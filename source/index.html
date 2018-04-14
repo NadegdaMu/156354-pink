@@ -6,7 +6,227 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+   <!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+
+    <header class="header-main">
+
+      <div class="header-main__panel">
+        <h1 class="header-main__title-logo">
+          PINK
+        </h1>
+        <button class="header-main__btn  header-main__btn--close  header-main__btn--open" type="button">
+          Закрыть
+        </button>
+
+      </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/">HMTL Academy</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="app">
+        <h2 class="app__title">Взгляните на жизнь иначе!</h2>
+        <a class="app__btn btn" href="http://alpinefile.ru/itunes.html">Скачать приложение</a>
+        <div class="app__icons">
+          <a class="app__icon app__icon--apple" href="https://play.google.com/store/apps/developer?id=Apple+Inc.">apple</a>
+          <a class="app__icon app__icon--android" href="http://programmy-dlya-android.ru/internet/237-google-play-market.html">android</a>
+          <a class="app__icon app__icon--windows" href="https://play-market-windows.ru/">windows</a>
+        </div>
+        <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+
+    </header>
+
+    <main class="content-main">
+
+        <section class="advantages">
+
+          <h2 class="advantages__main-title"><span class="advantages__span">Устали от серости мегаполиса?</span><span class="advantages__span-desk">Нам есть, что вам <span class="advantages__span-word">предложить!</span></span></h2>
+
+          <ul class="advantages__list">
+
+            <li class="advantages__item">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+              <li class="advantages__item">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+
+        </section>
+
+        <section class="scientific-data">
+          <h3 class="scientific-data__title">Эффект на 24 часа!</h3>
+          <p class="scientific-data__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится челые сутки!</p>
+          <a href="" class="scientific-data__link">Узнать больше об исследовании</a>
+        </section>
+
+        <section class="reviews">
+          <input class="reviews__input reviews__input--1" type="radio" id="btn-1" name="toggle" checked>
+          <input class="reviews__input reviews__input--2" type="radio" id="btn-2" name="toggle">
+          <input class="reviews__input reviews__input--3" type="radio" id="btn-3" name="toggle">
+          <div class="reviews__controls">
+            <label class="control control--1" for="btn-1"></label>
+            <label class="control control--2" for="btn-2"></label>
+            <label class="control control--3" for="btn-3"></label>
+          </div>
+          <div class="reviews__paginator">
+            <label class="paginator paginator--1" for="btn-4"></label>
+            <label class="paginator paginator--2" for="btn-5"></label>
+          </div>
+
+          <ul class="reviews__list">
+
+            <li class="reviews__item reviews__item--1">
+              <h3 class="reviews__title">Николай Петров</h3>
+              <p class="reviews__desc">25 лет,водитель трамвая</p>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+
+            <li class="reviews__item reviews__item--2">
+              <h3 class="reviews__title">Будет текст</h3>
+              <p class="reviews__text">Будет текст</p>
+            </li>
+
+            <li class="reviews__item reviews__item--3">
+              <h3 class="reviews__title">Будет текст</h3>
+              <p class="reviews__text">Будет текст</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="prices">
+          <input class="prices__input prices__input--1" type="radio" id="btn-4" name="switch" checked>
+          <input class="prices__input prices__input--2" type="radio" id="btn-5" name="switch">
+          <input class="prices__input prices__input--3" type="radio" id="btn-6" name="switch">
+          <div class="prices__controls">
+              <label class="control" for="btn-4"></label>
+              <label class="control" for="btn-5"></label>
+              <label class="control" for="btn-6"></label>
+          </div>
+
+            <table class="prices__table">
+
+              <thead class="prices__thead">
+
+                <tr>
+                  <th class="prices__header">
+                    <div class="prices__text">База</div>
+                    <div class="prices__number">1,99 USD</div>
+                  </th>
+                  <th class="prices__header">
+                    <div class="prices__ribbon">
+                      <span class="prices__deck">
+                        ХИТ
+                      </span>
+                    </div>
+                    <div class="prices__text">Стандарт</div>
+                    <div class="prices__number">3,99 USD</div>
+                  </th>
+                  <th class="prices__header">
+                    <div class="prices__text">Анлим</div>
+                    <div class="prices__number">9,99 USD</div>
+                  </th>
+                </tr>
+
+              </thead>
+
+              <tbody>
+
+                <tr class="prices__item">
+                  <td class="prices__name">Розовый фильтр
+                    <span class="prices__available prices__available--yes">+</span>
+                  </td>
+                  <td class="prices__name">Розовый фильтр
+                    <span class="prices__available prices__available--yes">+</span>
+                  </td>
+                  <td class="prices__name">Розовый фильтр
+                    <span class="prices__available prices__available--yes">+</span>
+                  </td>
+                </tr>
+
+                <tr class="prices__item">
+                  <td class="prices__name">Смайлики
+                    <span class="prices__available prices__available--no">+</span>
+                  </td>
+                  <td class="prices__name">Смайлики
+                    <span class="prices__available prices__available--yes">+</span>
+                  </td>
+                  <td class="prices__name">Смайлики
+                    <span class="prices__available prices__available--yes">+</span>
+                  </td>
+                </tr>
+
+                <tr class="prices__item">
+                  <td class="prices__name">Комментарии
+                    <span class="prices__available prices__available--no">-</span>
+                  </td>
+                  <td class="prices__name">Комментарии
+                    <span class="prices__available prices__available--no">-</span>
+                  </td>
+                  <td class="prices__name">Комментарии
+                    <span class="prices__available prices__available--yes">+</span>
+                  </td>
+                </tr>
+
+              </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer class="footer-main">
+      <div class="contacts">
+        <h2 class="contacts__main-title">Остались вопросы?<br>Свяжитесь с нами!</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h3 class="contacts__title">Звоните:</h3>
+            <p class="contacts__text">+7 (812) 555-66-66</p>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__title">Пишите:</h3>
+            <p class="contacts__text">mail@htmlacademy.ru</p>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__title">Приезжайте в гости:</h3>
+            <p class="contacts__text">ул. Большая<br>Конюшенная, 19/8</p>
+          </li>
+        </ul>
+      </div>
+
+      <iframe class="footer-main__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894615741413!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1464713370467" width="320" height="220" style="border:0" allowfullscreen></iframe>
+    </footer>
+
+  </body>
+</html>
+
 
   </body>
 </html>
