@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Пинк</title>
+
+  </head>
+
+  <body>
+
+    <header class="header-main">
+
+      <div class="header-main__panel">
+        <h1 class="header-main__title-logo">
+          PINK
+        </h1>
+        <button class="header-main__btn header-main__btn--close  header-main__btn--open" type="button">
+          Закрыть
+        </button>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/">HMTL Academy</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main class="content-main">
+
+        <div class="content-main__header">
+          <h2 class="content-main__title">Фотографии пользователей</h2>
+        </div>
+
+      <section class="posts">
+
+        <h3 class="posts__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h3>
+
+        <div class="post post--panorama">
+          <img class="post__img-panorama" src="http://placehold.it/320x137" alt="Фотография местности с высоты">
+          <div class="post__desc">панорама дня</div>
+          <div class="post__meta post__meta--panorama">
+            <span class="post__author">Анна</span> (5 минут назад)
+          </div>
+          <h4 class="post__title post__title--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</h4>
+          <div class="post__likes post__likes--panorama">Нравится: 215</div>
+        </div>
+
+        <div class="post">
+          <img class="post__img" src="http://placehold.it/280x180" alt="Ударная установка">
+          <div class="post__meta">
+            <span class="post__author">Левон</span> (5 часов назад)
+          </div>
+          <h4 class="post__title">Вчера он на луну летал, сегодня в руки к нам попал.</h4>
+          <div class="post__likes">Нравится: 356</div>
+        </div>
+
+        <div class="post">
+          <img class="post__img"  src="http://placehold.it/280x180" alt="Затейливая архитектура здания">
+          <div class="post__meta">
+            <span class="post__author">Антон</span> (12 часов назад)
+          </div>
+          <h4 class="post__title">Соседи будут рады!</h4>
+          <div class="post__likes">Нравится: 666</div>
+        </div>
+
+        <div class="post">
+          <img class="post__img" src="http://placehold.it/280x180" alt="Фотосъемка машины">
+          <div class="post__meta">
+            <span class="post__author">Борис</span> (20 часов назад)
+          </div>
+          <h4 class="post__title">Здесь могла быть ваша цитата о высоком и вечном.</h4>
+          <div class="post__likes">Нравится: 215</div>
+        </div>
+
+        <div class="post">
+          <img class="post__img" src="http://placehold.it/280x180" alt="Ярмарка на кубани">
+          <div class="post__meta">
+            <span class="post__author">Сергей</span> (25 часов назад)
+          </div>
+          <h4 class="post__title">Самая кубанская в мире!</h4>
+          <div class="post__likes">Нравится: 4</div>
+        </div>
+
+        <div class="post">
+          <img class="post__img" src="http://placehold.it/280x180" alt="Вид с вершины горы">
+          <div class="post__meta">
+            <span class="post__author">Максим</span> (40 часов назад)
+          </div>
+          <h4 class="post__title">Где снег-то!</h4>
+          <div class="post__likes">Нравится: 150</div>
+        </div>
+
+        <div class="post">
+          <img class="post__img" src="http://placehold.it/280x180" alt="Крыло самолета в воздухе">
+          <div class="post__meta">
+            <span class="post__author">Надежда</span> (45 часов назад)
+          </div>
+          <h4 class="post__title">Всем GM и взаимные лайки!</h4>
+          <div class="post__likes">Нравится: 2560</div>
+        </div>
+      </section>
+
+      <section class="upload">
+
+        <h3 class="upload__title">Затмите их всех! Выкладывайте все что накопилось в телефоне!</h3>
+
+        <div class="upload__content">
+          <img class="upload__img" src="http://placehold.it/280x375" alt="Заснеженная трасса">
+
+          <form action="#" class="upload__form">
+
+            <div class="upload__tools">
+              <button class="upload__tool  upload__tool--size" type="button"></button>
+              <button class="upload__tool  upload__tool--fill" type="button"></button>
+              <button class="upload__tool  upload__tool--contrast" type="button"></button>
+              <div class="upload__scale">
+                <input type="range" min="1" max="10">
+              </div>
+            </div>
+
+            <button class="upload__btn  upload__btn--post" type="submit">Запостить</button>
+            <button class="upload__btn  upload__btn--cancel" type="reset">Отмена</button>
+
+          </form>
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <footer class="footer-main footer-main--photo">
+
+      <a class="footer-main__logo" href="index.html">PINK</a>
+
+      <div class="social">
+        <a class="social__link  social__link--t" href="#">
+          <span class="visually-hidden">twitter</span>
+        </a>
+        <a class="social__link  social__link--fb" href="#">
+          <span class="visually-hidden">facebook</span>
+        </a>
+        <a class="social__link  social__link--yt" href="#">
+          <span class="visually-hidden">youtube</span>
+        </a>
+      </div>
+
+      <div class="copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__img" src="http://placehold.it/40x40" alt="Картинка логотипа Html academy">
+        </a>
+      </div>
+
+    </footer>
+
+  </body>
+</html>
