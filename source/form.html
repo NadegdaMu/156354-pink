@@ -2,7 +2,6 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name=viewport content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
   </head>
 
@@ -11,9 +10,9 @@
     <header class="header-main">
 
       <div class="header-main__panel">
-        <h1 class="header-main__title-logo">
+        <p class="header-main__text-logo">
           PINK
-        </h1>
+        </p>
         <button class="header-main__btn  header-main__btn--close  header-main__btn--open" type="button">
           Закрыть
         </button>
@@ -28,7 +27,7 @@
             <a class="main-nav__link" href="photo.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">Конкурс</a>
+            <a class="main-nav__link main-nav__link—current">Конкурс</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="https://htmlacademy.ru/">HMTL Academy</a>
@@ -41,11 +40,10 @@
     <main class="content-main">
 
       <div class="content-main__header">
-        <h2 class="content-main__title">Конкурс на самое безбашеное путешествие с Пинк</h2>
+        <h1 class="content-main__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
       </div>
 
       <p class="content-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-        <span class="content-main__text-span">Пожалуйста, заполните форму ниже:</span>
       </p>
 
       <form action="https://echo.htmlacademy.ru" class="page-form">
@@ -54,14 +52,14 @@
 
           <label class="user-data__label">
             Фамилия:
-            <input class="user-data__input" type="text" name="surname" placeholder="Укажите фамилию">
+            <input class="user-data__input" type="text" name="surname" placeholder="Укажите фамилию" required>
           </label>
 
 
 
           <label class="user-data__label">
             Имя:
-            <input class="user-data__input" type="text" name="name" placeholder="Введите ваше имя">
+            <input class="user-data__input" type="text" name="name" placeholder="Введите ваше имя" required>
           </label>
 
 
@@ -76,7 +74,7 @@
 
         <fieldset class="achievements">
 
-          <h3 class="achievements__title">Ваши безбашенные достижения в путешествии</h3>
+          <legend class="achievements__title">Ваши безбашенные достижения в путешествии</legend>
 
           <div class="achievements__wrapper">
 
@@ -122,16 +120,17 @@
 
         <fieldset class="user-data user-data--network">
 
-          <h3 class="user-data__title">Контактная информация</h3>
+          <legend class="user-data__title">Контактная информация</legend>
 
           <div class="user-data__wrapper user-data__wrapper--network">
 
-            <input class="user-data__input  user-data__input--network" id="user-data__phone" type="tel" name="tel" placeholder="Номер, пожалуйста">
-            <label class="user-data__label-tablet" for="user-data__phone">Номер телефона</label>
+            <label class="user-data__label-tablet">Номер телефона
+            <input class="user-data__input  user-data__input--network" type="tel" name="tel" placeholder="Номер, пожалуйста">
+            </label>
 
-
-            <input class="user-data__input  user-data__input--network" id="user-data__address" type="email" name="email" placeholder="Введите почту *">
-            <label class="user-data__label-tablet" for="user-data__address">Адрес почты</label>
+            <label class="user-data__label-tablet">Адрес почты
+            <input class="user-data__input  user-data__input--network" type="email" name="email" placeholder="Введите почту *" required>
+            </label>
 
           </div>
 
@@ -185,21 +184,30 @@
       <a class="footer-main__logo" href="#">PINK</a>
 
       <div class="social">
-        <a class="social__link  social__link--t" href="#">
-          <span class="visually-hidden">twitter</span>
-        </a>
-        <a class="social__link  social__link--fb" href="#">
-          <span class="visually-hidden">facebook</span>
-        </a>
-        <a class="social__link  social__link--yt" href="#">
-          <span class="visually-hidden">youtube</span>
-        </a>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">twitter</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">youtube</span>
+            </a>
+          </li>
+        </ul>
       </div>
 
       <div class="copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__img" src="http://placehold.it/40x40" alt="Картинка логотипа Html academy">
+          <img class="copyright__img" src="http://placehold.it/40x40" alt="Продвинутые курсы HTML и CSS HTMLacademy">
+          <span class="visually-hidden">Сылка на интенсив HTMLacademy</span>
         </a>
       </div>
 
