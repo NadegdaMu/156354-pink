@@ -10,12 +10,9 @@
     <header class="header-main">
 
       <div class="header-main__panel">
-        <p class="header-main__text-logo">
-          PINK
-        </p>
-        <button class="header-main__btn  header-main__btn--close  header-main__btn--open" type="button">
-          Закрыть
-        </button>
+        <a class="header-main__link" href="index.html">
+          <img class="header-main__logo" alt="Логотип компании Птнк">PINK
+        </a>
       </div>
 
       <nav class="main-nav">
@@ -33,6 +30,9 @@
             <a class="main-nav__link" href="https://htmlacademy.ru/">HMTL Academy</a>
           </li>
         </ul>
+        <button class="main-nav__btn" type="button">
+          <span class="visually-hidden">Меню</span>
+        </button>
       </nav>
 
     </header>
@@ -181,7 +181,9 @@
 
     <footer class="footer-main footer-main--form">
 
-      <a class="footer-main__logo" href="#">PINK</a>
+      <a class="footer-main__logo" href="#">
+        <img class="footer-main__link" href="index.html" alt="Логотип компании Пинк">PINK
+      </a>
 
       <div class="social">
         <ul class="social__list">
@@ -221,7 +223,7 @@
       <p class="modal-message__text">
         Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
       </p>
-      <button class="modal-message__btn  btn-contest" type="submit">ok</button>
+      <button class="modal-message__btn  btn-contest" type="button">ok</button>
     </div>
 
     <div class="modal-message  modal-message--success">
@@ -232,7 +234,7 @@
         Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
       </p>
       <div class="modal-message__footer">
-        <button class="modal-message__btn  btn-contest  modal-message__btn--success" type="submit">Закрыть окно</button>
+        <button class="modal-message__btn  btn-contest  modal-message__btn--success" type="button">Закрыть окно</button>
       </div>
     </div>
 
