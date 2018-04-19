@@ -1,0 +1,43 @@
+.review {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border: none;
+
+}
+
+.review__label {
+  margin-left: 40px;
+  text-transform: uppercase;
+  color: $red-text;
+}
+
+.review__textarea {
+  width: 100%;
+  min-height: 210px;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 18px;
+  border: 2px solid $color-border;
+  border-radius: 2px;
+  color: $color-text;
+  outline: 0;
+}
+
+.review__textarea::-webkit-input-placeholder {
+  color: $indigo;
+}
+
+.review__textarea:-moz-placeholder {
+  color: $indigo;
+}
+
+.review__textarea::-moz-placeholder {
+  color: $indigo;
+}
+
+.review__textarea:-ms-input-placeholder {
+  color: $indigo;
+}
+

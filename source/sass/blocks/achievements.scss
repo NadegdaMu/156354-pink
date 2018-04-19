@@ -1,0 +1,26 @@
+.achievements {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $base-color;
+  border: none;
+}
+
+.achievements__title {
+  padding: 0;
+  margin-bottom: 40px;
+  line-height: 18px;
+  color: $red-text;
+  text-transform:  uppercase;
+}
+
+.achievements__label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 60px;
+  padding-left: 70px;
+  color: $color-text;
+}
+
+.achievements__label:last-of-type {
+  margin-bottom: 0px;
+}

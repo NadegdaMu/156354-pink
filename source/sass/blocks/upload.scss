@@ -1,0 +1,23 @@
+.upload {
+  background-color: $base-color;
+}
+
+.upload__btn {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 800;
+  border: 3px solid $red-text;
+  border-radius: 25px;
+  color: $red-text;
+}
+
+.upload__btn--post {
+  margin-bottom: 10px;
+}
+
+.upload__btn--cancel {
+  margin-bottom: 40px;
+}

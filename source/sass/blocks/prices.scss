@@ -1,0 +1,69 @@
+.prices {
+  background-color: $base-color;
+}
+
+.prices__table {
+  display: flex;
+}
+
+.prices__list {
+  @include list-reset;
+
+}
+
+.prices__name {
+
+  width: 210px;
+  height: 60px;
+  padding-top: 20px;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-text;
+  background-color: $white-color;
+  border-left: 2px solid $base-color;
+}
+
+.prices__name:nth-of-type(1) {
+  width: 280px;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white-color;
+  background-color: $color-text;
+}
+
+.prices__desk {
+  width: 280px;
+  margin: 0px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-left: 2px solid $base-color;
+}
+
+.prices__desk:nth-of-type(1) {
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: $white-color;
+  background-color: $color-text;
+}
+
+.prices__available--yes {
+
+  width: 70px;
+  height: 60px;
+  background-image: url(../img/icon-yes.svg);
+  background-repeat: no-repeat, no-repeat;
+
+}
+
+.prices__available--no {
+  width: 70px;
+  height: 60px;
+  background-image: url(../img/icon-no.svg);
+  background-repeat: no-repeat, no-repeat;
+
+}

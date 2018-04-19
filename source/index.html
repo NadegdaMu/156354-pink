@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="header-main">
-
+      <div class="conteiner">
       <h1 class="visually-hidden">Пинк, приложение для обработки фотографий</h1>
 
       <div class="header-main__panel">
@@ -35,8 +36,11 @@
           <span class="visually-hidden">Меню</span>
         </button>
       </nav>
+      </div>
+
 
       <div class="app">
+        <div class="conteiner">
         <a class="app__btn btn" href="http://alpinefile.ru/itunes.html">Скачать приложение</a>
         <ul class="app__icon-list">
           <li class="app__icon-item">
@@ -57,6 +61,7 @@
         </ul>
 
         <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
 
     </header>
@@ -66,10 +71,13 @@
         <section class="advantages">
 
          <h2 class="visually-hidden">Возможности приложения.</h2>
+          <div class="conteiner">
+          <p class="advantages__desk">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+          </div>
 
-          <p>Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
-
-          <ul class="advantages__list">
+          <div class="wrap">
+            <div class="conteiner">
+              <ul class="advantages__list">
 
             <li class="advantages__item">
               <h3 class="advantages__title">Поднимает настроение</h3>
@@ -83,11 +91,15 @@
               <h3 class="advantages__title">Заводит новых друзей</h3>
               <p class="advantages__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
-          </ul>
+
+              </ul>
+            </div>
+          </div>
 
         </section>
 
         <section class="reviews">
+          <div class="conteiner">
           <input class="reviews__input reviews__input--1" type="radio" id="btn-1" name="toggle" checked>
           <input class="reviews__input reviews__input--2" type="radio" id="btn-2" name="toggle">
           <input class="reviews__input reviews__input--3" type="radio" id="btn-3" name="toggle">
@@ -119,6 +131,7 @@
               </blockquote>
             </li>
           </ul>
+          </div>
         </section>
 
         <section class="prices">
@@ -126,6 +139,8 @@
           <input class="prices__input prices__input--2" type="radio" id="btn-5" name="switch">
           <input class="prices__input prices__input--3" type="radio" id="btn-6" name="switch">
 
+
+          <div class="prices__table">
           <dl class="prices__list">
 
             <dt class="prices__name">Стандарт</dt>
@@ -162,7 +177,7 @@
             </dd>
 
             <dt class="prices__name">Комментарии</dt>
-            <dd>
+            <dd class="prices__available prices__available--yes">
               <span class="visually-hidden">Не входит в комплектацию</span>
             </dd>
           </dl>
@@ -186,6 +201,7 @@
               <span class="visually-hidden">Не входит в комплектацию</span>
             </dd>
           </dl>
+          </div>
           <div class="prices__controls">
             <label class="control" for="btn-4"></label>
             <label class="control" for="btn-5"></label>
@@ -197,9 +213,11 @@
     </main>
 
     <footer class="footer-main">
+
       <div class="contacts">
+        <div class="conteiner">
         <h2 class="visually-hidden">Наши контакты.</h2>
-        <p class="contacts__text">Остались вопросы?<br>Свяжитесь с нами!</p>
+        <p class="contacts__textual">Остались вопросы?<br>Свяжитесь с нами!</p>
         <ul class="contacts__list">
           <li class="contacts__item">
             <h3 class="contacts__title">Звоните:</h3>
@@ -214,9 +232,13 @@
             <p class="contacts__text">ул. Большая<br>Конюшенная, 19/8</p>
           </li>
         </ul>
+        </div>
       </div>
 
-      <iframe class="footer-main__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894615741413!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1464713370467" width="320" height="220" style="border:0" allowfullscreen></iframe>
+      <div class="map">
+        <iframe class="footer-main__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894615741413!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1464713370467" width="320" height="220" style="border:0" allowfullscreen></iframe>
+      </div>
+
     </footer>
 
   </body>
