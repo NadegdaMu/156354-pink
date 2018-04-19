@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -24,12 +24,12 @@ html {
 .conteiner {
   width: 320px;
   margin: 0 auto;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 
 .post__conteiner {
   width: 320px;
-  padding: 0px 20px;
+  padding: 0 20px;
   background-color: $base-color;
 }
 

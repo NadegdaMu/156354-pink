@@ -8,7 +8,6 @@
 
 .prices__list {
   @include list-reset;
-
 }
 
 .prices__name {
@@ -37,7 +36,7 @@
 
 .prices__desk {
   width: 280px;
-  margin: 0px;
+  margin: 0;
   padding-bottom: 20px;
   text-align: center;
   border-left: 2px solid $base-color;
@@ -52,18 +51,15 @@
 }
 
 .prices__available--yes {
-
   width: 70px;
   height: 60px;
-  background-image: url(../img/icon-yes.svg);
+  background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat, no-repeat;
-
 }
 
 .prices__available--no {
   width: 70px;
   height: 60px;
-  background-image: url(../img/icon-no.svg);
+  background-image: url("../img/icon-no.svg");
   background-repeat: no-repeat, no-repeat;
-
 }

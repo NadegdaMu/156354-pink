@@ -1,10 +1,9 @@
 .app {
   padding-top: 470px;
   background-color: $indigo;
-  background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center 175px, top center;
-
 }
 
 .app__btn {
@@ -47,17 +46,16 @@
   display: block;
   width: 60px;
   height: 60px;
-
 }
 
 .app__icon-item:nth-child(1) .app__icon-link {
-  background: url(../img/logo-apple.svg) no-repeat;
+  background: url("../img/logo-apple.svg") no-repeat;
 }
 
 .app__icon-item:nth-child(2) .app__icon-link {
-  background: url(../img/logo-android.svg) no-repeat;
+  background: url("../img/logo-android.svg") no-repeat;
 }
 
 .app__icon-item:nth-child(3) .app__icon-link {
-  background: url(../img/logo-microsoft.svg) no-repeat;
+  background: url("../img/logo-microsoft.svg") no-repeat;
 }
