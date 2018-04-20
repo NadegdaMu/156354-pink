@@ -1,7 +1,7 @@
 .main-nav {
   font-size: 18px;
   line-height: 32px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .main-nav__list {
@@ -23,7 +23,9 @@
 }
 
 .main-nav__link {
-  line-height: 62px;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-transform: uppercase;
   text-decoration: none;
   color: $white-color;

@@ -9,11 +9,10 @@
 .prices__list {
   @include list-reset;
   width: 280px;
-
 }
 
 .prices__name {
-  float: left;
+
   width: 210px;
   height: 60px;
   padding-top: 20px;
@@ -53,7 +52,7 @@
 }
 
 .prices__available--yes {
-  float: right;
+
   margin: 0;
   width: 70px;
   height: 60px;
@@ -63,7 +62,6 @@
 }
 
 .prices__available--no {
-  float: right;
   margin: 0;
   width: 70px;
   height: 60px;
