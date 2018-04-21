@@ -33,19 +33,6 @@
   color: $red-text;
 }
 
-.user-data__input::-webkit-input-placeholder {
-  color: $indigo;
-}
-
-
-.user-data__input:-moz-placeholder {
-  color: $indigo;
-}
-
-.user-data__input::-moz-placeholder {
-  color: $indigo;
-}
-
-.user-data__input:-ms-input-placeholder {
+.user-data__input::placeholder {
   color: $indigo;
 }

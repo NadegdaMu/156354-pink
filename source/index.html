@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -138,80 +139,87 @@
         </section>
 
         <section class="prices">
-          <input class="prices__input prices__input--1" type="radio" id="btn-4" name="switch" checked>
-          <input class="prices__input prices__input--2" type="radio" id="btn-5" name="switch">
-          <input class="prices__input prices__input--3" type="radio" id="btn-6" name="switch">
 
 
+        <div class="prices__container">
+          <input class="prices__input prices__input--1 visually-hidden" type="radio" id="btn-4" name="switch" checked>
+          <input class="prices__input prices__input--2 visually-hidden" type="radio" id="btn-5" name="switch">
+          <input class="prices__input prices__input--3 visually-hidden" type="radio" id="btn-6" name="switch">
           <div class="prices__table">
-            <dl class="prices__list">
 
-              <dt class="prices__name">Стандарт</dt>
-              <dd class="prices__desk">3,99 USD</dd>
+            <div class="prices__content">
 
-              <dt class="prices__name">Розовый фильтр</dt>
-              <dd class="prices__available prices__available--yes">
-                <span class="visually-hidden">Входит в комплектацию</span>
-              </dd>
+              <dl class="prices__list">
 
-              <dt class="prices__name">Смайлики</dt>
-              <dd class="prices__available prices__available--yes">
-                <span class="visually-hidden">Входит в комплектацию</span>
-              </dd>
+                <dt class="prices__name prices__name--header">Стандарт</dt>
+                <dd class="prices__desk prices__desk--header">3,99 USD</dd>
 
-              <dt class="prices__name">Комментарии</dt>
-              <dd class="prices__available prices__available--no">
-                <span class="visually-hidden">Не входит в комплектацию</span>
-              </dd>
-            </dl>
+                <dt class="prices__name">1. Розовый фильтр</dt>
+                <dd class="prices__available prices__available--yes">
+                  <span class="visually-hidden">Входит в комплектацию</span>
+                </dd>
 
-            <dl class="prices__list">
-              <dt class="prices__name">Стандарт</dt>
-              <dd class="prices__desk">3,99 USD</dd>
+                <dt class="prices__name">Смайлики</dt>
+                <dd class="prices__available prices__available--yes">
+                  <span class="visually-hidden">Входит в комплектацию</span>
+                </dd>
 
-              <dt class="prices__name">Розовый фильтр</dt>
-              <dd class="prices__available prices__available--yes">
-                <span class="visually-hidden">Входит в комплектацию</span>
-              </dd>
+                <dt class="prices__name">Комментарии</dt>
+                <dd class="prices__available prices__available--no">
+                  <span class="visually-hidden">Не входит в комплектацию</span>
+                </dd>
+              </dl>
 
-              <dt class="prices__name">Смайлики</dt>
-              <dd class="prices__available prices__available--yes">
-                <span class="visually-hidden">Входит в комплектацию</span>
-              </dd>
+              <dl class="prices__list">
+                <dt class="prices__name prices__name--header">Стандарт</dt>
+                <dd class="prices__desk prices__desk--header">3,99 USD</dd>
 
-              <dt class="prices__name">Комментарии</dt>
-              <dd class="prices__available prices__available--yes">
-                <span class="visually-hidden">Не входит в комплектацию</span>
-              </dd>
-            </dl>
+                <dt class="prices__name">2. Розовый фильтр</dt>
+                <dd class="prices__available prices__available--yes">
+                  <span class="visually-hidden">Входит в комплектацию</span>
+                </dd>
 
-            <dl class="prices__list">
-              <dt class="prices__name">Стандарт</dt>
-              <dd class="prices__desk">3,99 USD</dd>
+                <dt class="prices__name">Смайлики</dt>
+                <dd class="prices__available prices__available--yes">
+                  <span class="visually-hidden">Входит в комплектацию</span>
+                </dd>
 
-              <dt class="prices__name">Розовый фильтр</dt>
-              <dd class="prices__available prices__available--yes">
-                <span class="visually-hidden">Входит в комплектацию</span>
-              </dd>
+                <dt class="prices__name">Комментарии</dt>
+                <dd class="prices__available prices__available--yes">
+                  <span class="visually-hidden">Не входит в комплектацию</span>
+                </dd>
+              </dl>
 
-              <dt class="prices__name">Смайлики</dt>
-              <dd class="prices__available prices__available--yes">
-                <span class="visually-hidden">Входит в комплектацию</span>
-              </dd>
+              <dl class="prices__list">
+                <dt class="prices__name prices__name--header">Стандарт</dt>
+                <dd class="prices__desk prices__desk--header">3,99 USD</dd>
 
-              <dt class="prices__name">Комментарии</dt>
-              <dd class="prices__available prices__available--no">
-                <span class="visually-hidden">Не входит в комплектацию</span>
-              </dd>
-            </dl>
+                <dt class="prices__name">3. Розовый фильтр</dt>
+                <dd class="prices__available prices__available--yes">
+                  <span class="visually-hidden">Входит в комплектацию</span>
+                </dd>
+
+                <dt class="prices__name">Смайлики</dt>
+                <dd class="prices__available prices__available--yes">
+                  <span class="visually-hidden">Входит в комплектацию</span>
+                </dd>
+
+                <dt class="prices__name">Комментарии</dt>
+                <dd class="prices__available prices__available--no">
+                  <span class="visually-hidden">Не входит в комплектацию</span>
+                </dd>
+              </dl>
+            </div>
           </div>
+
           <div class="prices__controls">
-            <label class="control" for="btn-4"></label>
-            <label class="control" for="btn-5"></label>
-            <label class="control" for="btn-6"></label>
+            <label class="prices__control prices__control--01" for="btn-4"><span class="visually-hidden">1 слайд</span></label>
+            <label class="prices__control prices__control--02" for="btn-5"><span class="visually-hidden">2 слайд</span></label>
+            <label class="prices__control prices__control--03" for="btn-6"><span class="visually-hidden">3 слайд</span></label>
           </div>
+        </div>
 
-        </section>
+      </section>
 
     </main>
 
