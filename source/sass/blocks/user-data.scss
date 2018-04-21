@@ -1,0 +1,38 @@
+.user-data {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+  border: none;
+}
+
+.user-data--network {
+  padding-top: 40px;
+}
+
+.user-data__label {
+  display: block;
+  margin-left: 23px;
+  text-transform: uppercase;
+  color: $red-text;
+}
+
+.user-data__input {
+  width: 100%;
+  height: 58px;
+  padding-left: 23px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  border: 2px solid $color-border;
+  border-radius: 2px;
+  color: $color-text;
+}
+
+.user-data__label-tablet {
+  margin-left: 23px;
+  text-transform: uppercase;
+  color: $red-text;
+}
+
+.user-data__input::placeholder {
+  color: $indigo;
+}

@@ -1,0 +1,101 @@
+.prices {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: $base-color;
+}
+
+.prices__table {
+  overflow: hidden;
+}
+
+.prices__content {
+  display: flex;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.prices__list {
+  flex-shrink: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  background-color: $white-color;
+}
+
+.prices__name,
+.prices__desk {
+  margin: 0;
+  padding: 0;
+}
+
+.prices__name {
+  flex-basis: 76%;
+  width: 76%;
+  padding: 10px;
+  border: 1px solid blue;
+}
+
+
+.prices__name--header,
+.prices__desk--header {
+  flex-basis: 100%;
+  width: 100%;
+  background-color: $color-text;
+  color: $white-color;
+  text-align: center;
+}
+
+.prices__available {
+  padding: 0;
+  margin: 0;
+  flex-basis: 24%;
+  width: 24%;
+  border: 1px solid green;
+}
+
+.prices__available::before {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 60px;
+  margin-left: auto;
+  border: 1px solid red;
+}
+
+.prices__controls {
+  display: flex;
+  justify-content: center;
+}
+
+.prices__control {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border: 2px solid blue;
+  border-radius: 50%;
+}
+
+.prices__input--1:checked ~ .prices__table .prices__content {
+  transform: translateX(0);
+}
+
+.prices__input--1:checked ~ .prices__controls .prices__control--01 {
+  background-color: red;
+}
+
+.prices__input--2:checked ~ .prices__table .prices__content {
+  transform: translateX(-84.5%);
+}
+
+.prices__input--2:checked ~ .prices__controls .prices__control--02 {
+  background-color: red;
+}
+
+.prices__input--3:checked ~ .prices__table .prices__content {
+  transform: translateX(-170%);
+}
+
+.prices__input--3:checked ~ .prices__controls .prices__control--03 {
+  background-color: red;
+}

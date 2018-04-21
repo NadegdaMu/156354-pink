@@ -1,0 +1,13 @@
+.header-main {
+  background-color: $header-color;
+  color: $white-color;
+}
+
+.header-main__panel {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 68px;
+  border-bottom: 1px solid #000001;
+}

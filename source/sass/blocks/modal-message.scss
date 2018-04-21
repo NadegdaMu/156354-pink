@@ -1,0 +1,28 @@
+.modal-message__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.modal-message__text {
+  line-height: 24px;
+}
+
+.modal-message__btn {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 2px;
+  font-size: 18px;
+  font-weight: 700;
+  color: $white-color;
+}
+
+.modal-message__footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $base-color;
+}

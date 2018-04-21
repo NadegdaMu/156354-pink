@@ -1,0 +1,32 @@
+.main-nav {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__item {
+  display: block;
+  width: 100%;
+  text-align: center;
+  min-height: 14px;
+  background-color: $color-text;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000001;
+}
+
+.main-nav__item:nth-child(1) {
+  border-top: 1px solid #485461;
+}
+
+.main-nav__link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white-color;
+}

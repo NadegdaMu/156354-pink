@@ -2,61 +2,72 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="header-main">
 
-      <h1 class="visually-hidden">Пинк, приложение для обработки фотографий</h1>
+      <div class="container">
+        <h1 class="visually-hidden">Пинк, приложение для обработки фотографий</h1>
 
-      <div class="header-main__panel">
-        <a class="header-main__link">
-          <img class="header-main__logo" alt="Логотип компании Птнк">PINK
-        </a>
+        <div class="header-main__panel">
+          <a class="header-main__link">
+            <img class="header-main__logo" alt="Логотип компании Птнк">PINK
+          </a>
+        </div>
+
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link—current">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/">HMTL Academy</a>
+            </li>
+          </ul>
+          <button class="main-nav__btn" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
+        </nav>
       </div>
 
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link—current">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/">HMTL Academy</a>
-          </li>
-        </ul>
-        <button class="main-nav__btn" type="button">
-          <span class="visually-hidden">Меню</span>
-        </button>
-      </nav>
 
       <div class="app">
-        <a class="app__btn btn" href="http://alpinefile.ru/itunes.html">Скачать приложение</a>
-        <ul class="app__icon-list">
-          <li class="app__icon-item">
-            <a class="app__icon-link" href="https://play.google.com/store/apps/eveloper?id=Apple+Inc.">
-              <span class="visually-hidden">apple</span>
-            </a>
-          </li>
-          <li class="app__icon-item">
-            <a class="app__icon-link" href="http://programmy-dlya-android.ru/internet/237-google-play-market.html">
-              <span class="visually-hidden">android</span>
-            </a>
-          </li>
-          <li class="app__icon-item">
-            <a class="app__icon-link" href="https://play-market-windows.ru/">
-              <span class="visually-hidden">windows</span>
-            </a>
-          </li>
-        </ul>
 
-        <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="container">
+
+          <a class="app__btn btn" href="http://alpinefile.ru/itunes.html">Скачать приложение</a>
+
+          <ul class="app__icon-list">
+            <li class="app__icon-item">
+              <a class="app__icon-link" href="https://play.google.com/store/apps/eveloper?id=Apple+Inc.">
+                <span class="visually-hidden">apple</span>
+              </a>
+            </li>
+            <li class="app__icon-item">
+              <a class="app__icon-link" href="http://programmy-dlya-android.ru/internet/237-google-play-market.html">
+                <span class="visually-hidden">android</span>
+              </a>
+            </li>
+            <li class="app__icon-item">
+              <a class="app__icon-link" href="https://play-market-windows.ru/">
+                <span class="visually-hidden">windows</span>
+              </a>
+            </li>
+          </ul>
+
+          <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+
       </div>
 
     </header>
@@ -67,156 +78,178 @@
 
           <h2 class="visually-hidden">Возможности приложения.</h2>
 
-          <p>Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+          <div class="container">
+            <p class="advantages__desk">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+          </div>
 
-          <ul class="advantages__list">
-
-            <li class="advantages__item">
-              <h3 class="advantages__title">Поднимает настроение</h3>
-              <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-              <li class="advantages__item">
-              <h3 class="advantages__title">Заводит новых друзей</h3>
-              <p class="advantages__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
+          <div class="wrap">
+            <div class="container">
+              <ul class="advantages__list">
+                <li class="advantages__item">
+                  <h3 class="advantages__title">Поднимает настроение</h3>
+                  <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </li>
+                <li class="advantages__item">
+                  <h3 class="advantages__title">Меняет мир вокруг</h3>
+                  <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                </li>
+                <li class="advantages__item">
+                  <h3 class="advantages__title">Заводит новых друзей</h3>
+                  <p class="advantages__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+                </li>
+              </ul>
+            </div>
+          </div>
 
         </section>
 
         <section class="reviews">
-          <input class="reviews__input reviews__input--1" type="radio" id="btn-1" name="toggle" checked>
-          <input class="reviews__input reviews__input--2" type="radio" id="btn-2" name="toggle">
-          <input class="reviews__input reviews__input--3" type="radio" id="btn-3" name="toggle">
-          <div class="reviews__controls">
-            <label class="control control--1" for="btn-1"></label>
-            <label class="control control--2" for="btn-2"></label>
-            <label class="control control--3" for="btn-3"></label>
+          <div class="container">
+            <input class="reviews__input reviews__input--1" type="radio" id="btn-1" name="toggle" checked>
+            <input class="reviews__input reviews__input--2" type="radio" id="btn-2" name="toggle">
+            <input class="reviews__input reviews__input--3" type="radio" id="btn-3" name="toggle">
+            <div class="reviews__controls">
+              <label class="control control--1" for="btn-1"></label>
+              <label class="control control--2" for="btn-2"></label>
+              <label class="control control--3" for="btn-3"></label>
+            </div>
+            <ul class="reviews__list">
+              <li class="reviews__item reviews__item--1">
+                <blockquote class="reviews__text">
+                  <cite class="reviews__author">Николай Петров</cite>
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </blockquote>
+              </li>
+
+              <li class="reviews__item reviews__item--2">
+                <blockquote class="reviews__text">
+                  <cite class="reviews__author">Будет текст</cite>
+                  Будет текст
+                </blockquote>
+              </li>
+
+              <li class="reviews__item reviews__item--3">
+                <blockquote class="reviews__text">
+                  <cite class="reviews__author">Будет текст</cite>
+                  Будет текст
+                </blockquote>
+              </li>
+            </ul>
           </div>
-          <ul class="reviews__list">
-
-            <li class="reviews__item reviews__item--1">
-              <blockquote class="reviews__text">
-                <cite class="reviews__author">Николай Петров</cite>
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-              </blockquote>
-            </li>
-
-            <li class="reviews__item reviews__item--2">
-              <blockquote class="reviews__text">
-                <cite class="reviews__author">Будет текст</cite>
-                Будет текст
-              </blockquote>
-            </li>
-
-            <li class="reviews__item reviews__item--3">
-              <blockquote class="reviews__text">
-                <cite class="reviews__author">Будет текст</cite>
-                Будет текст
-              </blockquote>
-            </li>
-          </ul>
         </section>
 
         <section class="prices">
-          <input class="prices__input prices__input--1" type="radio" id="btn-4" name="switch" checked>
-          <input class="prices__input prices__input--2" type="radio" id="btn-5" name="switch">
-          <input class="prices__input prices__input--3" type="radio" id="btn-6" name="switch">
 
-          <dl class="prices__list">
 
-            <dt class="prices__name">Стандарт</dt>
-            <dd class="prices__desk">3,99 USD</dd>
+        <div class="prices__container">
+          <input class="prices__input prices__input--1 visually-hidden" type="radio" id="btn-4" name="switch" checked>
+          <input class="prices__input prices__input--2 visually-hidden" type="radio" id="btn-5" name="switch">
+          <input class="prices__input prices__input--3 visually-hidden" type="radio" id="btn-6" name="switch">
+          <div class="prices__table">
 
-            <dt class="prices__name">Розовый фильтр</dt>
-            <dd class="prices__available prices__available--yes">
-              <span class="visually-hidden">Входит в комплектацию</span>
-            </dd>
+            <div class="prices__content">
 
-            <dt class="prices__name">Смайлики</dt>
-            <dd class="prices__available prices__available--yes">
-              <span class="visually-hidden">Входит в комплектацию</span>
-            </dd>
+              <dl class="prices__list">
 
-            <dt class="prices__name">Комментарии</dt>
-            <dd class="prices__available prices__available--no">
-              <span class="visually-hidden">Не входит в комплектацию</span>
-            </dd>
-          </dl>
+                <dt class="prices__name prices__name--header">Стандарт</dt>
+                <dd class="prices__desk prices__desk--header">3,99 USD</dd>
 
-          <dl class="prices__list">
-            <dt class="prices__name">Стандарт</dt>
-            <dd class="prices__desk">3,99 USD</dd>
+                <dt class="prices__name">1. Розовый фильтр</dt>
+                <dd class="prices__available prices__available--yes">
+                  <span class="visually-hidden">Входит в комплектацию</span>
+                </dd>
 
-            <dt class="prices__name">Розовый фильтр</dt>
-            <dd class="prices__available prices__available--yes">
-              <span class="visually-hidden">Входит в комплектацию</span>
-            </dd>
+                <dt class="prices__name">Смайлики</dt>
+                <dd class="prices__available prices__available--yes">
+                  <span class="visually-hidden">Входит в комплектацию</span>
+                </dd>
 
-            <dt class="prices__name">Смайлики</dt>
-            <dd class="prices__available prices__available--yes">
-              <span class="visually-hidden">Входит в комплектацию</span>
-            </dd>
+                <dt class="prices__name">Комментарии</dt>
+                <dd class="prices__available prices__available--no">
+                  <span class="visually-hidden">Не входит в комплектацию</span>
+                </dd>
+              </dl>
 
-            <dt class="prices__name">Комментарии</dt>
-            <dd>
-              <span class="visually-hidden">Не входит в комплектацию</span>
-            </dd>
-          </dl>
+              <dl class="prices__list">
+                <dt class="prices__name prices__name--header">Стандарт</dt>
+                <dd class="prices__desk prices__desk--header">3,99 USD</dd>
 
-          <dl class="prices__list">
-            <dt class="prices__name">Стандарт</dt>
-            <dd class="prices__desk">3,99 USD</dd>
+                <dt class="prices__name">2. Розовый фильтр</dt>
+                <dd class="prices__available prices__available--yes">
+                  <span class="visually-hidden">Входит в комплектацию</span>
+                </dd>
 
-            <dt class="prices__name">Розовый фильтр</dt>
-            <dd class="prices__available prices__available--yes">
-              <span class="visually-hidden">Входит в комплектацию</span>
-            </dd>
+                <dt class="prices__name">Смайлики</dt>
+                <dd class="prices__available prices__available--yes">
+                  <span class="visually-hidden">Входит в комплектацию</span>
+                </dd>
 
-            <dt class="prices__name">Смайлики</dt>
-            <dd class="prices__available prices__available--yes">
-              <span class="visually-hidden">Входит в комплектацию</span>
-            </dd>
+                <dt class="prices__name">Комментарии</dt>
+                <dd class="prices__available prices__available--yes">
+                  <span class="visually-hidden">Не входит в комплектацию</span>
+                </dd>
+              </dl>
 
-            <dt class="prices__name">Комментарии</dt>
-            <dd class="prices__available prices__available--no">
-              <span class="visually-hidden">Не входит в комплектацию</span>
-            </dd>
-          </dl>
-          <div class="prices__controls">
-            <label class="control" for="btn-4"></label>
-            <label class="control" for="btn-5"></label>
-            <label class="control" for="btn-6"></label>
+              <dl class="prices__list">
+                <dt class="prices__name prices__name--header">Стандарт</dt>
+                <dd class="prices__desk prices__desk--header">3,99 USD</dd>
+
+                <dt class="prices__name">3. Розовый фильтр</dt>
+                <dd class="prices__available prices__available--yes">
+                  <span class="visually-hidden">Входит в комплектацию</span>
+                </dd>
+
+                <dt class="prices__name">Смайлики</dt>
+                <dd class="prices__available prices__available--yes">
+                  <span class="visually-hidden">Входит в комплектацию</span>
+                </dd>
+
+                <dt class="prices__name">Комментарии</dt>
+                <dd class="prices__available prices__available--no">
+                  <span class="visually-hidden">Не входит в комплектацию</span>
+                </dd>
+              </dl>
+            </div>
           </div>
 
-        </section>
+          <div class="prices__controls">
+            <label class="prices__control prices__control--01" for="btn-4"><span class="visually-hidden">1 слайд</span></label>
+            <label class="prices__control prices__control--02" for="btn-5"><span class="visually-hidden">2 слайд</span></label>
+            <label class="prices__control prices__control--03" for="btn-6"><span class="visually-hidden">3 слайд</span></label>
+          </div>
+        </div>
+
+      </section>
 
     </main>
 
     <footer class="footer-main">
+
       <div class="contacts">
-        <h2 class="visually-hidden">Наши контакты.</h2>
-        <p class="contacts__text">Остались вопросы?<br>Свяжитесь с нами!</p>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <h3 class="contacts__title">Звоните:</h3>
-            <p class="contacts__text">+7 (812) 555-66-66</p>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__title">Пишите:</h3>
-            <p class="contacts__text">mail@htmlacademy.ru</p>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__title">Приезжайте в гости:</h3>
-            <p class="contacts__text">ул. Большая<br>Конюшенная, 19/8</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="visually-hidden">Наши контакты.</h2>
+          <p class="contacts__textual">Остались вопросы?<br>Свяжитесь с нами!</p>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <h3 class="contacts__title">Звоните:</h3>
+              <p class="contacts__text">+7 (812) 555-66-66</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__title">Пишите:</h3>
+              <p class="contacts__text">mail@htmlacademy.ru</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__title">Приезжайте в гости:</h3>
+              <p class="contacts__text">ул. Большая<br>Конюшенная, 19/8</p>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <iframe class="footer-main__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894615741413!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1464713370467" width="320" height="220" style="border:0" allowfullscreen></iframe>
+      <div class="map">
+        <iframe class="footer-main__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894615741413!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1464713370467" width="320" height="220" style="border:0" allowfullscreen></iframe>
+      </div>
+
     </footer>
 
   </body>

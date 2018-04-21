@@ -1,0 +1,29 @@
+.advantages__desk {
+  font-size: 24px;
+  font-weight: 300;
+  color: $color-text;
+}
+
+.wrap {
+  background-color: $base-color;
+}
+
+.advantages__list {
+  @include list-reset;
+  padding-bottom: 290px;
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat center 400px;
+}
+
+.advantages__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.advantages__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-text;
+}

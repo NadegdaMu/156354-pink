@@ -1,0 +1,24 @@
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.post__container {
+  width: 320px;
+  padding: 0 20px;
+  background-color: #f2f2f2;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.prices__container {
+  width: 320px;
+  margin: 0 auto;
+}

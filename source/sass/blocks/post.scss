@@ -1,0 +1,60 @@
+.post {
+  margin-bottom: 20px;
+}
+
+.post__wrap {
+  margin-top: -10px;
+  padding-left: 17px;
+  background-color: $base-color;
+}
+
+.post__author {
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.post__load-time {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.post__textual {
+  line-height: 24px;
+}
+
+.post__wording {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $red-text;
+}
+
+.post__number-likes {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $red-text;
+}
+
+.post--panorama {
+  position: relative;
+}
+
+.post__desc {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: $red-text;
+  color: $white-color;
+  z-index: 10;
+}

@@ -1,0 +1,21 @@
+.app-use {
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  border: none;
+  background-color: $base-color;
+}
+
+.app-use__text {
+  text-transform: uppercase;
+  line-height: 18px;
+  color: $red-text;
+}
+
+.app-use__label {
+  display: block;
+  margin-bottom: 60px;
+  padding-left: 70px;
+  font-size: 18px;
+}

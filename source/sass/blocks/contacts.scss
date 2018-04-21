@@ -1,0 +1,20 @@
+.contacts__text {
+  font-size: 24px;
+  font-weight: 300;
+  color: $red-text;
+}
+
+.contacts__textual {
+  font-size: 24px;
+  font-weight: 300;
+  color: $color-text;
+}
+
+.contacts__list {
+  @include list-reset;
+}
+
+.contacts__title {
+  font-size: 18px;
+  font-weight: 700;
+}
