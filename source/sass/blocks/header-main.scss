@@ -5,9 +5,52 @@
 
 .header-main__panel {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   height: 68px;
   border-bottom: 1px solid #000001;
+}
+
+.main-nav__btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 270px;
+}
+
+@media (min-width: 660px) {
+  .main-nav__btn {
+    left: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .header-main__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
+
+  .main-nav__btn {
+    display: none;
+  }
+
+  .header-main__panel {
+    width: 150px;
+  }
+
+  .main-nav {
+    display: block;
+    width: 700px;
+  }
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-nav__item {
+    width: 150px;
+  }
 }

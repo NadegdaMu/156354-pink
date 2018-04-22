@@ -59,3 +59,48 @@
 .app__icon-item:nth-child(3) .app__icon-link {
   background: url("../img/logo-microsoft.svg") no-repeat;
 }
+
+.app__appeal {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .app {
+    height: 620px;
+    padding-top: 0;
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 450px 450px, 620px 660px;
+    background-position: bottom right,0 0;
+  }
+
+  .app__wrap {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+
+  .app__btn {
+    width: 300px;
+  }
+
+  .app__icon-list {
+    width: 300px;
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  .app__text {
+    width: 300px;
+    margin: 0;
+  }
+
+  .app__appeal {
+    display: block;
+    width: 270px;
+    padding-left: 30px;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+  }
+}

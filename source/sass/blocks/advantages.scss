@@ -5,13 +5,13 @@
 }
 
 .wrap {
-  background-color: $base-color;
+  height: 670px;
+  background:  $base-color url("../img/iphone-screen-mobile@1x.png") no-repeat center 400px;
 }
 
 .advantages__list {
   @include list-reset;
-  padding-bottom: 290px;
-  background: url("../img/iphone-screen-mobile@1x.png") no-repeat center 400px;
+
 }
 
 .advantages__title {
@@ -26,4 +26,38 @@
   line-height: 24px;
   font-weight: 400;
   color: $color-text;
+}
+
+@media (min-width: 660px) {
+
+  .wrap {
+    height: 400px;
+    background:  $base-color url("../img/iphone-screen-mobile@1x.png") no-repeat top left;
+  }
+
+  .advantages__list {
+    margin-left: 300px;
+    width: 300px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrap {
+    background:  $base-color;
+  }
+
+  .advantages__list {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    margin-left: 0;
+  }
+
+  .advantages__item {
+    width: 300px;
+  }
+
 }

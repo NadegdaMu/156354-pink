@@ -1,7 +1,26 @@
 .container {
-  width: 320px;
+  width: auto;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+@media (min-width: 660px) {
+  .container {
+    width: auto;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 0 130px;
+  }
+}
+
+.prices__container {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .post__container {
@@ -17,3 +36,5 @@
   height: 1px;
   margin: -1px;
 }
+
+* {outline: 1px solid red}
