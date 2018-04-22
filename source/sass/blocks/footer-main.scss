@@ -1,0 +1,17 @@
+.footer-main__wrap {
+  display: none;
+}
+
+.footer-main--photo .footer-main__wrap,
+.footer-main--form .footer-main__wrap {
+  display: block;
+}
+
+@media (min-width: 660px) {
+
+  .footer-main__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+}

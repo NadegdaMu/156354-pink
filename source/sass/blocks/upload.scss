@@ -21,3 +21,58 @@
 .upload__btn--cancel {
   margin-bottom: 40px;
 }
+
+.upload__tools {
+  margin-left: 30px;
+}
+
+.upload__tool {
+  width: 65px;
+  height: 65px;
+  margin-right: 10px;
+}
+
+@media (min-width: 660px) {
+
+  .upload__content {
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  .upload__form {
+    width: 300px;
+  }
+
+  .upload__img {
+    margin-right: 20px;
+  }
+
+  .upload__tools {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-bottom: 60px;
+  }
+
+  .upload__scale {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .upload__form {
+    width: 410px;
+  }
+
+  .upload__img {
+    margin-right: 120px;
+  }
+
+  .upload__btn {
+    width: 183px;
+  }
+
+  .upload__btn--post {
+    margin-right: 40px;
+  }
+}
