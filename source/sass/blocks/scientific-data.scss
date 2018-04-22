@@ -1,0 +1,41 @@
+.scientific-data {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .scientific-data {
+    display: block;
+    background-color: $base-color;
+  }
+
+  .scientific-data__wrap {
+    width: 320px;
+    margin-left: 300px;
+  }
+
+  .scientific-data__appeal {
+    font-size: 34px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  .scientific-data__text {
+    font-size: 18px;
+  }
+
+  .scientific-data__link {
+    line-height: 24px;
+    color: $red-text;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .scientific-data__wrap {
+    width: 600px;
+    margin-left: 400px;
+  }
+
+
+
+}
