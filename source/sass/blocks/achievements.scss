@@ -34,6 +34,10 @@
   .achievements__title {
     text-align: center;
   }
+
+  .achievements__label {
+    width: 270px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -41,4 +45,7 @@
     width: 940px;
   }
 
+  .achievements__wrapper {
+    display: flex;
+  }
 }
