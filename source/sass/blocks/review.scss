@@ -24,19 +24,7 @@
   outline: 0;
 }
 
-.review__textarea::-webkit-input-placeholder {
-  color: $indigo;
-}
-
-.review__textarea:-moz-placeholder {
-  color: $indigo;
-}
-
-.review__textarea::-moz-placeholder {
-  color: $indigo;
-}
-
-.review__textarea:-ms-input-placeholder {
+.review__textarea::placeholder {
   color: $indigo;
 }
 

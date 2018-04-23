@@ -109,6 +109,7 @@
   height: 10px;
   background-color: $base-color;
   border: 2px solid $color-text;
+
 }
 
 .prices__input--2:checked ~ .prices__table .prices__content {
@@ -116,6 +117,7 @@
 }
 
 .prices__input--2:checked ~ .prices__controls .prices__control--02 {
+
   width: 10px;
   height: 10px;
   background-color: $base-color;
