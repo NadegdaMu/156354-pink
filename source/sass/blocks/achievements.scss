@@ -24,3 +24,21 @@
 .achievements__label:last-of-type {
   margin-bottom: 0;
 }
+
+@media (min-width: 660px) {
+  .achievements {
+    background-color: $white-color;
+    border: 2px solid $color-border;
+  }
+
+  .achievements__title {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .achievements {
+    width: 940px;
+  }
+
+}
