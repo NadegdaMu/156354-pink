@@ -26,6 +26,8 @@
 @media (min-width: 1200px) {
 
   .header-main__wrap {
+    width: 1200px;
+    padding: 0 130px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
