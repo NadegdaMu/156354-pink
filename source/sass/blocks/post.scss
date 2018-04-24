@@ -131,4 +131,14 @@
   .post:nth-child(3n+1) {
     margin-right: 0;
   }
+
+  .post--panorama {
+    margin-left: 20px;
+  }
+
+  .post__img-panorama {
+    width: 1200px;
+    height: 504px;
+
+  }
 }

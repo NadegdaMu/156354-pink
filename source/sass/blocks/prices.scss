@@ -141,6 +141,12 @@
   }
 
   .prices__table {
-    overflow: visible;
+    overflow: hidden; /* visible*/
+  }
+}
+
+@media (min-width: 1200px) {
+  .prices__table {
+    overflow: hidden; /* visible*/
   }
 }

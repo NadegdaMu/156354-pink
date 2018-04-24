@@ -13,10 +13,20 @@
     width: auto;
     padding: 0 20px;
   }
+
+  .prices__container {
+    width: auto;
+    padding: 0 20px;
+  }
 }
 
 @media (min-width: 1200px) {
   .container {
+    width: 1200px;
+    padding: 0 130px;
+  }
+
+  .prices__container {
     width: 1200px;
     padding: 0 130px;
   }
