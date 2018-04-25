@@ -1,3 +1,8 @@
+.prices__container {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .prices {
   padding-top: 60px;
   padding-bottom: 40px;
@@ -136,6 +141,12 @@
 }
 
 @media (min-width: 660px) {
+
+  .prices__container {
+    width: 620px;
+    margin: 0 auto;
+  }
+
   .prices__controls {
     display: none;
   }
@@ -146,6 +157,12 @@
 }
 
 @media (min-width: 1200px) {
+
+   .prices__container {
+    width: 940px;
+    margin: 0 auto;
+  }
+
   .prices__table {
     overflow: hidden; /* visible*/
   }

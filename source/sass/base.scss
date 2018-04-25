@@ -1,44 +1,20 @@
 .container {
-  min-width: 320px;
+  width: 280px;
   margin: 0 auto;
-  padding: 0 20px;
-}
-.prices__container {
-  width: 100%;
-  margin: 0 auto;
+
 }
 
 @media (min-width: 660px) {
   .container {
-    width: auto;
-    padding: 0 20px;
-  }
-
-  .prices__container {
-    width: auto;
-    padding: 0 20px;
-  }
-
-  .container-wrap {
-    width: auto;
-    padding: 0 20px;
+    width: 620px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: auto;
-    padding: 0 130px;
-  }
-
-  .prices__container {
-    width: auto;
-    padding: 0 130px;
-  }
-
-  .container-wrap {
-    width: auto;
-    padding: 0 130px;
+    width: 940px;
+    margin: 0 auto;
   }
 }
 
