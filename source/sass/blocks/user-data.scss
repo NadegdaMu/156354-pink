@@ -1,8 +1,16 @@
 .user-data {
   margin: 0;
   padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 15px;
   border: none;
+}
+
+.user-data__wrap {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .user-data--network {
@@ -41,9 +49,15 @@
 }
 
 @media (min-width: 660px) {
+
+  .user-data__wrap {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
   .user-data__label {
     margin-left: 0;
-    margin-right: 15px;
+    margin-right: 10px;
   }
 
   .user-data__input {
