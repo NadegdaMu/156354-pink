@@ -5,6 +5,7 @@
 .footer-main--photo .footer-main__wrap,
 .footer-main--form .footer-main__wrap {
   display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 660px) {
