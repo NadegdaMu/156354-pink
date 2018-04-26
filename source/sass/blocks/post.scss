@@ -38,7 +38,7 @@
   color: $red-text;
 }
 
-.post--panorama {
+.post__panorama {
   position: relative;
 }
 
@@ -69,6 +69,15 @@
 
 @media (min-width: 660px) {
 
+  .post {
+    width: 300px;
+  }
+
+  .post__panorama {
+    width: 660px;
+    margin: 0 auto;
+  }
+
   .post__wrap--panorama {
     width: 620px;
   }
@@ -76,11 +85,7 @@
   .post__img-panorama {
     width: 660px;
     height: 510px;
-
-  }
-
-  .post {
-    width: 300px;
+    margin: 0 auto;
   }
 
   .post__wrapper {
@@ -123,6 +128,11 @@
 }
 
 @media (min-width: 1200px) {
+  .post__panorama {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
   .post__wrap--panorama {
     width: 940px;
   }
@@ -130,6 +140,11 @@
   .post__meta--panorama {
     margin-right: 600px;
   }
+
+  .post:nth-child(2n+1) {
+    margin-right: 0;
+  }
+
   .post {
     margin-right: 20px;
   }
@@ -141,6 +156,6 @@
   .post__img-panorama {
     width: 1200px;
     height: 504px;
-
+    margin: 0 auto;
   }
 }
