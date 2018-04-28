@@ -152,8 +152,54 @@
   }
 
   .prices__table {
-    overflow: hidden; /* visible*/
+    width: 620px;
   }
+
+  .prices__list:nth-child(1) {
+    width: 310px;
+    flex-shrink: 0;
+  }
+
+  .prices__list:nth-child(2),
+  .prices__list:nth-child(3) {
+    width: 155px;
+  }
+
+  .prices__list:nth-child(2) .prices__name,
+  .prices__list:nth-child(3) .prices__name {
+    display: none;
+  }
+
+  .prices__list:nth-child(2) .prices__name--header,
+  .prices__list:nth-child(3) .prices__name--header {
+    display: flex;
+    margin-left: 0;
+
+  }
+
+  .prices__list:nth-child(2) .prices__desk--header,
+  .prices__list:nth-child(3) .prices__desk--header {
+    margin-left: 0;
+
+  }
+
+  .prices__name {
+    flex-basis: 155px;
+    width: 155px;
+  }
+
+  .prices__name--header,
+  .prices__desk--header {
+    flex-basis: 155px;
+    width: 155px;
+    margin-left: 155px;
+  }
+
+  .prices__available {
+    flex-basis: 155px;
+    width: 155px;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -164,6 +210,33 @@
   }
 
   .prices__table {
-    overflow: hidden; /* visible*/
+    width: 940px;
   }
+
+  .prices__list:nth-child(1) {
+    width: 470px;
+  }
+
+  .prices__list:nth-child(2),
+  .prices__list:nth-child(3) {
+    width: 236px;
+  }
+
+  .prices__name {
+    flex-basis: 235px;
+    width: 235px;
+  }
+
+  .prices__name--header,
+  .prices__desk--header {
+    flex-basis:235px;
+    width: 235px;
+    margin-left: 235px;
+  }
+
+  .prices__available {
+    flex-basis: 235px;
+    width: 235px;
+  }
+
 }

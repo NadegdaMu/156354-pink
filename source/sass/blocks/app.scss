@@ -1,5 +1,6 @@
 .app {
-  padding-top: 470px;
+  padding-top: 395px;
+  padding-bottom: 30px;
   background-color: $indigo;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
@@ -9,9 +10,9 @@
 .app__btn {
   display: block;
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-top: 40px;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  margin-top: 30px;
   color: $white-color;
   font-size: 18px;
   line-height: 18px;
@@ -24,22 +25,42 @@
 
 .app__icon-list {
   @include list-reset;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 30px;
 }
 
 .app__text {
+  margin: 0;
   margin-left: 25px;
-  padding-bottom: 40px;
+  margin-top: 5px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
 }
 
+.app__desck {
+  margin-left: 8px;
+}
+
 .app__icon-item {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 20px;
+
+}
+
+.app__icon-item:nth-child(1) {
+  margin-top: -10px;
+  margin-left: 10px;
+}
+
+.app__icon-item:nth-child(2) {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.app__icon-item:nth-child(3) {
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 .app__icon-link {
@@ -82,6 +103,7 @@
 
   .app__btn {
     width: 300px;
+    margin-top: 35px;
   }
 
   .app__icon-list {
@@ -93,14 +115,61 @@
   .app__text {
     width: 300px;
     margin: 0;
+    margin-top: 25px;
+    margin-left: 3px;
+    font-size: 18px;
   }
 
   .app__appeal {
+    margin: 0;
+    margin-top: 93px;
     display: block;
     width: 270px;
     padding-left: 30px;
     font-size: 40px;
+    line-height: 47px;
     font-weight: 300;
     text-align: center;
+  }
+
+  .app__icon-item:nth-child(1) {
+    margin-top: 0;
+    margin-left: 50px;
+  }
+
+  .app__desck {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 1200px)  {
+
+  .app {
+    height: 745px;
+  }
+
+  .app__appeal {
+    margin-top: 110px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .app__btn {
+    width: 300px;
+    margin-top: 51px;
+    padding-top: 15px;
+    font-size: 21px;
+  }
+
+  .app__icon-list {
+    margin-top: 65px;
+  }
+
+  .app__icon-item:nth-child(1) {
+    margin-top: 0;
+  }
+
+  .app__text {
+    margin-top: 40px;
   }
 }

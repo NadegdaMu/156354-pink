@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
+    <style>
+
+      BODY {
+        background: url( './background/pink-index-mobile.jpg' ) 50% 0 no-repeat;
+      }
+
+      @media (min-width: 660px) {
+        BODY {
+          background-image: url( './background/pink-index-tablet.jpg' );
+        }
+      }
+
+      @media (min-width: 1200px) {
+        BODY {
+          background-image: url( './background/pink-index-desktop.jpg' );
+        }
+      }
+
+    </style>
   </head>
   <body>
 
@@ -16,7 +35,10 @@
 
         <div class="header-main__panel">
           <a class="header-main__link">
-            <img class="header-main__logo" src="#" alt="Логотип компании Пинк">PINK
+            <img class="header-main__logo" src="#" alt="Логотип компании Пинк">
+              <span class="visually-hidden">
+                PINK
+              </span>
           </a>
         </div>
 
@@ -32,7 +54,7 @@
               <a class="main-nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HMTL Academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
           <button class="main-nav__btn" type="button">
@@ -71,7 +93,9 @@
               </li>
             </ul>
 
-            <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            <p class="app__text">Доступно для iPhone, iPad, Android,
+              <span class="app__desck">Windows Phone, OS X, Windows 8</span>
+            </p>
           </div>
         </div>
 
