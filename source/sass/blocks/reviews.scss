@@ -1,5 +1,10 @@
-.reviews__list {
-  height: 370px;
+ .reviews {
+  position: relative;
+  padding-bottom: 20px;
+ }
+
+ .reviews__list {
+  height: 300px;
   @include list-reset;
   position: relative;
 }
@@ -15,10 +20,13 @@
 .reviews__blockquote {
   margin: 0;
   color: $color-text;
+  text-align: center;
 }
 
 .reviews__author {
   display: block;
+  margin-top: 37px;
+  margin-bottom: 14px;
   font-size: 18px;
   font-weight: 700;
   color: #000000;
@@ -38,6 +46,47 @@
 
 .reviews__text {
   display: none;
+}
+
+.reviews__controls {
+  position: absolute;
+  bottom: 15px;
+  left: 110px;
+  margin-left: 14px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.control {
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin: 0 6px;
+  background-color: #b5b9be;
+  border: 3px solid $white-color;
+  border-radius: 50%;
+}
+
+.reviews__input--1:checked ~ .reviews__controls .control--1 {
+  width: 13px;
+  height: 13px;
+  background-color: $white-color;
+  border: 3px solid $color-text;
+}
+
+.reviews__input--2:checked ~ .reviews__controls .control--2 {
+  width: 13px;
+  height: 13px;
+  background-color: $white-color;
+  border: 3px solid $color-text;
+}
+
+.reviews__input--3:checked ~ .reviews__controls .control--3 {
+  width: 13px;
+  height: 13px;
+  background-color: $white-color;
+  border: 3px solid $color-text;
 }
 
 @media (min-width: 660px) {
