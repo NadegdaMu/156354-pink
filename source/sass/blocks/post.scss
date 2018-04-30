@@ -38,7 +38,7 @@
   color: $red-text;
 }
 
-.post--panorama {
+.post__panorama {
   position: relative;
 }
 
@@ -57,4 +57,105 @@
   background-color: $red-text;
   color: $white-color;
   z-index: 10;
+}
+
+.post__btn-likes::before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: url("../img/icon-heart.svg") no-repeat;
+}
+
+@media (min-width: 660px) {
+
+  .post {
+    width: 300px;
+  }
+
+  .post__panorama {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .post__wrap--panorama {
+    width: 620px;
+  }
+
+  .post__img-panorama {
+    width: 660px;
+    height: 510px;
+    margin: 0 auto;
+  }
+
+  .post__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
+
+  .post:nth-child(2n+1) {
+    margin-right: 20px;
+  }
+
+  .post__likes {
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  .post__btn-likes {
+    order: 2;
+    margin-left: 150px;
+  }
+
+  .post__wrap--panorama {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
+
+  .post__meta--panorama {
+    margin-right: 300px;
+  }
+
+  .post__btn-likes--panorama {
+    margin-left: 0;
+  }
+
+  .post__textual--panorama {
+    order: 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .post__panorama {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .post__wrap--panorama {
+    width: 940px;
+  }
+
+  .post__meta--panorama {
+    margin-right: 600px;
+  }
+
+  .post:nth-child(2n+1) {
+    margin-right: 0;
+  }
+
+  .post {
+    margin-right: 20px;
+  }
+
+  .post:nth-child(3n+1) {
+    margin-right: 0;
+  }
+
+  .post__img-panorama {
+    width: 1200px;
+    height: 504px;
+    margin: 0 auto;
+  }
 }

@@ -1,12 +1,14 @@
 .review {
   margin: 0;
   padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
   border: none;
 }
 
-.review__label {
+.review__title {
   margin-left: 40px;
   text-transform: uppercase;
   color: $red-text;
@@ -26,4 +28,20 @@
 
 .review__textarea::placeholder {
   color: $indigo;
+}
+
+@media (min-width: 660px) {
+  .review {
+    border: 2px solid $color-border;
+  }
+
+  .review__title {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .review {
+    width: 940px;
+  }
 }

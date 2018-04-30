@@ -8,43 +8,66 @@
   </head>
 
   <body>
+    <style>
+
+      BODY {
+        background: url( './background/pink-form-mobile.jpg' ) 50% 0 no-repeat;
+      }
+
+      @media (min-width: 700px) {
+        BODY {
+          background-image: url( './background/pink-form-tablet.jpg' );
+        }
+      }
+
+      @media (min-width: 1200px) {
+        BODY {
+          background-image: url( './background/pink-form-desktop.jpg' );
+        }
+      }
+
+    </style>
 
     <header class="header-main">
 
-      <div class="container">
-        <div class="header-main__panel">
-          <a class="header-main__link" href="index.html">
-            <img class="header-main__logo" alt="Логотип компании Птнк">PINK
-          </a>
+
+        <div class="header-main__wrap">
+
+          <div class="header-main__panel">
+            <a class="header-main__link" href="index.html">
+              <img class="header-main__logo" alt="Логотип компании Птнк">PINK
+            </a>
+          </div>
+
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link—current">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HMTL Academy</a>
+              </li>
+            </ul>
+            <button class="main-nav__btn" type="button">
+              <span class="visually-hidden">Меню</span>
+            </button>
+          </nav>
+
         </div>
 
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link—current">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HMTL Academy</a>
-            </li>
-          </ul>
-          <button class="main-nav__btn" type="button">
-            <span class="visually-hidden">Меню</span>
-          </button>
-        </nav>
-      </div>
     </header>
 
     <main class="content-main">
 
-      <div class="content-main__header">
+      <div class="content-main__header content-main__header--form">
         <div class="container">
-          <h1 class="content-main__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
+          <h1 class="content-main__title content-main__title--form">Конкурс на самое безбашеное путешествие с Пинк</h1>
         </div>
       </div>
 
@@ -53,10 +76,11 @@
         </p>
       </div>
 
-      <form action="https://echo.htmlacademy.ru" class="page-form">
+      <div class="registration">
+        <form action="https://echo.htmlacademy.ru" class="registration__form">
 
-        <fieldset class="user-data">
-          <div class="container">
+
+          <fieldset class="user-data">
 
             <label class="user-data__label" for="user-data__surname">
               Фамилия:
@@ -72,13 +96,10 @@
               Отчество:
             </label>
             <input class="user-data__input" type="text" id="user-data__middle-name" name="middle-name" placeholder="Ну и отчество тоже">
-            </label>
 
-          </div>
-        </fieldset>
+          </fieldset>
 
-        <fieldset class="achievements">
-          <div class="container">
+          <fieldset class="achievements">
 
             <legend class="achievements__title">Ваши безбашенные достижения в путешествии</legend>
 
@@ -113,16 +134,13 @@
                 Разгромил отель
               </label>
               <input class="achievements__input visually-hidden" type="checkbox" name="record6" id="chx6">
-
             </div>
-          </div>
 
-        </fieldset>
+          </fieldset>
 
-        <fieldset class="user-data user-data--network">
-          <div class="container">
+          <fieldset class="user-data user-data--network">
 
-            <legend class="user-data__title visually-hidden">Контактная информация</legend>
+            <legend class="user-data__title">Контактная информация</legend>
 
             <div class="user-data__wrapper user-data__wrapper--network">
 
@@ -137,14 +155,12 @@
               <input class="user-data__input  user-data__input--network" type="email" name="email" id="user-data__address" placeholder="Введите почту *" required>
 
             </div>
-          </div>
 
-        </fieldset>
+          </fieldset>
 
-        <fieldset class="app-use">
-          <div class="container">
+          <fieldset class="app-use">
 
-            <p class="app-use__text">С каким приложением путешествовали?</p>
+            <legend class="app-use__text">С каким приложением путешествовали?</legend>
 
             <label class="app-use__label" for="rd1">
               Pink для iOS
@@ -160,32 +176,27 @@
               Windows Phone
             </label>
             <input class="app-use__input visually-hidden" type="radio" name="program-name" value="Phone" id="rd3">
-          </div>
-        </fieldset>
 
-        <fieldset class="review">
-          <div class="container">
+          </fieldset>
 
-            <label class="review__label" for="review__emotions">
-              Опишите свои эмоции
-            </label>
+          <fieldset class="review">
+            <legend class="review__title">Опишите свои эмоции</legend>
+
             <textarea class="review__textarea" name="review" id="review__emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </div>
 
-        </fieldset>
+          </fieldset>
 
-        <div class="page-form__wraper">
-          <div class="container">
-            <button class="page-form__btn  btn-contest" type="submit">Отправить форму</button>
+          <div class="registration__wrapper">
+            <button class="registration__btn  btn-contest" type="submit">Отправить форму</button>
 
-            <p class="page-form__text">
-              <span class="page-form__desk">*</span>
+            <p class="registration__text">
+              <span class="registration__desk">*</span>
               — обязательные поля
             </p>
           </div>
-        </div>
 
-      </form>
+        </form>
+      </div>
 
     </main>
 
@@ -193,37 +204,39 @@
     <footer class="footer-main footer-main--form">
 
       <div class="container">
+        <div class="footer-main__wrap">
 
-        <a class="footer-main__logo" href="#">
-          <img class="footer-main__link" href="index.html" alt="Логотип компании Пинк">PINK
-        </a>
-
-        <div class="social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <span class="visually-hidden">twitter</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <span class="visually-hidden">facebook</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <span class="visually-hidden">youtube</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="copyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__img" src="../img/logo-htmlacademy.svg" width="40" height="40"  alt="Продвинутые курсы HTML и CSS HTMLacademy">
-            <span class="visually-hidden">Сылка на интенсив HTMLacademy</span>
+          <a class="footer-main__logo" href="#">
+            <img class="footer-main__link" href="index.html" alt="Логотип компании Пинк">PINK
           </a>
+
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--tw" href="#">
+                  <span class="visually-hidden">twitter</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--f" href="#">
+                  <span class="visually-hidden">facebook</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--yt" href="#">
+                  <span class="visually-hidden">youtube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="copyright">
+            <p class="copyright__text">Разработано</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__img" src="../img/logo-htmlacademy.svg" width="40" height="40"  alt="Продвинутые курсы HTML и CSS HTMLacademy">
+              <span class="visually-hidden">Сылка на интенсив HTMLacademy</span>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

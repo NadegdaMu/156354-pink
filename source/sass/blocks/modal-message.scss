@@ -26,3 +26,21 @@
   padding-bottom: 50px;
   background-color: $base-color;
 }
+
+@media (min-width: 660px)  {
+  .modal-message {
+    width: 460px;
+    padding-left: 20px;
+  }
+
+  .modal-message__btn {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal-message {
+    width: 940px;
+    margin: 0 auto;
+  }
+}

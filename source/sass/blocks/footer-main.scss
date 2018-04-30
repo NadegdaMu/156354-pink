@@ -1,0 +1,27 @@
+.footer-main__wrap-index {
+  display: none;
+}
+
+@media (min-width: 660px) {
+
+  .footer-main__wrap-index {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+
+  .footer-main__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+
+  .footer-main--form .footer-main__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+}

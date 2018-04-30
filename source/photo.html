@@ -8,36 +8,57 @@
   </head>
 
   <body>
+    <style>
+
+      BODY {
+        background: url( './background/pink-photo-mobile.jpg' ) 50% 0 no-repeat;
+      }
+
+      @media (min-width: 700px) {
+        BODY {
+          background-image: url( './background/pink-photo-tablet.jpg' );
+        }
+      }
+
+      @media (min-width: 1200px) {
+        BODY {
+          background-image: url( './background/pink-photo-desktop.jpg' );
+        }
+      }
+
+    </style>
 
     <header class="header-main">
-      <div class="container">
-        <div class="header-main__panel">
-          <a class="header-main__link" href="index.html">
-            <img class="header-main__logo" alt="Логотип компании Птнк">PINK
-          </a>
+
+        <div class="header-main__wrap">
+
+          <div class="header-main__panel">
+            <a class="header-main__link" href="index.html">
+              <img class="header-main__logo" alt="Логотип компании Птнк">PINK
+            </a>
+          </div>
+
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link—current">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HMTL Academy</a>
+              </li>
+            </ul>
+            <button class="main-nav__btn" type="button">
+              <span class="visually-hidden">Меню</span>
+            </button>
+          </nav>
+
         </div>
-
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link—current">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HMTL Academy</a>
-            </li>
-          </ul>
-          <button class="main-nav__btn" type="button">
-            <span class="visually-hidden">Меню</span>
-          </button>
-
-        </nav>
-      </div>
 
     </header>
 
@@ -57,17 +78,17 @@
           <p class="posts__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
 
-        <div class="post post--panorama">
+        <div class="post__panorama">
           <img class="post__img-panorama" src="../img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография местности с высоты">
           <div class="post__desc">панорама дня</div>
           <div class="container">
-            <div class="post__wrap">
+            <div class="post__wrap post__wrap--panorama">
               <div class="post__meta post__meta--panorama">
                 <span class="post__author">Анна</span>
                 <span class="post__load-time">(5 минут назад)</span>
               </div>
               <p class="post__textual post__textual--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-              <div class="post__likes">
+              <div class="post__likes post__likes--panorama">
                 <button class="post__btn-likes post__btn-likes--panorama" type="button">
                   <span class="visually-hidden">Сердечко</span>
                 </button>
@@ -79,121 +100,123 @@
         </div>
 
         <div class="container">
+          <div class="post__wrapper">
 
-          <div class="post">
+            <div class="post">
 
-            <img class="post__img" src="../img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Ударная установка">
-            <div class="post__wrap">
-              <div class="post__meta">
-                <span class="post__author">Левон</span>
-                <span class="post__load-time">(5 часов назад)</span>
-              </div>
-              <p class="post__textual">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <div class="post__likes">
-                <button class="post__btn-likes post__btn-likes--panorama" type="button">
-                  <span class="visually-hidden">Сердечко</span>
-                </button>
-                <span class="post__wording">Нравится:</span>
-                <span class="post__number-likes">356</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="post">
-
-            <img class="post__img"  src="../img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Затейливая архитектура здания">
-            <div class="post__wrap">
-              <div class="post__meta">
-                <span class="post__author">Антон</span>
-                <span class="post__load-time">(12 часов назад)</span>
-              </div>
-              <p class="post__textual">Соседи будут рады!</p>
-              <div class="post__likes">
-                <button class="post__btn-likes post__btn-likes--panorama" type="button">
-                  <span class="visually-hidden">Сердечко</span>
-                </button>
-                <span class="post__wording">Нравится:</span>
-                <span class="post__number-likes">666</span>
+              <img class="post__img" src="../img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Ударная установка">
+              <div class="post__wrap">
+                <div class="post__meta">
+                  <span class="post__author">Левон</span>
+                  <span class="post__load-time">(5 часов назад)</span>
+                </div>
+                <p class="post__textual">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="post__likes">
+                  <button class="post__btn-likes" type="button">
+                    <span class="visually-hidden">Сердечко</span>
+                  </button>
+                  <span class="post__wording">Нравится:</span>
+                  <span class="post__number-likes">356</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="post">
+            <div class="post">
 
-            <img class="post__img" src="../img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотосъемка машины">
-            <div class="post__wrap">
-              <div class="post__meta">
-                <span class="post__author">Борис</span>
-                <span class="post__load-time">(20 часов назад)</span>
-              </div>
-              <p class="post__textual">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <div class="post__likes">
-                <button class="post__btn-likes post__btn-likes--panorama" type="button">
-                  <span class="visually-hidden">Сердечко</span>
-                </button>
-                <span class="post__wording">Нравится:</span>
-                <span class="post__number-likes">215</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="post">
-
-            <img class="post__img" src="../img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Ярмарка на кубани">
-            <div class="post__wrap">
-              <div class="post__meta">
-                <span class="post__author">Сергей</span>
-                <span class="post__load-time">(25 часов назад)</span>
-              </div>
-              <p class="post__textual">Самая кубанская в мире!</p>
-              <div class="post__likes">
-                <button class="post__btn-likes post__btn-likes--panorama" type="button">
-                  <span class="visually-hidden">Сердечко</span>
-                </button>
-                <span class="post__wording">Нравится:</span>
-                <span class="post__number-likes">4</span>
+              <img class="post__img"  src="../img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Затейливая архитектура здания">
+              <div class="post__wrap">
+                <div class="post__meta">
+                  <span class="post__author">Антон</span>
+                  <span class="post__load-time">(12 часов назад)</span>
+                </div>
+                <p class="post__textual">Соседи будут рады!</p>
+                <div class="post__likes">
+                  <button class="post__btn-likes" type="button">
+                    <span class="visually-hidden">Сердечко</span>
+                  </button>
+                  <span class="post__wording">Нравится:</span>
+                  <span class="post__number-likes">666</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="post">
+            <div class="post">
 
-            <img class="post__img" src="../img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Вид с вершины горы">
-            <div class="post__wrap">
-              <div class="post__meta">
-                <span class="post__author">Максим</span>
-                <span class="post__load-time">(40 часов назад)</span>
-              </div>
-              <p class="post__textual">Где снег-то!</p>
-              <div class="post__likes">
-                <button class="post__btn-likes" type="button">
-                  <span class="visually-hidden">Сердечко</span>
-                </button>
-                <span class="post__wording">Нравится:</span>
-                <span class="post__number-likes">150</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="post">
-
-            <img class="post__img" src="../img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолета в воздухе">
-            <div class="post__wrap">
-              <div class="post__meta">
-                <span class="post__author">Надежда</span>
-                <span class="post__load-time">(45 часов назад)</span>
-              </div>
-              <p class="post__textual">Всем GM и взаимные лайки!</p>
-              <div class="post__likes">
-                <button class="post__btn-likes" type="button">
-                  <span class="visually-hidden">Сердечко</span>
-                </button>
-                <span class="post__wording">Нравится:</span>
-                <span class="post__number-likes">2560</span>
+              <img class="post__img" src="../img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотосъемка машины">
+              <div class="post__wrap">
+                <div class="post__meta">
+                  <span class="post__author">Борис</span>
+                  <span class="post__load-time">(20 часов назад)</span>
+                </div>
+                <p class="post__textual">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="post__likes">
+                  <button class="post__btn-likes" type="button">
+                    <span class="visually-hidden">Сердечко</span>
+                  </button>
+                  <span class="post__wording">Нравится:</span>
+                  <span class="post__number-likes">215</span>
+                </div>
               </div>
             </div>
-          </div>
 
+            <div class="post">
+
+              <img class="post__img" src="../img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Ярмарка на кубани">
+              <div class="post__wrap">
+                <div class="post__meta">
+                  <span class="post__author">Сергей</span>
+                  <span class="post__load-time">(25 часов назад)</span>
+                </div>
+                <p class="post__textual">Самая кубанская в мире!</p>
+                <div class="post__likes">
+                  <button class="post__btn-likes" type="button">
+                    <span class="visually-hidden">Сердечко</span>
+                  </button>
+                  <span class="post__wording">Нравится:</span>
+                  <span class="post__number-likes">4</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="post">
+
+              <img class="post__img" src="../img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Вид с вершины горы">
+              <div class="post__wrap">
+                <div class="post__meta">
+                  <span class="post__author">Максим</span>
+                  <span class="post__load-time">(40 часов назад)</span>
+                </div>
+                <p class="post__textual">Где снег-то!</p>
+                <div class="post__likes">
+                  <button class="post__btn-likes" type="button">
+                    <span class="visually-hidden">Сердечко</span>
+                  </button>
+                  <span class="post__wording">Нравится:</span>
+                  <span class="post__number-likes">150</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="post">
+
+              <img class="post__img" src="../img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолета в воздухе">
+              <div class="post__wrap">
+                <div class="post__meta">
+                  <span class="post__author">Надежда</span>
+                  <span class="post__load-time">(45 часов назад)</span>
+                </div>
+                <p class="post__textual">Всем GM и взаимные лайки!</p>
+                <div class="post__likes">
+                  <button class="post__btn-likes" type="button">
+                    <span class="visually-hidden">Сердечко</span>
+                  </button>
+                  <span class="post__wording">Нравится:</span>
+                  <span class="post__number-likes">2560</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
 
@@ -233,35 +256,38 @@
 
       <div class="container">
 
-        <a class="footer-main__logo" href="index.html">
-          <img class="footer-main__link" href="index.html" alt="Логотип компании Пинк">PINK
-        </a>
+        <div class="footer-main__wrap">
 
-        <div class="social">
+          <a class="footer-main__logo" href="index.html">
+            <img class="footer-main__link" href="index.html" alt="Логотип компании Пинк">PINK
+          </a>
+
+          <div class="social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link social__link--tw" href="#">
                 <span class="visually-hidden">twitter</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link social__link--f" href="#">
                 <span class="visually-hidden">facebook</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link social__link--yt" href="#">
                 <span class="visually-hidden">youtube</span>
               </a>
             </li>
           </ul>
-        </div>
+          </div>
 
-        <div class="copyright">
+          <div class="copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <img class="copyright__img" src="../img/logo-htmlacademy.svg" width="40" height="40" alt="Продвинутые курсы HTML и CSS HTMLacademy">
           </a>
+          </div>
         </div>
       </div>
     </footer>

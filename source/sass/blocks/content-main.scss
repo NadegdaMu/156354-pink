@@ -12,3 +12,14 @@
   font-weight: 300;
   color: $white-color;
 }
+
+@media (min-width: 660px) {
+  .content-main__header--form {
+    height: 330px;
+  }
+
+  .content-main__header--form .content-main__title--form {
+    height: 330px;
+    font-size: 50px;
+  }
+}

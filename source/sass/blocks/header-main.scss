@@ -5,9 +5,29 @@
 
 .header-main__panel {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   height: 68px;
   border-bottom: 1px solid #000001;
+}
+
+@media (min-width: 660px) {
+  .header-main__panel {
+    min-height: 108px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .header-main__wrap {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
+
+  .header-main__panel {
+    width: 150px;
+  }
+
 }
