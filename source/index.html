@@ -17,7 +17,7 @@
         }
       }
 
-      @media (min-width: 1200px) {
+      @media (min-width: 940px) {
         BODY {
           background-image: url( './background/pink-index-desktop.jpg' );
         }
@@ -137,8 +137,8 @@
         <section class="scientific-data">
           <div class="container">
             <div class="scientific-data__wrap">
-              <p class="scientific-data__appeal">Эффект на 24 часа!</p>
-              <p class="scientific-data__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится челые сутки!</p>
+              <p class="scientific-data__appeal"><span class="scientific-data__desk">Эффект</span> на 24 часа!</p>
+              <p class="scientific-data__text">Британские ученые провели исследования и доказали, <br>что положительный эффект<span class="scientific-data__desk"> от использования приложения длится целые сутки!</span></p>
               <a href="" class="scientific-data__link">Узнать больше об исследовании</a>
             </div>
           </div>
@@ -146,9 +146,9 @@
 
         <section class="reviews">
           <div class="container">
-            <input class="reviews__input reviews__input--1" type="radio" id="btn-1" name="toggle" checked>
-            <input class="reviews__input reviews__input--2" type="radio" id="btn-2" name="toggle">
-            <input class="reviews__input reviews__input--3" type="radio" id="btn-3" name="toggle">
+            <input class="reviews__input reviews__input--1 visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+            <input class="reviews__input reviews__input--2 visually-hidden" type="radio" id="btn-2" name="toggle">
+            <input class="reviews__input reviews__input--3 visually-hidden" type="radio" id="btn-3" name="toggle">
             <div class="reviews__controls">
               <label class="control control--1" for="btn-1"></label>
               <label class="control control--2" for="btn-2"></label>
@@ -158,6 +158,7 @@
               <label class="paginator paginator--1" for="btn-4"></label>
               <label class="paginator paginator--2" for="btn-5"></label>
             </div>
+
             <ul class="reviews__list">
               <li class="reviews__item reviews__item--1">
                 <blockquote class="reviews__blockquote">
@@ -181,6 +182,7 @@
                 </blockquote>
               </li>
             </ul>
+
           </div>
         </section>
 
@@ -200,7 +202,7 @@
                 <dt class="prices__name prices__name--header">База</dt>
                 <dd class="prices__desk prices__desk--header">1,99 USD</dd>
 
-                <dt class="prices__name">Розовый фильтр</dt>
+                <dt class="prices__name prices__name--collumn">Розовый фильтр</dt>
                 <dd class="prices__available prices__available--yes">
                   <span class="visually-hidden">Входит в комплектацию</span>
                 </dd>
@@ -275,7 +277,8 @@
       <div class="contacts">
         <div class="container">
           <h2 class="visually-hidden">Наши контакты.</h2>
-          <p class="contacts__textual">Остались вопросы?<br>Свяжитесь с нами!</p>
+          <p class="contacts__textual">Остались вопросы?</p>
+          <p class="contacts__desk">Свяжитесь с нами!</p>
           <ul class="contacts__list">
             <li class="contacts__item">
               <h3 class="contacts__title">Звоните:</h3>
@@ -287,7 +290,7 @@
             </li>
             <li class="contacts__item">
               <h3 class="contacts__title">Приезжайте в гости:</h3>
-              <p class="contacts__text">ул. Большая<br>Конюшенная, 19/8</p>
+              <p class="contacts__text">ул. Большая<span class="contacts__word">Конюшенная, 19/8</span></p>
             </li>
           </ul>
         </div>

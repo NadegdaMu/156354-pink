@@ -4,7 +4,7 @@
 }
 
 .prices {
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 40px;
   background-color: $base-color;
 }
@@ -17,13 +17,14 @@
   display: flex;
   transition-duration: 0.3s;
   transition-property: transform;
+  margin-top: 65px;
 }
 
 .prices__list {
   flex-shrink: 0;
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 87%;
   background-color: $white-color;
 }
 
@@ -36,11 +37,13 @@
 .prices__name {
   flex-basis: 76%;
   width: 76%;
-  padding: 10px;
+  padding-top: 15px;
+  padding-left: 22px;
   text-transform: uppercase;
   color: $color-text;
+  border-left: 2px solid $color-border;
+  border-bottom: 2px solid $color-border;
 }
-
 
 .prices__name--header,
 .prices__desk--header {
@@ -49,12 +52,17 @@
   background-color: $color-text;
   color: $white-color;
   text-align: center;
+  border-left: 2px solid $color-border;
+
 }
 
 .prices__name--header {
   font-size: 18px;
   font-weight: 700;
+  padding-top: 15px;
+  padding-bottom: 3px;
   text-transform: uppercase;
+  border-bottom: none;
 }
 
 .prices__desk--header {
@@ -69,6 +77,7 @@
   margin: 0;
   flex-basis: 24%;
   width: 24%;
+  border-bottom: 2px solid $color-border;
 }
 
 .prices__available::before {
@@ -93,15 +102,16 @@
 .prices__controls {
   display: flex;
   justify-content: center;
+  margin-top: 25px;
 }
 
 .prices__control {
   display: block;
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  margin: 0 7px;
   background-color: #b5b9be;
-  border: 2px solid $base-color;
+  border: 3px solid $base-color;
   border-radius: 50%;
 }
 
@@ -110,23 +120,23 @@
 }
 
 .prices__input--1:checked ~ .prices__controls .prices__control--01 {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   background-color: $base-color;
-  border: 2px solid $color-text;
+  border: 3px solid $color-text;
 
 }
 
 .prices__input--2:checked ~ .prices__table .prices__content {
-  transform: translateX(-84.5%);
+  transform: translateX(-81%);
 }
 
 .prices__input--2:checked ~ .prices__controls .prices__control--02 {
 
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   background-color: $base-color;
-  border: 2px solid $color-text;
+  border: 3px solid $color-text;
 }
 
 .prices__input--3:checked ~ .prices__table .prices__content {
@@ -134,10 +144,10 @@
 }
 
 .prices__input--3:checked ~ .prices__controls .prices__control--03 {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   background-color: $base-color;
-  border: 2px solid $color-text;
+  border: 3px solid $color-text;
 }
 
 @media (min-width: 660px) {
@@ -147,12 +157,37 @@
     margin: 0 auto;
   }
 
+  .prices {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 65px;
+  }
+
+  .prices::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 17px;
+    width: 24%;
+    height: 26%;
+    background: $base-color;
+    z-index: 10;
+  }
+
+  .prices__content {
+    margin-top: 39px;
+  }
+
   .prices__controls {
     display: none;
   }
 
   .prices__table {
     width: 620px;
+  }
+
+  .prices__list {
+    margin: 0;
   }
 
   .prices__list:nth-child(1) {
@@ -174,39 +209,92 @@
   .prices__list:nth-child(3) .prices__name--header {
     display: flex;
     margin-left: 0;
+    margin-left: -2px;
+    padding-left: 35px;
+  }
 
+  .prices__list:nth-child(3) .prices__name--header {
+    padding-left: 45px;
   }
 
   .prices__list:nth-child(2) .prices__desk--header,
   .prices__list:nth-child(3) .prices__desk--header {
-    margin-left: 0;
+    margin-left: -2px;
+    padding-left: 15px;
+  }
 
+  .prices__list .prices__name:nth-of-type(2),
+  .prices__list .prices__name:nth-of-type(3),
+  .prices__list .prices__name:nth-of-type(4) {
+    height: 47px;
+    padding: 0;
+    padding-top: 5px;
+    padding-left: 15px;
   }
 
   .prices__name {
     flex-basis: 155px;
     width: 155px;
+    text-transform: none;
+    border-right: 2px solid $color-border;
   }
 
   .prices__name--header,
   .prices__desk--header {
     flex-basis: 155px;
     width: 155px;
-    margin-left: 155px;
+    margin-left: 153px;
+
+  }
+
+  .prices__name--header {
+    padding: 0;
+    padding-top: 11px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .prices__desk--header {
+    padding-bottom: 10px;
+    margin-top: -2px;
+    font-size: 18px;
   }
 
   .prices__available {
     flex-basis: 155px;
     width: 155px;
+    height: 47px;
+    border-right: 2px solid $color-border;
   }
+
+  .prices__name--collumn {
+    border-top: 2px solid $color-border;
+
+  }
+
+  .prices__name--header {
+    border-right: none;
+  }
+
 
 }
 
 @media (min-width: 1200px) {
+  .prices {
+    padding-bottom: 100px;
+  }
 
-   .prices__container {
+  .prices::before {
+    top: 46px;
+    left: 79px;
+  }
+  .prices__container {
     width: 940px;
     margin: 0 auto;
+  }
+
+  .prices__content {
+    margin-top: 63px;
   }
 
   .prices__table {
@@ -237,6 +325,40 @@
   .prices__available {
     flex-basis: 235px;
     width: 235px;
+    height: 61px;
+  }
+
+  .prices__name--header {
+    padding-top: 16px;
+    font-size: 18px;
+  }
+
+  .prices__desk--header {
+    padding-bottom: 20px;
+    padding-top: 4px;
+    font-size: 24px;
+  }
+
+  .prices__list:nth-child(2) .prices__name--header {
+    padding-left: 68px;
+  }
+
+  .prices__list:nth-child(3) .prices__name--header {
+    padding-left: 80px;
+  }
+
+  .prices__list:nth-child(2) .prices__desk--header,
+  .prices__list:nth-child(3) .prices__desk--header {
+    padding-left: 0;
+  }
+
+  .prices__list .prices__name:nth-of-type(2),
+  .prices__list .prices__name:nth-of-type(3),
+  .prices__list .prices__name:nth-of-type(4) {
+    height: 61px;
+    font-size: 18px;
+    padding-top: 13px;
+    padding-left: 20px;
   }
 
 }

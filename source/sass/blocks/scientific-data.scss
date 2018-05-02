@@ -5,6 +5,7 @@
 @media (min-width: 660px) {
   .scientific-data {
     display: block;
+    min-height: 300px;
   }
 
   .scientific-data__wrap {
@@ -13,19 +14,42 @@
   }
 
   .scientific-data__appeal {
-    font-size: 34px;
+    margin: 0;
+    margin-top: 95px;
+    margin-left: 9px;
+    font-size: 30px;
+    line-height: 36px;
     font-weight: 700;
     color: #000;
   }
 
+  .scientific-data__desk {
+    display: block;
+
+  }
+
   .scientific-data__text {
-    font-size: 18px;
+    width: 300px;
+    margin: 0;
+    margin-left: 9px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
   }
 
   .scientific-data__link {
+    margin-top: 10px;
+    margin-left: 9px;
     line-height: 24px;
-    color: $red-text;
+    color: #d22856;
+    display: block;
   }
+
+  br {
+    display: none;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -33,5 +57,33 @@
   .scientific-data__wrap {
     width: 600px;
     margin-left: 340px;
+  }
+
+  .scientific-data__desk {
+    display: inline;
+  }
+
+  .scientific-data__appeal {
+    margin-top: 135px;
+    margin-left: 25px;
+  }
+
+  .scientific-data__text {
+    width: 530px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 22px;
+    margin-left: 26px;
+  }
+
+  br {
+    display: block;
+  }
+
+  .scientific-data__link {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-left: 26px;
   }
 }
