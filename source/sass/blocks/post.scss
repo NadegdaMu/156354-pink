@@ -1,16 +1,53 @@
 .post {
   margin-bottom: 20px;
+
+  &:nth-child(3) {
+    margin-bottom: 19px;
+  }
+
+  &:nth-child(2) .post__meta {
+    margin-top: 2px;
+  }
+
+  &:nth-child(3) .post__meta,
+  &:nth-child(4) .post__meta,
+  &:nth-child(5) .post__meta,
+  &:nth-child(6) .post__meta {
+    margin-top: 3px;
+  }
+
+  &:nth-child(2) .post__likes {
+    margin-top: 4px;
+  }
+
+  &:nth-child(3) .post__likes {
+    margin-top: 4px;
+  }
+
+  &:nth-child(3) .post__textual {
+    margin-top: -3px;
+  }
 }
 
 .post__wrap {
-  margin-top: -10px;
   padding-left: 17px;
+  background-color: $base-color;
+  padding-bottom: 20px;
+}
+
+.post__wrap-panorama {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
   background-color: $base-color;
 }
 
 .post__author {
   line-height: 24px;
   font-weight: 700;
+}
+
+.post__meta-panorama .post__author {
+  margin-left: 17px;
 }
 
 .post__load-time {
@@ -21,6 +58,8 @@
 }
 
 .post__textual {
+  margin: 0;
+  margin-top: -3px;
   line-height: 24px;
 }
 
@@ -29,6 +68,10 @@
   line-height: 24px;
   text-transform: uppercase;
   color: $red-text;
+}
+
+.post__likes {
+  margin-top: 4px;
 }
 
 .post__number-likes {
@@ -46,13 +89,14 @@
   display: block;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 160px;
   width: 140px;
-  padding-top: 12px;
+  padding-top: 10px;
   padding-bottom: 12px;
   font-size: 12px;
   line-height: 14px;
   font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
   background-color: $red-text;
   color: $white-color;
@@ -66,6 +110,32 @@
   height: 17px;
   background: url("../img/icon-heart.svg") no-repeat;
 }
+
+
+.post__meta-panorama {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.post__textual-panorama {
+  margin: 0;
+  margin-top: -4px;
+  margin-left: 17px;
+  line-height: 24px;
+}
+
+.post__btn-likes {
+  margin-top: 5px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.post__likes-panorama {
+  margin-top: 6px;
+  margin-left: 16px;
+}
+
+
 
 @media (min-width: 660px) {
 
