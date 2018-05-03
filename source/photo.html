@@ -78,29 +78,29 @@
           <p class="posts__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
 
-        <div class="post__panorama">
-          <img class="post__img-panorama" src="../img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография местности с высоты">
-          <div class="post__desc">панорама дня</div>
+        <div class="panorama">
+          <img class="panorama__img" src="../img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография местности с высоты">
+          <div class="panorama__desc">панорама дня</div>
           <div class="container">
-            <div class="post__wrap-panorama">
-              <div class="post__meta-panorama">
-                <span class="post__author">Анна</span>
-                <span class="post__load-time">(5 минут назад)</span>
+            <div class="panorama__wrap">
+              <div class="panorama__meta">
+                <span class="panorama__author">Анна</span>
+                <span class="panorama__load-time">(5 минут назад)</span>
               </div>
-              <p class="post__textual-panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-              <div class="post__likes-panorama">
-                <button class="post__btn-likes post__btn-likes--panorama" type="button">
+              <p class="panorama__textual">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+              <div class="panorama__likes">
+                <button class="panorama__btn-likes" type="button">
                   <span class="visually-hidden">Сердечко</span>
                 </button>
-                <span class="post__wording">Нравится:</span>
-                <span class="post__number-likes">215</span>
+                <span class="panorama__wording">Нравится:</span>
+                <span class="panorama__number-likes">215</span>
               </div>
             </div>
           </div>
         </div>
 
         <div class="container">
-          <div class="post__wrapper">
+          <div class="wrapper">
 
             <div class="post">
 
@@ -186,7 +186,7 @@
                   <span class="post__author">Максим</span>
                   <span class="post__load-time">(40 часов назад)</span>
                 </div>
-                <p class="post__textual">Где снег-то!</p>
+                <p class="post__textual">Где снег-то?</p>
                 <div class="post__likes">
                   <button class="post__btn-likes" type="button">
                     <span class="visually-hidden">Сердечко</span>
@@ -227,27 +227,40 @@
         <div class="container">
           <p class="upload__text">Затмите их всех!</p>
           <p class="upload__text">Выкладывайте все что накопилось в телефоне!</p>
-
-          <div class="upload__content">
-            <img class="upload__img" src="../img/photo-road-mobile@1x.jpg" width="280" height="375" alt="Заснеженная трасса">
-
-            <form action="#" class="upload__form">
-
-              <div class="upload__tools">
-                <button class="upload__tool  upload__tool--size" type="button"></button>
-                <button class="upload__tool  upload__tool--fill" type="button"></button>
-                <button class="upload__tool  upload__tool--contrast" type="button"></button>
-                <div class="upload__scale">
-                  <input type="range" min="1" max="10">
-                </div>
-              </div>
-
-              <button class="upload__btn  upload__btn--post" type="submit">Запостить</button>
-              <button class="upload__btn  upload__btn--cancel" type="reset">Отмена</button>
-
-            </form>
-          </div>
         </div>
+          <div class="upload__content">
+            <div class="container">
+              <div class="upload__wrap">
+                <img class="upload__img" src="../img/photo-road-mobile@1x.jpg" width="280" height="375" alt="Заснеженная трасса">
+
+                <form action="#" class="upload__form">
+
+                  <div class="upload__tools">
+
+                    <button class="upload__tool  upload__tool--size" type="button"></button>
+                    <div class="upload__scale">
+                      <input class="upload__input" type="range" min="1" max="10">
+                    </div>
+
+                    <button class="upload__tool  upload__tool--fill" type="button"></button>
+                    <div class="upload__scale">
+                      <input class="upload__input" type="range" min="1" max="10">
+                    </div>
+
+                    <button class="upload__tool  upload__tool--contrast" type="button"></button>
+                    <div class="upload__scale">
+                      <input class="upload__input" type="range" min="1" max="10">
+                    </div>
+                  </div>
+
+                  <button class="upload__btn  upload__btn--post" type="submit">Запостить</button>
+                  <button class="upload__btn  upload__btn--cancel" type="reset">Отмена</button>
+
+                </form>
+              </div>
+            </div>
+          </div>
+
       </section>
 
     </main>
@@ -260,7 +273,8 @@
         <div class="footer-main__wrap">
 
           <a class="footer-main__logo" href="index.html">
-            <img class="footer-main__link" href="index.html" alt="Логотип компании Пинк">PINK
+            <img class="footer-main__link" src="../img/logo-pink-blue-mobile.svg" alt="Логотип компании Пинк">
+            <span class="visually-hidden">PINK</span>
           </a>
 
           <div class="social">
