@@ -8,9 +8,18 @@
     margin-top: 48px;
     margin-left: 70px;
   }
+
+  @media (min-width: 1200px) {
+    margin-top: 113px;
+  }
 }
 
 .copyright__text {
   margin: 0;
   margin-right: 10px;
+
+  @media (min-width: 1200px) {
+    margin-right: 0;
+    font-size: 18px;
+  }
 }

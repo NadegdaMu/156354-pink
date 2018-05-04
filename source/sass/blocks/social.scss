@@ -3,6 +3,11 @@
     margin-top: 7px;
     margin-left: 24px;
   }
+
+  @media (min-width: 1200px) {
+    margin-top: 75px;
+    margin-left: 43px;
+  }
 }
 .social__list {
   width: 200px;

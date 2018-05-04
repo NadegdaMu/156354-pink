@@ -36,8 +36,9 @@
   }
 
   @media (min-width: 1200px) {
-    margin-right: 120px;
-  }
+    margin-right: 88px;
+    margin-left: 80px;
+   }
 }
 .upload__content {
   padding-top: 18px;
@@ -59,7 +60,7 @@
   }
 
   @media (min-width: 1200px) {
-    width: 410px;
+    width: 420px;
   }
 }
 
@@ -100,8 +101,13 @@
     width: 183px;
 
     &--post {
-
+      margin-top: 139px;
       margin-right: 40px;
+      margin-left: 2px;
+    }
+
+    &--cancel {
+      margin-left: 0;
     }
   }
 }
@@ -156,6 +162,26 @@
   @media (min-width: 660px) {
     margin: 0;
   }
+
+  @media (min-width: 1200px) {
+    margin-right: 35px;
+
+    &--size {
+      margin-top: -3px;
+
+    }
+
+    &--fill {
+      margin-top: 15px;
+      margin-left: 2px;
+    }
+
+    &--contrast {
+      margin-top: 15px;
+      margin-left: 8px;
+      margin-right: 27px;
+    }
+  }
 }
 
 .upload__scale {
@@ -202,6 +228,25 @@
       margin-top: 28px;
     }
   }
+
+  @media (min-width: 1200px) {
+    margin-top: 2px;
+
+    &::after {
+      width: 410px;
+      left: -92px;
+    }
+
+
+    &:nth-of-type(2) {
+      margin-top: 18px;
+    }
+
+    &:nth-of-type(3) {
+      margin-top: 13px;
+    }
+  }
+
 }
 
 .upload__input {
@@ -223,6 +268,12 @@
   @media (min-width: 660px) {
     width: 200px;
   }
+
+  @media (min-width: 1200px) {
+    width: 287px;
+
+  }
+
 
 }
 
