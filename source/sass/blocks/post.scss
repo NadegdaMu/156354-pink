@@ -5,20 +5,27 @@
     margin-bottom: 19px;
   }
 
+  &:nth-child(1) .post__wrap,
+  &:nth-child(3) .post__wrap {
+    min-height: 143px;
+  }
+
   &:nth-child(2) .post__meta {
+    margin-top: 1px;
+  }
+
+  &:nth-child(5) .post__meta,
+  &:nth-child(3) .post__meta,
+  &:nth-child(6) .post__meta {
+    margin-top: 1px;
+  }
+
+  &:nth-child(4) .post__meta {
     margin-top: 2px;
   }
 
-  &:nth-child(3) .post__meta,
-  &:nth-child(4) .post__meta,
-  &:nth-child(5) .post__meta,
-  &:nth-child(6) .post__meta {
-    margin-top: 3px;
-  }
-
-  &:nth-child(2) .post__likes,
   &:nth-child(3) .post__likes {
-    margin-top: 4px;
+    margin-top: 6px;
   }
 
   &:nth-child(3) .post__textual {
@@ -88,9 +95,10 @@
 }
 
 .post__wrap {
+  min-height: 120px;
   padding-left: 17px;
+  margin-top: -10px;
   /*background-color: $base-color;*/
-  padding-bottom: 20px;
 
   @media (min-width: 660px) {
     margin-top: -12px;
@@ -105,6 +113,9 @@
 }
 
 .post__img {
+  width: 280px;
+  height: 180px;
+
    @media (min-width: 660px) {
     display: block;
     width: 300px;
@@ -118,18 +129,21 @@
 }
 
 .post__meta {
+  padding-top: 16px;
+
   @media (min-width: 660px) {
-    padding-top: 23px;
+    padding-top: 35px;
     margin-left: 11px;
   }
 
   @media (min-width: 1200px) {
-    padding-top: 20px;
+    padding-top: 33px;
   }
 }
 
 .post__likes {
-  margin-top: 4px;
+  position: relative;
+  margin-top: 6px;
 
   @media (min-width: 660px) {
     display: flex;
@@ -165,6 +179,7 @@
 }
 
 .post__wording {
+  margin-left: 17px;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
@@ -173,6 +188,7 @@
   @media (min-width: 660px) {
     order: 1;
     margin-right: 4px;
+    margin-left: 0;
   }
 }
 
@@ -189,7 +205,6 @@
 }
 
 .post__btn-likes {
-  margin-top: 5px;
   border: none;
   background-color: #f2f2f2;
 
@@ -198,12 +213,20 @@
     display: block;
     width: 17px;
     height: 17px;
+    position: absolute;
+    top: 10px;
+    left: 0;
     background: url("../img/icon-heart.svg") no-repeat;
   }
 
   @media (min-width: 660px) {
     order: 3;
     margin-left: 130px;
+
+    &::before {
+      top: 6px;
+      left: 228px;
+    }
   }
 }
 

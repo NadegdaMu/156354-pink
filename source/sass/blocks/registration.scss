@@ -2,6 +2,7 @@
   @media (min-width: 660px) {
     width: 620px;
     margin: 0 auto;
+    margin-top: 65px;
   }
 
   @media (min-width: 1200px) {
@@ -19,10 +20,13 @@
     display: flex;
     justify-content: space-between;
     flex-shrink: 0;
+    margin-top: 58px;
+    padding: 0;
   }
 
   @media (min-width: 1200px) {
     width: 940px;
+    margin-top: 56px;
   }
 }
 
@@ -42,7 +46,8 @@
 }
 
 .registration__btn {
-  width: 100%;
+  width: 280px;
+  margin-left: 5px;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 18px;
@@ -56,6 +61,8 @@
 
   @media (min-width: 660px) {
     width: 300px;
+    margin-top: 12px;
+    margin-left: 0;
   }
 }
 
@@ -64,6 +71,24 @@
   margin-top: 36px;
   text-align: center;
   text-transform: uppercase;
+
+  &:nth-of-type(2) {
+    display: none;
+  }
+
+  @media (min-width: 660px) {
+    margin-top: 29px;
+  }
+
+  @media (min-width: 1200px) {
+    &:nth-of-type(1) {
+      display: none;
+    }
+
+    &:nth-of-type(2) {
+      display: block;
+    }
+  }
 }
 
 .registration__desk {

@@ -15,17 +15,18 @@
 }
 
 .panorama__wrap {
+  margin-top: -10px;
   margin-bottom: 20px;
-  padding-bottom: 20px;
+  height: 190px;
   /*background-color: $base-color;*/
 
   @media (min-width: 660px) {
     width: 620px;
+    height: 130px;
     display: flex;
     flex-wrap: wrap;
     flex-shrink: 0;
-    padding-bottom: 24px;
-    margin-bottom: 52px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: 1200px) {
@@ -82,12 +83,14 @@
 }
 
 .panorama__meta {
-  padding-top: 5px;
+  padding-top: 15px;
   margin-bottom: 0;
+  margin-left: 18px;
 
   @media (min-width: 660px) {
     width: 400px;
-    padding-top: 22px;
+    padding-top: 32px;
+    margin-left: 0;
     order: 1;
   }
 
@@ -123,18 +126,21 @@
   @media (min-width: 660px) {
     order: 3;
     width: 515px;
+    height: 30px;
     margin-left: 27px;
+    margin-top: -37px;
   }
 
   @media (min-width: 1200px) {
     width: 900px;
-    margin-top: -25px;
+    margin-top: -10px;
   }
 }
 
 .panorama__likes {
-  margin-top: 6px;
+  position: relative;
   margin-left: 16px;
+  margin-top: 7px;
 
   @media (min-width: 660px) {
     order: 2;
@@ -157,16 +163,24 @@
     display: block;
     width: 17px;
     height: 17px;
+    position: absolute;
+    top: 10px;
+    left: 2px;
     background: url("../img/icon-heart.svg") no-repeat;
   }
 
   @media (min-width: 660px) {
     order: 3;
 
+    &::before {
+      top: 15px;
+      left: 106px;
+    }
   }
 }
 
 .panorama__wording {
+  margin-left: 17px;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
@@ -175,6 +189,8 @@
   @media (min-width: 660px) {
     order: 1;
     margin-right: 3px;
+    margin-left: 0;
+    margin-top: 10px;
   }
 }
 
@@ -187,6 +203,7 @@
   @media (min-width: 660px) {
     order: 2;
     margin-right: 5px;
+    margin-top: 10px;
   }
 
 }

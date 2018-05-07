@@ -10,7 +10,8 @@
 
 .upload__text {
   margin: 0;
-  margin-top: 37px;
+  margin-top: 42px;
+  margin-left: -3px;
   text-align: center;
 
   &:nth-child(2) {
@@ -20,11 +21,20 @@
 
   @media (min-width: 660px) {
     font-size: 18px;
-    margin-top: 45px;
+    margin-top: 47px;
+
+    &:nth-child(2) {
+      margin-left: -6px;
+    }
   }
 
   @media (min-width: 1200px) {
-     margin-top: 38px;
+    margin-top: 50px;
+    margin-left: 2px;
+
+    &:nth-child(2) {
+      margin-left: 2px;
+    }
   }
 }
 
@@ -114,7 +124,7 @@
 
 .upload__tools {
   position: relative;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 18px;
   margin-bottom: 23px;
 
@@ -137,7 +147,6 @@
   background-color: transparent; /*$base-color;*/
 
   &--size {
-    margin-top: 10px;
     margin-left: 16px;
     margin-right: 10px;
     background-image: url("../img/icon-editor-crop.svg");
@@ -145,7 +154,6 @@
   }
 
   &--fill {
-    margin-top: 12px;
     margin-left: 6px;
     margin-right: 10px;
     background-image: url("../img/icon-editor-fill.svg");
@@ -153,7 +161,6 @@
   }
 
   &--contrast {
-    margin-top: 18px;
     margin-left: 15px;
     background-image: url("../img/icon-editor-contrast.svg");
     background-repeat: no-repeat;
@@ -188,12 +195,12 @@
   position: relative;
   margin-bottom: 10px;
   height: 30px;
-  margin-top: -10px;
+  margin-top: -5px;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -24px;
+    bottom: -25px;
     left: -40px;
     width: 320px;
     height: 1px;

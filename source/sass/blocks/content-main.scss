@@ -29,8 +29,7 @@
   }
 
   @media (min-width: 1200px) {
-
-    margin-left: 285px;
+    margin: 0;
     padding-top: 66px;
   }
 }
@@ -40,6 +39,44 @@
   text-align: center;
   margin-top: 45px;
   margin-bottom: 34px;
+
+  @media (min-width: 660px) {
+    font-size: 18px;
+    margin-top: 91px;
+    margin-left: 60px;
+    margin-bottom: 0;
+    width: 500px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 800px;
+    margin-top: 47px;
+    margin-left: 70px;
+    margin-bottom: 79px;
+  }
+
+}
+
+.content-main__text-desk {
+  @media (min-width: 1200px) {
+    display: block;
+    margin-left: -328px;
+  }
+}
+
+.content-main__desk {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: block;
+    margin: 0;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: -29px;
+    margin-left: 200px;
+  }
+
 }
 
 .content-main__header--form {
@@ -56,3 +93,4 @@
     font-size: 50px;
     }
 }
+
