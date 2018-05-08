@@ -1,10 +1,53 @@
+.registration {
+  @media (min-width: 660px) {
+    width: 620px;
+    margin: 0 auto;
+    margin-top: 65px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
 .registration__wrapper {
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: 660px) {
+    order: 6;
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    margin-top: 58px;
+    padding: 0;
+  }
+
+  @media (min-width: 1200px) {
+    width: 940px;
+    margin-top: 56px;
+  }
+}
+
+.registration__form {
+  @media (min-width: 660px) {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
 }
 
 .registration__btn {
-  width: 100%;
+  width: 280px;
+  margin-left: 5px;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 18px;
@@ -14,28 +57,45 @@
   border-radius: 2px;
   color: $white-color;
   background-color: #2aab6d;
+
+
+  @media (min-width: 660px) {
+    width: 300px;
+    margin-top: 12px;
+    margin-left: 0;
+  }
+}
+
+.registration__text {
+  margin: 0;
+  margin-top: 36px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:nth-of-type(2) {
+    display: none;
+  }
+
+  @media (min-width: 660px) {
+    margin-top: 29px;
+  }
+
+  @media (min-width: 1200px) {
+    &:nth-of-type(1) {
+      display: none;
+    }
+
+    &:nth-of-type(2) {
+      display: block;
+    }
+  }
 }
 
 .registration__desk {
   color: $red-text;
 }
 
-.registration__text {
-  text-transform: uppercase;
-}
-
 @media (min-width: 660px) {
-
-  .registration {
-    width: 620px;
-    margin: 0 auto;
-  }
-
-  .registration__form {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-  }
 
   .user-data {
     order: 1;
@@ -57,33 +117,5 @@
     order: 5;
   }
 
-  .registration__wrapper {
-    order: 6;
-    display: flex;
-    justify-content: space-between;
-    flex-shrink: 0;
-  }
-
-  .registration__btn {
-    width: 300px;
-  }
 }
 
-@media (min-width: 1200px) {
-
-  .registration {
-    width: 940px;
-    margin: 0 auto;
-  }
-
-  .registration__form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-shrink: 0;
-  }
-
-  .registration__wrapper {
-    width: 940px;
-  }
-}
