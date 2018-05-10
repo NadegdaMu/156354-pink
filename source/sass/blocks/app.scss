@@ -2,9 +2,14 @@
   padding-top: 395px;
   padding-bottom: 30px;
   background-color: $indigo;
-  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-image:  url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: center 175px, top center;
+  background-position: 0 108px, 0 -67px;
+  background-size: 256px 286px, 320px 462px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:  url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .app__btn {
@@ -92,7 +97,11 @@
     background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-size: 450px 450px, 620px 660px;
-    background-position: bottom right,0 0;
+    background-position: bottom right, 0 0;
+
+    /*@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+
+    }*/
   }
 
   .app__wrap {
