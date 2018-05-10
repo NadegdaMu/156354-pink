@@ -3,14 +3,42 @@
   background-color: $color-text;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: 0 -60px;
+  background-size: 320px 462px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-tablet@2x.jpg");
+    background-position: -170px -70px;
+    background-size: 670px 480px;
+  }
 
   @media (min-width: 660px) {
-   height: 330px;
+    height: 330px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: -270px -115px;
+    background-size: 1200px 729px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-position: -270px -110px;
+      background-size: 1200px 729px;
+    }
   }
 
   @media (min-width: 1200px) {
     height: 285px;
+
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: -680px -115px;
+    background-size: 2560px 853px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-position: -680px -110px;
+
+    }
   }
 }
 

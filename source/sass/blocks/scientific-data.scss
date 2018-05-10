@@ -9,8 +9,16 @@
   }
 
   .scientific-data__wrap {
-    width: 320px;
-    margin-left: 300px;
+    width: 640px;
+    padding-left: 300px;
+    background-image: url("1../img/iphone-screen-1-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: -3px 0;
+    background-size: 292px 302px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+    }
   }
 
   .scientific-data__appeal {

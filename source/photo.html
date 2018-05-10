@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/picturefill.js" async></script>
   </head>
 
   <body>
@@ -82,7 +83,11 @@
         </div>
 
         <div class="panorama">
-          <img class="panorama__img" src="../img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография местности с высоты">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="panorama__img" src="../img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография местности с высоты">
+          </picture>
           <div class="panorama__desc">панорама дня</div>
           <div class="container">
             <div class="panorama__wrap">
@@ -106,8 +111,11 @@
           <div class="wrapper">
 
             <div class="post">
-
-              <img class="post__img" src="../img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Ударная установка">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="post__img" src="../img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотосъемка машины">
+              </picture>
               <div class="post__wrap">
                 <div class="post__meta">
                   <span class="post__author">Левон</span>
@@ -125,8 +133,11 @@
             </div>
 
             <div class="post">
-
-              <img class="post__img"  src="../img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Затейливая архитектура здания">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="post__img"  src="../img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Ударная установка">
+              </picture>
               <div class="post__wrap">
                 <div class="post__meta">
                   <span class="post__author">Антон</span>
@@ -144,8 +155,11 @@
             </div>
 
             <div class="post">
-
-              <img class="post__img" src="../img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотосъемка машины">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="post__img" src="../img/photo-window-mobile@1x.jpg"  srcset="img/photo-window-mobile@2x.jpg 2x" alt="Затейливая архитектура здания">
+              </picture>
               <div class="post__wrap">
                 <div class="post__meta">
                   <span class="post__author">Борис</span>
@@ -163,8 +177,11 @@
             </div>
 
             <div class="post">
-
-              <img class="post__img" src="../img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Ярмарка на кубани">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="post__img" src="../img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Ярмарка на кубани">
+              </picture>
               <div class="post__wrap">
                 <div class="post__meta">
                   <span class="post__author">Сергей</span>
@@ -182,8 +199,11 @@
             </div>
 
             <div class="post">
-
-              <img class="post__img" src="../img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Вид с вершины горы">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="post__img" src="../img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Вид с вершины горы">
+              </picture>
               <div class="post__wrap">
                 <div class="post__meta">
                   <span class="post__author">Максим</span>
@@ -201,8 +221,11 @@
             </div>
 
             <div class="post">
-
-              <img class="post__img" src="../img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолета в воздухе">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="post__img" src="../img/photo-wing-mobile@1x.jpg"  srcset="img/photo-wing-mobile@2x.jpg 2x"alt="Крыло самолета в воздухе">
+              </picture>
               <div class="post__wrap">
                 <div class="post__meta">
                   <span class="post__author">Надежда</span>
@@ -234,7 +257,11 @@
           <div class="upload__content">
             <div class="container">
               <div class="upload__wrap">
-                <img class="upload__img" src="../img/photo-road-mobile@1x.jpg" width="280" height="375" alt="Заснеженная трасса">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                  <img class="upload__img" src="../img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Заснеженная трасса">
+                </picture>
 
                 <form action="#" class="upload__form">
 

@@ -16,6 +16,12 @@
   background-color: $color-text;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000001;
+
+  @media (min-width: 1200px) {
+    width: 150px;
+    border: none;
+    background-color: transparent;
+  }
 }
 
 .main-nav__item:nth-child(1) {
@@ -81,11 +87,6 @@
 }
 
 @media (min-width: 1200px) {
-
-  .header-main__wrap {
-    background-color: rgba(40, 54, 69, 0.3);
-  }
-
   .main-nav__btn {
     display: none;
   }
@@ -102,14 +103,10 @@
     margin-top: 21px;
   }
 
-  .main-nav__item {
-    width: 150px;
-    border: none;
-  }
 
   .main-nav__item:nth-child(1) {
-  border-top: none;
-}
+    border-top: none;
+  }
 
   .main-nav__link {
     font-weight: 400;
