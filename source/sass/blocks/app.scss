@@ -27,10 +27,10 @@
   @media (min-width: 1200px) {
     height: 853px;
     margin-top: -108px;
-    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-size: 1050px 645px, 2560px 853px;
-    background-position: bottom right, -680px -1px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 2560px 853px;
+    background-position: -680px -1px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image:  url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
@@ -38,6 +38,27 @@
 
   }
 
+}
+
+.app__wrap {
+  @media (min-width: 660px) {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 853px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 1050px 645px;
+    background-position: 20px bottom;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:  url("../img/iphone-hand-desktop@2x.png");
+    }
+
+  }
 }
 
 .app__btn {
@@ -119,11 +140,6 @@
 }
 
 @media (min-width: 660px) {
-  .app__wrap {
-    display: flex;
-    flex-shrink: 0;
-    flex-direction: column;
-  }
 
   .app__btn {
     width: 300px;
