@@ -6,6 +6,8 @@
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
     <script src="js/picturefill.js" async></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+     <script src="js/custom-google-map.js"></script>
     <style>
 
       BODY {
@@ -38,10 +40,9 @@
 
           <div class="header-main__panel">
           <a class="header-main__link">
-            <img class="header-main__logo" src="#" alt="Логотип компании Пинк">
-              <span class="visually-hidden">
-                PINK
-              </span>
+            <svg class="header-main__logo header-main__logo--mobile" width="75" height="22"><use xlink:href="img/sprite.svg#logo-mobile"></use></svg>
+            <svg class="header-main__logo header-main__logo--tablet" width="147" height="40"><use xlink:href="img/sprite.svg#logo-tablet"></use></svg>
+            <svg class="header-main__logo header-main__logo--desktop" width="147" height="40"><use xlink:href="img/sprite.svg#logo-desktop"></use></svg>
           </a>
           </div>
 
@@ -294,15 +295,13 @@
             </li>
             <li class="contacts__item">
               <h3 class="contacts__title">Приезжайте в гости:</h3>
-              <p class="contacts__text">ул. Большая<span class="contacts__word">Конюшенная, 19/8</span></p>
+              <p class="contacts__text">ул.&#160;Большая<span class="contacts__word">Конюшенная, 19/8</span></p>
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="map">
-        <iframe class="footer-main__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894615741413!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1464713370467" width="320" height="220" style="border:0" allowfullscreen></iframe>
-      </div>
+      <div class="map" id="map"></div>
 
       <div class="container">
 
@@ -334,10 +333,10 @@
           </div>
 
           <div class="copyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__img" src="../img/logo-htmlacademy.svg" width="40" height="40" alt="Продвинутые курсы HTML и CSS HTMLacademy">
-          </a>
+            <p class="copyright__text">Разработано</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="copyright__img" width="34" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
+            </a>
           </div>
         </div>
       </div>

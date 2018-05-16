@@ -1,6 +1,6 @@
  .reviews {
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
  }
 
  .reviews__list {
@@ -25,7 +25,7 @@
 
 .reviews__author {
   display: block;
-  margin-top: 37px;
+  margin-top: 42px;
   margin-bottom: 14px;
   font-size: 18px;
   font-weight: 700;
@@ -50,7 +50,7 @@
 
 .reviews__controls {
   position: absolute;
-  bottom: 15px;
+  bottom: 40px;
   left: 110px;
   margin-left: 14px;
   display: flex;
@@ -92,7 +92,7 @@
 @media (min-width: 660px) {
 
   .reviews {
-    padding-bottom: 40px;
+    padding-bottom: 35px;
   }
   .reviews__item {
     display: flex;
@@ -110,7 +110,7 @@
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    margin-top: 37px;
+    margin-top: 32px;
   }
 
   .reviews__author {
@@ -122,7 +122,7 @@
   }
 
   .reviews__controls {
-    bottom: 70px;
+    bottom: 75px;
     left: 278px;
   }
 }
@@ -130,7 +130,8 @@
 @media (min-width: 1200px) {
 
   .reviews {
-    min-height: 520px;
+    min-height: 490px;
+    padding-bottom: 0;
   }
 
   .reviews__controls {
@@ -139,10 +140,16 @@
 
   .reviews__blockquote  {
     margin: 0;
-    padding-top: 206px;
+    padding-top: 187px;
     width: 710px;
     min-height: 360px;
     margin-left: 115px;
+
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+      background-position: center 74px;
+      background-size: 78px 63px;
+
   }
 
   .reviews__author {
@@ -153,8 +160,32 @@
   }
 
   .reviews__text {
-    margin-top: 5px;
+    margin-top: -15px;
     font-size: 18px;
     margin-left: 358px;
+  }
+
+  .reviews__paginator--1 {
+    display: block;
+    position: absolute;
+    top: 215px;
+    left: 130px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/icon-review-arrow-left.svg);
+    background-repeat: no-repeat;
+    background-size: 21px 41px;
+  }
+
+  .reviews__paginator--2 {
+    display: block;
+    position: absolute;
+    top: 215px;
+    right: 100px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/icon-review-arrow-right.svg);
+    background-repeat: no-repeat;
+    background-size: 21px 41px;
   }
 }

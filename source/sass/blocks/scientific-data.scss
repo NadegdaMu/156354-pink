@@ -1,29 +1,45 @@
 .scientific-data {
   display: none;
+
+  @media (min-width: 660px) {
+    display: block;
+    min-height: 400px;
+  }
+
+  @media (min-width: 1200px) {
+   min-height: 455px;
+  }
+
 }
 
 @media (min-width: 660px) {
-  .scientific-data {
-    display: block;
-    min-height: 300px;
-  }
 
   .scientific-data__wrap {
+    position: relative;
     width: 640px;
     padding-left: 300px;
-    background-image: url("1../img/iphone-screen-1-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: -3px 0;
-    background-size: 292px 302px;
+    padding-top: 50px;
+    background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 20px 115px , 0 15px;
+    background-size: 200px 200px, 240px 360px;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+    &:before {
+      content: "24";
+      position: absolute;
+      top: 194px;
+      left: 65px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 96px;
+      font-weight: 700;
+      color: $red-text;
     }
+
   }
 
   .scientific-data__appeal {
     margin: 0;
-    margin-top: 95px;
+    margin-top: 45px;
     margin-left: 9px;
     font-size: 30px;
     line-height: 36px;
@@ -63,8 +79,16 @@
 @media (min-width: 1200px) {
 
   .scientific-data__wrap {
-    width: 600px;
-    margin-left: 340px;
+    width: 900px;
+    padding-left: 340px;
+    background-position: 23px 115px , 0 37px;
+    background-size: 250px 250px, 300px 360px;
+
+    &:before {
+      top: 218px;
+      left: 80px;
+      font-size: 120px;
+    }
   }
 
   .scientific-data__desk {
@@ -72,7 +96,7 @@
   }
 
   .scientific-data__appeal {
-    margin-top: 135px;
+    margin-top: 85px;
     margin-left: 25px;
   }
 

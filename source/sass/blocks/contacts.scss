@@ -1,3 +1,4 @@
+
 .contacts__text {
   margin: 0;
   margin-top: -2px;
@@ -9,7 +10,7 @@
 
 .contacts__textual {
   margin: 0;
-  margin-top: 47px;
+  margin-top: 43px;
   margin-left: 30px;
   font-size: 24px;
   font-weight: 300;
@@ -53,8 +54,12 @@
 }
 
 .contacts__item:nth-child(3) .contacts__text {
-  margin-left: 2px;
   margin-top: 1px;
+}
+
+.contacts__word {
+  display: block;
+  margin-top: -2px;
 }
 
 @media (min-width: 660px) {
@@ -135,7 +140,7 @@
   .contacts__textual {
     font-size: 50px;
     margin-left: 240px;
-    margin-top: 75px;
+    margin-top: 80px;
   }
 
   .contacts__desk {

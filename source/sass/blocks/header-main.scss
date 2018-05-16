@@ -35,3 +35,52 @@
     flex-shrink: 0;
   }
 }
+
+.header-main__link {
+  display: block;
+  padding-top: 22px;
+  margin-left: 20px;
+
+  @media (min-width: 660px) {
+    position: relative;
+    padding-top: 27px;
+    }
+
+  @media (min-width: 1200px) {
+    margin-left: 0;
+  }
+}
+
+.header-main__logo--mobile {
+  @media (min-width: 660px) {
+    display: none;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.header-main__logo--tablet {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: block;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.header-main__logo--desktop {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: none;
+  }
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}
