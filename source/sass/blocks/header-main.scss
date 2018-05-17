@@ -52,6 +52,17 @@
 }
 
 .header-main__logo--mobile {
+  fill: $white-color;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+
   @media (min-width: 660px) {
     display: none;
   }
@@ -66,6 +77,7 @@
 
   @media (min-width: 660px) {
     display: block;
+    fill: $white-color;
 
     &:hover {
       fill: #b32b54;
@@ -86,5 +98,20 @@
 
   @media (min-width: 1200px) {
     display: block;
+    fill: $white-color;
+
   }
 }
+
+/*.logo-desk {
+  @media (min-width: 1200px) {
+    fill: $white-color;
+  }
+}
+
+.header-main__logo--desktop .star {
+  @media (min-width: 1200px) {
+    fill: #D22856;
+  }
+}*/
+

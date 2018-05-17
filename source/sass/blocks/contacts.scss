@@ -8,6 +8,30 @@
   color: $red-text;
 }
 
+.contacts__link {
+  margin: 0;
+  margin-top: -2px;
+  margin-left: 22px;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  color: $red-text;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-text;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+  }
+
+  @media (min-width: 660px) {
+    margin-left: 30px;
+  }
+}
+
 .contacts__textual {
   margin: 0;
   margin-top: 43px;
@@ -41,6 +65,14 @@
 .contacts__item:nth-child(2) .contacts__title {
   margin-left: 101px;
   margin-top: 17px;
+
+  @media (min-width: 660px) {
+    margin-bottom: 3px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 23px;
+  }
 }
 
 .contacts__item:nth-child(2) .contacts__text {
@@ -50,7 +82,12 @@
 
 .contacts__item:nth-child(3) .contacts__title {
   margin-left: 42px;
-  margin-top: 19px;
+  margin-top: 15px;
+
+  @media (min-width: 660px) {
+    margin-left: 52px;
+    margin-top: 36px;
+  }
 }
 
 .contacts__item:nth-child(3) .contacts__text {
@@ -113,10 +150,6 @@
     margin-top: 3px;
   }
 
-  .contacts__item:nth-child(3) .contacts__title {
-    margin-left: 52px;
-    margin-top: 40px;
-  }
 
   .contacts__item:nth-child(3) .contacts__text {
     margin-left: 2px;

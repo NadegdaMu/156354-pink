@@ -75,6 +75,15 @@
   text-decoration: none;
   border: 3px solid $white-color;
   border-radius: 23px;
+
+  &:hover {
+    background-color: $white-color;
+    color: $red-text;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .app__icon-list {

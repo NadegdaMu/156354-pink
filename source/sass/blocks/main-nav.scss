@@ -72,6 +72,14 @@
     &:nth-child(1) {
       border-top: none;
     }
+
+    &:hover {
+      color: #b32b54;
+    }
+
+    &:active {
+      color: #82888e;
+    }
   }
 }
 

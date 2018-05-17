@@ -34,3 +34,16 @@
     width: 27px;
   }
 }
+
+.copyright__img {
+  fill: $red-text;
+
+  &:hover {
+    fill: none;
+  }
+
+  &:active {
+    fill: $color-text;
+    opacity: 0.3;
+  }
+}
