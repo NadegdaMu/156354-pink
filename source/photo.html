@@ -266,19 +266,25 @@
 
                   <div class="upload__tools">
 
-                    <button class="upload__tool  upload__tool--size" type="button"></button>
+                    <button class="upload__tool  upload__tool--size" type="button">
+                      <svg class="upload__icon upload__icon--size" width="48" height="48"><use xlink:href="img/sprite.svg#icon-crop"></use></svg>
+                    </button>
                     <div class="upload__scale">
-                      <input class="upload__input" type="range" min="1" max="10">
+                      <input class="upload__input" type="range" min="1" max="15" step="1" value="12">
                     </div>
 
-                    <button class="upload__tool  upload__tool--fill" type="button"></button>
+                    <button class="upload__tool  upload__tool--fill" type="button">
+                      <svg class="upload__icon upload__icon--fill" width="48" height="48"><use xlink:href="img/sprite.svg#icon-fill"></use></svg>
+                    </button>
                     <div class="upload__scale">
-                      <input class="upload__input" type="range" min="1" max="10">
+                      <input class="upload__input" type="range" min="1" max="15" step="1" value="3">
                     </div>
 
-                    <button class="upload__tool  upload__tool--contrast" type="button"></button>
+                    <button class="upload__tool  upload__tool--contrast" type="button">
+                      <svg class="upload__icon upload__icon--contrast" width="32" height="32"><use xlink:href="img/sprite.svg#icon-contrast"></use></svg>
+                    </button>
                     <div class="upload__scale">
-                      <input class="upload__input" type="range" min="1" max="10">
+                      <input class="upload__input" type="range" min="1" max="15" step="1" value="13">
                     </div>
                   </div>
 
@@ -329,7 +335,7 @@
           <div class="copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__img" src="../img/logo-htmlacademy.svg" width="40" height="40" alt="Продвинутые курсы HTML и CSS HTMLacademy">
+            <svg class="copyright__img" width="34" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
           </a>
           </div>
         </div>

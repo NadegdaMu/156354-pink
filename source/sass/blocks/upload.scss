@@ -97,6 +97,15 @@
     color: #dddfe0;
   }
 
+  &:hover {
+    background-color: $red-text;
+    color: $white-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media (min-width: 660px) {
     width: 260px;
     margin-left: 9px;
@@ -124,7 +133,6 @@
 
 .upload__tools {
   position: relative;
-  margin-top: 30px;
   margin-left: 18px;
   margin-bottom: 23px;
 
@@ -145,25 +153,33 @@
   height: 60px;
   border: none;
   background-color: transparent; /*$base-color;*/
+  outline: none;
+
+  &:hover {
+    fill: #b5b9be;
+  }
+
+  &:active {
+    fill: $red-text;
+  }
+
 
   &--size {
-    margin-left: 16px;
+    margin-top: 25px;
+    margin-left: 10px;
     margin-right: 10px;
-    background-image: url("../img/icon-editor-crop.svg");
-    background-repeat: no-repeat;
+    fill: $red-text;
   }
 
   &--fill {
     margin-left: 6px;
     margin-right: 10px;
-    background-image: url("../img/icon-editor-fill.svg");
-    background-repeat: no-repeat;
+    fill: #b5b9be;
   }
 
   &--contrast {
-    margin-left: 15px;
-    background-image: url("../img/icon-editor-contrast.svg");
-    background-repeat: no-repeat;
+    margin-left: 7px;
+    fill: #b5b9be;
   }
 
   @media (min-width: 660px) {
@@ -191,11 +207,60 @@
   }
 }
 
+.upload__icon--size {
+  @media (min-width: 660px) {
+    width: 24px;
+    height: 24px;
+    margin-top: -10px;
+    margin-left: -21px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 48px;
+    height: 48px;
+    margin-left: -10px;
+  }
+}
+
+.upload__icon--fill {
+  @media (min-width: 660px) {
+    width: 26px;
+    height: 26px;
+    margin-top: 22px;
+    margin-left: -20px;
+    fill: $red-text;
+  }
+
+  @media (min-width: 1200px) {
+    width: 48px;
+    height: 48px;
+    margin-top: -10px;
+    margin-left: -13px;
+  }
+}
+
+.upload__icon--contrast {
+  @media (min-width: 660px) {
+    width: 17px;
+    height: 17px;
+    margin-top: 38px;
+    margin-left: -18px;
+    fill: $red-text;
+  }
+
+  @media (min-width: 1200px) {
+    width: 32px;
+    height: 32px;
+    margin-top: -30px;
+    margin-left: -26px;
+  }
+}
+
 .upload__scale {
   position: relative;
+  margin-top: 4px;
   margin-bottom: 10px;
   height: 30px;
-  margin-top: -5px;
 
   &::after {
     content: "";
