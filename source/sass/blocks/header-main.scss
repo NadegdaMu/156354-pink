@@ -66,6 +66,10 @@
 
   @media (min-width: 660px) {
     display: block;
+
+    &:hover {
+      fill: #b32b54;
+    }
   }
 
   @media (min-width: 1200px) {
