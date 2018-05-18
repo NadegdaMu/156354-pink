@@ -20,6 +20,7 @@
 
 .header-main__wrapper {
   @media (min-width: 1200px) {
+    position: relative;
     background-color: rgba(0, 0, 0, 0.3);
   }
 }

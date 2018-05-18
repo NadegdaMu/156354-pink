@@ -68,21 +68,21 @@
   border-radius: 50%;
 }
 
-.reviews__input--1:checked ~ .reviews__controls .control--1 {
+.reviews__input--1:checked ~ .reviews__controls .reviews__control--1 {
   width: 13px;
   height: 13px;
   background-color: $white-color;
   border: 3px solid $color-text;
 }
 
-.reviews__input--2:checked ~ .reviews__controls .control--2 {
+.reviews__input--2:checked ~ .reviews__controls .reviews__control--2 {
   width: 13px;
   height: 13px;
   background-color: $white-color;
   border: 3px solid $color-text;
 }
 
-.reviews__input--3:checked ~ .reviews__controls .control--3 {
+.reviews__input--3:checked ~ .reviews__controls .reviews__control--3 {
   width: 13px;
   height: 13px;
   background-color: $white-color;

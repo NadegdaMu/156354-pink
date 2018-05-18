@@ -2,17 +2,12 @@
   width: 280px;
   margin: 0 auto;
 
-}
-
-@media (min-width: 660px) {
-  .container {
+  @media (min-width: 660px) {
     width: 620px;
     margin: 0 auto;
   }
-}
 
-@media (min-width: 1200px) {
-  .container {
+  @media (min-width: 1200px) {
     width: 940px;
     margin: 0 auto;
   }
