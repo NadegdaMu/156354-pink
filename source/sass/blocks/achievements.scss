@@ -59,7 +59,7 @@
   font-size: 18px;
   margin-top: 2px;
   margin-bottom: 52px;
-  padding-left: 72px;
+  padding-left: 70px;
   color: $color-text;
 
   &:last-of-type {
@@ -70,7 +70,7 @@
     content: "";
     position: absolute;
     top: -4px;
-    left: 4px;
+    left: 0;
     width: 39px;
     height: 39px;
     border: 2px solid $color-border;

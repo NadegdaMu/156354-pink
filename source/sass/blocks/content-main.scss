@@ -4,25 +4,25 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 -60px;
-  background-size: 320px 462px;
+  background-size: 100% 462px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-tablet@2x.jpg");
-    background-position: -170px -70px;
-    background-size: 670px 480px;
+    background-position: 0 -70px;
+    background-size: 100% 462px;
   }
 
   @media (min-width: 660px) {
     height: 330px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: -270px -115px;
-    background-size: 1200px 729px;
+    background-position: 0 -115px;
+    background-size: 100% 729px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-position: -270px -110px;
-      background-size: 1200px 729px;
+      background-position: 0 -110px;
+      background-size: 100% 729px;
     }
   }
 
