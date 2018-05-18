@@ -7,6 +7,10 @@
   @media (min-width: 660px) {
     margin-top: 48px;
     margin-left: 70px;
+
+    &--form {
+      margin-top: 49px;
+    }
   }
 
   @media (min-width: 1200px) {
@@ -55,4 +59,8 @@
 
 .copyright__img--form {
   margin-left: 5px;
+
+  @media (min-width: 660px) {
+    margin-left: 0;
+  }
 }
