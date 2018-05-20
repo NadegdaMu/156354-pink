@@ -159,18 +159,34 @@
 
     &--network {
       order: 1;
-      margin-left: 60px;
-      width: 370px;
-      padding-left: 16px;
+      position: relative;
+      margin-left: 56px;
+      margin-top: 29px;
+      width: 375px;
+      padding-left: 20px;
     }
+
 
     &--network:nth-of-type(2) {
       width: 375px;
       margin-left: 15px;
-      padding-left: 19px;
+      padding-left: 18px;
     }
 
   }
+}
+
+.user-data__input--network::after {
+  content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        background-color: $color-border;
+        border-radius: 2px;
+        z-index: -1;
+        outline: 1px solid green;
 }
 
 .user-data__label-mobile {

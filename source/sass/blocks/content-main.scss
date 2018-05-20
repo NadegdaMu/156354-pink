@@ -4,25 +4,26 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 -60px;
-  background-size: 100% 462px;
+  background-size: 100% auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-tablet@2x.jpg");
     background-position: 0 -70px;
-    background-size: 100% 462px;
+
   }
 
   @media (min-width: 660px) {
     height: 330px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 0 -115px;
-    background-size: 100% 729px;
+    background-size: 170%;
+    background-position: -273px -70px;
+
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
       background-position: 0 -110px;
-      background-size: 100% 729px;
+
     }
   }
 
@@ -31,8 +32,9 @@
     margin-top: -183px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: -680px -115px;
-    background-size: 2560px 853px;
+    background-size: 220%;
+    background-position: 50% -10%;
+
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -81,7 +83,7 @@
 
   @media (min-width: 1200px) {
     width: 800px;
-    margin-top: 47px;
+    margin-top: 93px;
     margin-left: 70px;
     margin-bottom: 79px;
   }
@@ -124,8 +126,10 @@
 .content-main__header--form .content-main__title--form {
 
     @media (min-width: 660px) {
-      width: 500px;
+      width: 800px;
       font-size: 50px;
+      margin-left: 0;
+      margin-left: 70px;
     }
 }
 
