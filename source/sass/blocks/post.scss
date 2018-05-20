@@ -81,6 +81,11 @@
     &:nth-child(3) {
       margin-bottom: 55px;
     }
+
+    &:nth-child(1) .post__wrap,
+    &:nth-child(3) .post__wrap {
+      min-height: 155px;
+    }
   }
 
 }
@@ -113,13 +118,13 @@
 }
 
 .post__img {
-  width: 280px;
-  height: 180px;
+  width: 100%;
+  height: auto;
 
-   @media (min-width: 660px) {
+  @media (min-width: 660px) {
     display: block;
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: auto;
   }
 
   @media (min-width: 1200px) {

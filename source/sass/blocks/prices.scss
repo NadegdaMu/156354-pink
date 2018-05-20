@@ -37,13 +37,14 @@
   flex-wrap: wrap;
   width: 87%;
   margin-top: 25px;
-  background-color: $white-color;
+
 }
 
 .prices__name,
 .prices__desk {
   margin: 0;
   padding: 0;
+  background-color: $white-color;
 }
 
 .prices__name {
@@ -55,6 +56,7 @@
   color: $color-text;
   border-left: 2px solid $color-border;
   border-bottom: 2px solid $color-border;
+
 }
 
 .prices__name--header,
@@ -102,13 +104,13 @@
 }
 
 .prices__available--yes {
-  background: url(../img/icon-table-yes.svg) no-repeat;
+  background: $white-color url(../img/icon-table-yes.svg) no-repeat;
   background-position: center center;
 
 }
 
 .prices__available--no {
-  background: url(../img/icon-no.svg) no-repeat;
+  background: $white-color url(../img/icon-no.svg) no-repeat;
   background-position: center center;
 }
 
@@ -179,18 +181,6 @@
       top: -50px;
       height: 50px;
     }
-  }
-
-  .prices::after {
-    content: "";
-    position: absolute;
-    top: 36px;
-    left: 21px;
-    width: 23%;
-    height: 25%;
-    background: $base-color;
-    z-index: 10;
-    outline: 1px solid red;
   }
 
   .prices__content {
@@ -305,11 +295,6 @@
     &::before {
       top: -73px;
       height: 100px;
-    }
-
-    &::after {
-      top: 58px;
-      left: 88px;
     }
   }
 
