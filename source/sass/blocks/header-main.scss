@@ -1,5 +1,5 @@
 .header-main {
-  /*background-color: $header-color;*/
+  background-color: $header-color;
   color: $white-color;
 }
 
@@ -103,16 +103,3 @@
 
   }
 }
-
-/*.logo-desk {
-  @media (min-width: 1200px) {
-    fill: $white-color;
-  }
-}
-
-.header-main__logo--desktop .star {
-  @media (min-width: 1200px) {
-    fill: #D22856;
-  }
-}*/
-

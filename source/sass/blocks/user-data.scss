@@ -178,15 +178,15 @@
 
 .user-data__input--network::after {
   content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 60px;
-        height: 60px;
-        background-color: $color-border;
-        border-radius: 2px;
-        z-index: -1;
-        outline: 1px solid green;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-color: $color-border;
+  border-radius: 2px;
+  z-index: 1;
+  outline: 1px solid green;
 }
 
 .user-data__label-mobile {

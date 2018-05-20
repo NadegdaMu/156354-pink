@@ -52,7 +52,7 @@
 }
 .upload__content {
   padding-top: 18px;
-  /*background-color: $base-color;*/
+  background-color: $base-color;
 
 }
 
@@ -152,7 +152,7 @@
   width: 60px;
   height: 60px;
   border: none;
-  background-color: transparent; /*$base-color;*/
+  background-color: $base-color;
   outline: none;
 
   &:hover {
