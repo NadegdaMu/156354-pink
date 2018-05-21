@@ -7,7 +7,25 @@
     <link href="css/style.css" rel="stylesheet">
     <script src="js/picturefill.js" async></script>
   </head>
+   <style>
 
+      BODY {
+        background: url( './background/pink-form-mobile.jpg' ) 50% 0 no-repeat;
+      }
+
+      @media (min-width: 660px) {
+        BODY {
+          background-image: url( './background/pink-form-tablet.jpg' );
+        }
+      }
+
+      @media (min-width: 1200px) {
+        BODY {
+          background-image: url( './background/pink-form-desktop.jpg' );
+        }
+      }
+
+    </style>
   <body>
 
 
@@ -135,12 +153,16 @@
               <label class="user-data__label-mobile" for="user-data__phone">
                 Номер телефона
               </label>
-              <input class="user-data__input  user-data__input--network" type="tel" name="tel"  id="user-data__phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста">
+              <div class="user-data__input-wrap">
+                <input class="user-data__input  user-data__input--network" type="tel" name="tel"  id="user-data__phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста">
+              </div>
 
               <label class="user-data__label-mobile" for="user-data__address">
                 Адрес почты
               </label>
-              <input class="user-data__input  user-data__input--network" type="email" name="email" id="user-data__address" placeholder="Введите почту *" required>
+              <div class="user-data__input-wrap">
+                <input class="user-data__input  user-data__input--network" type="email" name="email" id="user-data__address" placeholder="Введите почту *" required>
+              </div>
 
             </div>
 
