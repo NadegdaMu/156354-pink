@@ -65,7 +65,7 @@
 
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     height: 555px;
 
     &:nth-child(n) {
@@ -111,7 +111,7 @@
 
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     margin-top: 0;
 
   }
@@ -127,7 +127,7 @@
     height: auto;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     height: 400px;
 
   }
@@ -141,7 +141,7 @@
     margin-left: 11px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     padding-top: 33px;
   }
 }

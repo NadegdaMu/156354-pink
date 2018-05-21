@@ -25,7 +25,7 @@
 
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     width: 470px;
     height: 350px;
 
@@ -69,7 +69,7 @@
     flex-shrink: 0;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -144,7 +144,7 @@
   }
 
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     width: 340px;
     padding-left: 22px;
 
@@ -204,7 +204,7 @@
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     order: 3;
     margin-right: 240px;
 

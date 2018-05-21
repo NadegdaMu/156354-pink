@@ -14,7 +14,7 @@
     border: 2px solid $color-border;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 940px) {
     width: 435px;
     height: 308px;
     margin-left: 35px;
@@ -70,7 +70,7 @@
 
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 940px) {
     padding-left: 114px;
 
     &::before {

@@ -15,14 +15,14 @@
     margin-top: 57px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     font-size: 50px;
     margin-top: 72px;
     line-height: 50px;
   }
 }
 
-.wrap {
+.advantages__wrap {
   position: relative;
   height: 756px;
   background-color: $base-color;
@@ -35,7 +35,7 @@
     background-image: url("../img/iphone-screen-mobile@2x.png");
   }
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     top: -36px;
@@ -56,7 +56,7 @@
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     min-height: 600px;
     padding-top: 110px;
     background:  $base-color;
@@ -90,7 +90,7 @@
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     width: auto;
     display: flex;
     justify-content: space-around;
@@ -134,7 +134,7 @@
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     width: 300px;
     padding-top: 260px;
     margin-top: -130px;
@@ -222,7 +222,7 @@
     margin-left: 9px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     margin-top: 40px;
     font-size: 30px;
     line-height: 30px;
@@ -243,7 +243,7 @@
     margin-left: 9px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
@@ -262,7 +262,7 @@
     line-height: 48px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     width: 420px;
     margin-left: 260px;
     margin-top: 6px;
@@ -275,14 +275,14 @@
     display: block;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     display: inline;
     margin-left: 5px;
   }
 }
 
 .advantages__phrase {
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     display: block;
   }
 }

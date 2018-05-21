@@ -3,7 +3,7 @@
   line-height: 32px;
   font-weight: 700;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     display: block;
     width: 700px;
   }
@@ -12,7 +12,7 @@
 .main-nav__list {
   @include list-reset;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,7 +34,7 @@
     border-top: 1px solid #485461;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     width: 150px;
     border: none;
     background-color: transparent;
