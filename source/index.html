@@ -5,44 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
-    <style>
+    <script src="js/picturefill.js" async></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="js/custom-google-map.js"></script>
 
-      BODY {
-        background: url( './background/pink-index-mobile.jpg' ) 50% 0 no-repeat;
-      }
-
-      @media (min-width: 660px) {
-        BODY {
-          background-image: url( './background/pink-index-tablet.jpg' );
-        }
-      }
-
-      @media (min-width: 940px) {
-        BODY {
-          background-image: url( './background/pink-index-desktop.jpg' );
-        }
-      }
-
-    </style>
   </head>
   <body>
 
     <header class="header-main">
 
-      <div class="header-main__wrap">
+      <div class="header-main__wrapper">
 
-        <h1 class="visually-hidden">Пинк, приложение для обработки фотографий</h1>
+        <div class="header-main__wrap">
 
-        <div class="header-main__panel">
-          <a class="header-main__link">
-            <img class="header-main__logo" src="#" alt="Логотип компании Пинк">
-              <span class="visually-hidden">
-                PINK
-              </span>
-          </a>
-        </div>
+          <h1 class="visually-hidden">Пинк, приложение для обработки фотографий</h1>
 
-        <nav class="main-nav">
+          <div class="header-main__panel">
+            <a class="header-main__link">
+              <svg class="header-main__logo header-main__logo--mobile" width="75" height="22"><use xlink:href="img/sprite.svg#logo-mobile"></use></svg>
+              <svg class="header-main__logo header-main__logo--tablet" width="147" height="40"><use xlink:href="img/sprite.svg#logo-tablet"></use></svg>
+              <svg class="header-main__logo header-main__logo--desktop" width="147" height="40"><use xlink:href="img/sprite.svg#logo-desktop"></use></svg>
+            </a>
+          </div>
+
+          <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link—current">Главная</a>
@@ -60,8 +46,9 @@
           <button class="main-nav__btn" type="button">
             <span class="visually-hidden">Меню</span>
           </button>
-        </nav>
+          </nav>
 
+        </div>
       </div>
 
 
@@ -113,7 +100,7 @@
             <p class="advantages__slogan">Устали от серости мегаполиса?<span class="advantages__desk"> Нам есть, что вам предложить!</span></p>
           </div>
 
-          <div class="wrap">
+          <div class="advantages__wrap">
             <div class="container">
               <ul class="advantages__list">
                 <li class="advantages__item">
@@ -150,13 +137,13 @@
             <input class="reviews__input reviews__input--2 visually-hidden" type="radio" id="btn-2" name="toggle">
             <input class="reviews__input reviews__input--3 visually-hidden" type="radio" id="btn-3" name="toggle">
             <div class="reviews__controls">
-              <label class="reviews__control control--1" for="btn-1"></label>
-              <label class="reviews__control control--2" for="btn-2"></label>
-              <label class="reviews__control control--3" for="btn-3"></label>
+              <label class="reviews__control reviews__control--1" for="btn-1"></label>
+              <label class="reviews__control reviews__control--2" for="btn-2"></label>
+              <label class="reviews__control reviews__control--3" for="btn-3"></label>
             </div>
             <div class="reviews__paginator">
-              <label class="reviews__paginator paginator--1" for="btn-4"></label>
-              <label class="reviews__paginator paginator--2" for="btn-5"></label>
+              <label class="reviews__paginator reviews__paginator--1" for="btn-4"></label>
+              <label class="reviews__paginator reviews__paginator--2" for="btn-5"></label>
             </div>
 
             <ul class="reviews__list">
@@ -170,16 +157,18 @@
 
               <li class="reviews__item reviews__item--2">
                 <blockquote class="reviews__blockquote">
-                  <cite class="reviews__author">Будет текст</cite>
-                  Будет текст
+                  <cite class="reviews__author">Николай Петров</cite>
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
                 </blockquote>
+                <p class="reviews__text">25 лет, водитель трамвая</p>
               </li>
 
               <li class="reviews__item reviews__item--3">
                 <blockquote class="reviews__blockquote">
-                  <cite class="reviews__author">Будет текст</cite>
-                  Будет текст
+                  <cite class="reviews__author">Николай Петров</cite>
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
                 </blockquote>
+                <p class="reviews__text">25 лет, водитель трамвая</p>
               </li>
             </ul>
 
@@ -286,19 +275,17 @@
             </li>
             <li class="contacts__item">
               <h3 class="contacts__title">Пишите:</h3>
-              <p class="contacts__text">mail@htmlacademy.ru</p>
+              <a class="contacts__link">mail@htmlacademy.ru</a>
             </li>
             <li class="contacts__item">
               <h3 class="contacts__title">Приезжайте в гости:</h3>
-              <p class="contacts__text">ул. Большая<span class="contacts__word">Конюшенная, 19/8</span></p>
+              <p class="contacts__text">ул.&#160;Большая<span class="contacts__word">Конюшенная, 19/8</span></p>
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="map">
-        <iframe class="footer-main__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894615741413!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1464713370467" width="320" height="220" style="border:0" allowfullscreen></iframe>
-      </div>
+      <div class="map" id="map"></div>
 
       <div class="container">
 
@@ -330,10 +317,11 @@
           </div>
 
           <div class="copyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__img" src="../img/logo-htmlacademy.svg" width="40" height="40" alt="Продвинутые курсы HTML и CSS HTMLacademy">
-          </a>
+            <p class="copyright__text">Разработано</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="copyright__img" width="34" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
+              <span class="visually-hidden">Сылка на интенсив HTMLacademy</span>
+            </a>
           </div>
         </div>
       </div>

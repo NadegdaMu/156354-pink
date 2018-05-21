@@ -7,9 +7,13 @@
   @media (min-width: 660px) {
     margin-top: 48px;
     margin-left: 70px;
+
+    &--form {
+      margin-top: 49px;
+    }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     margin-top: 32px;
   }
 }
@@ -18,8 +22,45 @@
   margin: 0;
   margin-right: 10px;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     margin-right: 0;
     font-size: 18px;
+  }
+}
+
+.copyright__link {
+  @media (min-width: 660px) {
+    margin-left: 5px;
+  }
+
+  @media (min-width: 960px) {
+    margin-left: 14px;
+    width: 27px;
+  }
+}
+
+.copyright__img {
+  fill: $red-text;
+
+  &:hover {
+    fill: none;
+  }
+
+  &:active {
+    fill: $color-text;
+    opacity: 0.3;
+  }
+
+  &--photo {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.copyright__img--form {
+  margin-left: 5px;
+
+  @media (min-width: 660px) {
+    margin-left: 0;
   }
 }

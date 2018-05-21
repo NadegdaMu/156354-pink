@@ -4,9 +4,20 @@
 }
 
 .prices {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  position: relative;
+  padding-bottom: 47px;
   background-color: $base-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background: linear-gradient(to right bottom, $white-color 50%, $base-color 50%);
+    outline: 1px solid green;
+  }
 }
 
 .prices__table {
@@ -25,24 +36,27 @@
   display: flex;
   flex-wrap: wrap;
   width: 87%;
-  background-color: $white-color;
+  margin-top: 25px;
+
 }
 
 .prices__name,
 .prices__desk {
   margin: 0;
   padding: 0;
+  background-color: $white-color;
 }
 
 .prices__name {
   flex-basis: 76%;
   width: 76%;
-  padding-top: 15px;
+  padding-top: 18px;
   padding-left: 22px;
   text-transform: uppercase;
   color: $color-text;
   border-left: 2px solid $color-border;
   border-bottom: 2px solid $color-border;
+
 }
 
 .prices__name--header,
@@ -90,12 +104,13 @@
 }
 
 .prices__available--yes {
-  background: url(../img/icon-yes.svg) no-repeat;
+  background: $white-color url(../img/icon-table-yes.svg) no-repeat;
   background-position: center center;
+
 }
 
 .prices__available--no {
-  background: url(../img/icon-no.svg) no-repeat;
+  background: $white-color url(../img/icon-no.svg) no-repeat;
   background-position: center center;
 }
 
@@ -161,17 +176,11 @@
     position: relative;
     padding-top: 0;
     padding-bottom: 65px;
-  }
 
-  .prices::before {
-    content: "";
-    position: absolute;
-    top: 35px;
-    left: 17px;
-    width: 24%;
-    height: 26%;
-    background: $base-color;
-    z-index: 10;
+    &::before {
+      top: -50px;
+      height: 50px;
+    }
   }
 
   .prices__content {
@@ -220,7 +229,7 @@
   .prices__list:nth-child(2) .prices__desk--header,
   .prices__list:nth-child(3) .prices__desk--header {
     margin-left: -2px;
-    padding-left: 15px;
+    padding-left: 0;
   }
 
   .prices__list .prices__name:nth-of-type(2),
@@ -279,22 +288,23 @@
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .prices {
-    padding-bottom: 100px;
+    padding-bottom: 95px;
+
+    &::before {
+      top: -73px;
+      height: 100px;
+    }
   }
 
-  .prices::before {
-    top: 46px;
-    left: 79px;
-  }
   .prices__container {
     width: 940px;
     margin: 0 auto;
   }
 
   .prices__content {
-    margin-top: 63px;
+    margin-top: 73px;
   }
 
   .prices__table {
