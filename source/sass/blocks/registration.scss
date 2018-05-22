@@ -58,6 +58,14 @@
   color: $white-color;
   background-color: #2aab6d;
 
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: #61b98f;
+  }
+
 
   @media (min-width: 660px) {
     width: 300px;

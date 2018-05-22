@@ -81,6 +81,11 @@
 
 }
 
+.app-use__input:hover + .app-use__label::before {
+  box-shadow: 0 0 0 9px $white-color, 0 0 0 11px $color-text;
+}
+
 .app-use__input:checked + .app-use__label::before {
   background-color: $red-text;
+  box-shadow: 0 0 0 9px $white-color, 0 0 0 11px $red-text;
 }

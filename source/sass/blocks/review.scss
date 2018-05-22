@@ -52,6 +52,14 @@
   color: $color-text;
   outline: 0;
 
+  &:hover {
+    border: 2px solid $color-text;
+  }
+
+  &:active {
+    border: 2px solid $red-text;
+  }
+
   @media (min-width: 660px) {
     width: 500px;
     min-height: 192px;

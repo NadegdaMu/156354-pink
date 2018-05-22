@@ -181,6 +181,14 @@
     color: $indigo;
   }
 
+  &:hover {
+    border: 2px solid $color-text;
+  }
+
+  &:active {
+    border: 2px solid $red-text;
+  }
+
   &--network {
     margin-top: 0;
   }

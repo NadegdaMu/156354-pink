@@ -78,6 +78,10 @@
 
   }
 
+  &:hover::before {
+    border: 2px solid $color-text;
+  }
+
   @media (min-width: 660px) {
     width: 100%;
     margin-top: 48px;
@@ -150,6 +154,7 @@
 }
 
 .achievements__input:checked + .achievements__label::before {
+  border: 2px solid $red-text;
   background-color: $white-color;
   background-image: url(../img/icon-yes-red.svg);
   background-repeat: no-repeat;

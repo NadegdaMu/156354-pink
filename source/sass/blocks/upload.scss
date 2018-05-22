@@ -153,7 +153,6 @@
   height: 60px;
   border: none;
   background-color: $base-color;
-  outline: none;
 
   &:hover {
     fill: #b5b9be;
@@ -335,6 +334,10 @@
     border: 2px solid $red-text;
     border-radius: 50%;
     cursor: pointer;
+  }
+
+  &:active::-webkit-slider-thumb {
+    background-color: $red-text;
   }
 
   @media (min-width: 660px) {
