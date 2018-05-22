@@ -1,48 +1,211 @@
+.modal-message {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 320px;
+  margin: auto;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  @media (min-width: 660px) {
+    width: 463px;
+    height: 418px;
+    padding: 0;
+    left: -50px;
+  }
+
+  @media (min-width: 960px) {
+    width: 781px;
+    height: 378px;
+    padding: 0;
+    left: 0;
+  }
+}
+
+.modal-message--show {
+  display: block;
+}
+
+.modal-message--error {
+  height: 290px;
+  padding-top: 40px;
+
+  @media (min-width: 660px) {
+    width: 460px;
+    height: 365px;
+    left: 5px;
+    padding-top: 20px;
+  }
+
+  @media (min-width: 960px) {
+    width: 780px;
+    height: 378px;
+  }
+}
+
+.modal-message--success {
+  height: 380px;
+  outline: 1px solid #3dea21;
+}
+
+.modal-message__container {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: 660px) {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 960px) {
+
+    width: 462px;
+    margin: 0 auto;
+  }
+}
+
 .modal-message__title {
+  margin: 0;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
   text-align: center;
+
+  @media (min-width: 660px) {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+}
+
+.modal-message--error .modal-message__title {
+  margin-bottom: 25px;
+
+  @media (min-width: 660px) {
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 32px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 960px) {
+    width: 350px;
+    margin-left: 50px;
+    margin-top: 18px;
+    margin-bottom: 23px;
+  }
+}
+
+.modal-message--success .modal-message__title {
+  padding-top: 40px;
+  margin-bottom: 25px;
+
+  @media (min-width: 660px) {
+    margin-top: 44px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: 960px) {
+    width: 420px;
+    margin-left: 20px;
+    margin-bottom: 22px;
+  }
 }
 
 .modal-message__text {
+  margin: 0;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: 660px) {
+    font-size: 18px;
+  }
+}
+
+.modal-message--error .modal-message__text {
+  width: 280px;
+  margin-bottom: 40px;
+
+  @media (min-width: 660px) {
+    width: 300px;
+    margin-left: 7px;
+  }
+
+  @media (min-width: 960px) {
+    width: 350px;
+    margin-left: 50px;
+    margin-bottom: 63px;
+  }
+}
+
+.modal-message--success .modal-message__text {
+  margin-bottom: 30px;
+
+  @media (min-width: 660px) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: 960px) {
+    width: 400px;
+    margin-bottom: 37px;
+    margin-left: 30px;
+  }
 }
 
 .modal-message__btn {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #2aab6d;
+  background-color: transparent; /*#2aab6d;*/
   border: none;
   border-radius: 2px;
   font-size: 18px;
   font-weight: 700;
+  text-transform: uppercase;
   color: $white-color;
+
+  @media (min-width: 660px) {
+    width: 300px;
+    margin-left: 10px;
+  }
+
+  @media (min-width: 960px) {
+    width: 460px;
+    margin-bottom: 23px;
+    margin-left: 0;
+  }
 }
 
-.modal-message__footer {
+.modal-message--error .modal-message__btn {
+  width: 300px;
+  margin-left: 80px;
+}
+
+.modal-message--success .modal-message__btn {
+  margin-bottom: 25px;
+}
+
+.modal-message--error .modal-message__footer {
+  @media (min-width: 960px) {
+    height: 165px;
+    padding-top: 46px;
+    background-color: $base-color;
+  }
+}
+
+.modal-message--success .modal-message__footer {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 28px;
   background-color: $base-color;
 }
 
-@media (min-width: 660px)  {
-  .modal-message {
-    width: 460px;
-    padding-left: 20px;
-  }
-
-  .modal-message__btn {
-    width: 300px;
-  }
-}
-
-@media (min-width: 960px) {
-  .modal-message {
-    width: 940px;
-    margin: 0 auto;
+.modal-message__br {
+  @media (min-width: 960px) {
+    display: none;
   }
 }
