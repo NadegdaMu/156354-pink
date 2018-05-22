@@ -68,6 +68,14 @@
   border-radius: 50%;
 }
 
+.reviews__control:hover {
+  background-color: rgba(40, 54, 69, 0.3);
+}
+
+.reviews__control:active {
+  background-color: rgba(40, 54, 69, 0.1);
+}
+
 .reviews__input--1:checked ~ .reviews__controls .reviews__control--1 {
   width: 13px;
   height: 13px;
@@ -190,5 +198,13 @@
 
   .reviews__paginator:active {
     fill: rgba(40, 54, 69, 0.1);
+  }
+}
+
+.reviews__paginator {
+  display: none;
+
+  @media (min-width: 960px) {
+    display: block;
   }
 }

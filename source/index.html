@@ -8,6 +8,8 @@
     <script src="js/picturefill.js" async></script>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="js/custom-google-map.js"></script>
+    <script src="js/svgxuse.js" async></script>
+
 
   </head>
   <body>
@@ -296,7 +298,8 @@
         <div class="footer-main__wrap-index">
 
           <a class="footer-main__logo" href="index.html">
-            <img class="footer-main__link" src="../img/logo-pink-blue-mobile.svg" alt="Логотип компании Пинк">
+            <svg class="footer-main__logo footer-main__logo--tablet" width="147" height="40"><use xlink:href="img/sprite.svg#logo-tablet"></use></svg>
+            <svg class="footer-main__logo footer-main__logo--desktop" width="147" height="40"><use xlink:href="img/sprite.svg#logo-desktop"></use></svg>
             <span class="visually-hidden">PINK</span>
           </a>
 

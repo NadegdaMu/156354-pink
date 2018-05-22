@@ -129,6 +129,14 @@
   border-radius: 50%;
 }
 
+.prices__control:hover {
+  background-color: rgba(40, 54, 69, 0.3);
+}
+
+.prices__control:active {
+  background-color: rgba(40, 54, 69, 0.1);
+}
+
 .prices__input--1:checked ~ .prices__table .prices__content {
   transform: translateX(0);
 }
