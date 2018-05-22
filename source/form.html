@@ -6,26 +6,9 @@
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
     <script src="js/picturefill.js" async></script>
+    <script src="js/svgxuse.js" async></script>
   </head>
-   <style>
 
-      BODY {
-        background: url( './background/pink-form-mobile.jpg' ) 50% 0 no-repeat;
-      }
-
-      @media (min-width: 660px) {
-        BODY {
-          background-image: url( './background/pink-form-tablet.jpg' );
-        }
-      }
-
-      @media (min-width: 1200px) {
-        BODY {
-          background-image: url( './background/pink-form-desktop.jpg' );
-        }
-      }
-
-    </style>
   <body>
 
 
@@ -71,7 +54,7 @@
 
       <div class="content-main__header content-main__header--form">
         <div class="container">
-          <h1 class="content-main__title content-main__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          <h1 class="content-main__title content-main__title--form">Конкурс на самое безбашенное<br class="content-main__br"> путешествие с Пинк</h1>
         </div>
       </div>
 
@@ -154,14 +137,14 @@
               <label class="user-data__label-mobile" for="user-data__phone">
                 Номер телефона
               </label>
-              <div class="user-data__input-wrap">
+              <div class="user-data__input-wrap user-data__input-wrap--phone">
                 <input class="user-data__input  user-data__input--network" type="tel" name="tel"  id="user-data__phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста">
               </div>
 
               <label class="user-data__label-mobile" for="user-data__address">
                 Адрес почты
               </label>
-              <div class="user-data__input-wrap">
+              <div class="user-data__input-wrap user-data__input-wrap--email">
                 <input class="user-data__input  user-data__input--network" type="email" name="email" id="user-data__address" placeholder="Введите почту *" required>
               </div>
 
