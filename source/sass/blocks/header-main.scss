@@ -38,12 +38,15 @@
 }
 
 .header-main__link {
+  position: relative;
+  left: -60px;
+  top: -15px;
   display: block;
   padding-top: 22px;
   margin-left: 20px;
 
   @media (min-width: 660px) {
-    position: relative;
+    left: 30px;
     padding-top: 27px;
     }
 
@@ -51,7 +54,7 @@
     margin-left: 0;
   }
 }
-
+/*
 .header-main__logo--mobile {
   fill: $white-color;
 
@@ -102,4 +105,4 @@
     fill: $white-color;
 
   }
-}
+}*/

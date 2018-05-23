@@ -1,0 +1,62 @@
+.logo--header {
+  fill: $white-color;
+
+  &:hover {
+    fill: $red-text;
+  }
+
+  &:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.logo__glasses {
+    opacity: 0;
+
+    @media (min-width: 660px) {
+      opacity: 1;
+
+    }
+}
+
+.logo-star {
+    opacity: 0;
+
+    @media (min-width: 960px) {
+      opacity: 1;
+    }
+}
+
+.logo--footer:hover .logo__word--footer {
+  fill:  $red-text;
+}
+
+.logo--footer:active {
+  opacity: 0.3;
+}
+
+.logo__word--footer {
+  fill: $color-text;
+}
+
+.logo__parth-glasses--footer {
+  opacity: 0;
+}
+
+.logo__glasses--footer {
+  opacity: 1;
+  fill: $red-text;
+}
+
+.logo-star--footer {
+  fill: $red-text;
+}
+
+.logo-stars--footer {
+  opacity: 0;
+  @media (min-width: 960px) {
+    opacity: 1;
+    fill: $color-text;
+  }
+
+}
