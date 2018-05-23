@@ -39,8 +39,8 @@
 .footer-main__logo {
   display: block;
   width: 160px;
-  margin-top: 55px;
-  margin-left: 66px;
+  margin-top: 42px;
+  margin-left: 34px;
 
   &--photo {
     margin-top: 42px;
@@ -48,11 +48,33 @@
 
   @media (min-width: 660px) {
     margin: 0;
-    margin-top: 35px;
+    margin-top: 32px;
   }
 
   @media (min-width: 960px) {
-    margin-top: 16px;
+    margin-top: 8px;
+  }
+}
+
+.footer-main__logo--tablet {
+  @media (min-width: 960px) {
+    display: none;
+  }
+}
+
+.footer-main__logo--tablet .glass {
+  fill: #d22856;
+}
+
+.footer-main__logo--desktop {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: none;
+  }
+
+  @media (min-width: 960px) {
+    display: block;
   }
 }
 

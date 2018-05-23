@@ -8,6 +8,8 @@
     <script src="js/picturefill.js" async></script>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="js/custom-google-map.js"></script>
+    <script src="js/svgxuse.js" async></script>
+
 
   </head>
   <body>
@@ -101,7 +103,7 @@
           </div>
 
           <div class="advantages__wrap">
-            <div class="container">
+            <div class="container advantages__container">
               <ul class="advantages__list">
                 <li class="advantages__item">
                   <h3 class="advantages__title">Поднимает настроение</h3>
@@ -142,8 +144,12 @@
               <label class="reviews__control reviews__control--3" for="btn-3"></label>
             </div>
             <div class="reviews__paginator">
-              <label class="reviews__paginator reviews__paginator--1" for="btn-4"></label>
-              <label class="reviews__paginator reviews__paginator--2" for="btn-5"></label>
+              <label class="reviews__paginator reviews__paginator--1" for="btn-4">
+                <svg class="reviews__icon" width="22" height="41"><use xlink:href="img/sprite.svg#icon-left"></use></svg>
+              </label>
+              <label class="reviews__paginator reviews__paginator--2" for="btn-5">
+                <svg class="reviews__icon" width="22" height="41"><use xlink:href="img/sprite.svg#icon-right"></use></svg>
+              </label>
             </div>
 
             <ul class="reviews__list">
@@ -292,7 +298,8 @@
         <div class="footer-main__wrap-index">
 
           <a class="footer-main__logo" href="index.html">
-            <img class="footer-main__link" src="../img/logo-pink-blue-mobile.svg" alt="Логотип компании Пинк">
+            <svg class="footer-main__logo footer-main__logo--tablet" width="147" height="40"><use xlink:href="img/sprite.svg#logo-tablet"></use></svg>
+            <svg class="footer-main__logo footer-main__logo--desktop" width="147" height="40"><use xlink:href="img/sprite.svg#logo-desktop"></use></svg>
             <span class="visually-hidden">PINK</span>
           </a>
 

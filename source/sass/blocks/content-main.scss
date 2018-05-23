@@ -131,5 +131,17 @@
       margin-left: 0;
       margin-left: 20px;
     }
+
+    @media (min-width: 960px) {
+      width: 800px;
+      margin-left: 70px;
+    }
 }
 
+.content-main__br {
+  display: none;
+
+  @media (min-width: 960px) {
+    display: block;
+  }
+}

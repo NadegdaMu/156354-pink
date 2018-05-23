@@ -36,7 +36,7 @@
 .achievements__title {
   padding: 0;
   width: 225px;
-  padding-top: 39px;
+  padding-top: 37px;
   line-height: 18px;
   color: $red-text;
   text-transform: uppercase;
@@ -45,7 +45,7 @@
   @media (min-width: 660px) {
     text-align: center;
     width: 435px;
-    padding-top: 4px;
+    padding-top: 1px;
   }
 
   @media (min-width: 960px) {
@@ -57,7 +57,7 @@
   position: relative;
   display: block;
   font-size: 18px;
-  margin-top: 2px;
+  margin-top: 4px;
   margin-bottom: 52px;
   padding-left: 70px;
   color: $color-text;
@@ -75,6 +75,11 @@
     height: 39px;
     border: 2px solid $color-border;
     border-radius: 2px;
+
+  }
+
+  &:hover::before {
+    border: 2px solid $color-text;
   }
 
   @media (min-width: 660px) {
@@ -146,4 +151,12 @@
       left: 55px;
     }
   }
+}
+
+.achievements__input:checked + .achievements__label::before {
+  border: 2px solid $red-text;
+  background-color: $white-color;
+  background-image: url(../img/icon-yes-red.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }

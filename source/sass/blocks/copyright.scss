@@ -5,11 +5,11 @@
   margin-left: 75px;
 
   @media (min-width: 660px) {
-    margin-top: 48px;
+    margin-top: 77px;
     margin-left: 70px;
 
     &--form {
-      margin-top: 49px;
+      margin-top: 47px;
     }
   }
 
@@ -43,7 +43,7 @@
   fill: $red-text;
 
   &:hover {
-    fill: none;
+    fill: $color-text;
   }
 
   &:active {

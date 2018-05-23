@@ -60,6 +60,14 @@
     padding-bottom: 15px;
   }
 
+  &:hover {
+    color: $red-text;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+
   @media (min-width: 1200px) {
     font-weight: 400;
     text-transform: none;
@@ -111,8 +119,7 @@
     right: 0;
     width: 30px;
     height: 4px;
-    background-color: #fff;
-    border: 1px solid #fff;
+    background-color: $white-color;
     transform: rotate(45deg);
 }
 .main-nav__btn::after {
@@ -122,8 +129,16 @@
     right: 0;
     width: 30px;
     height: 4px;
-    background-color: #fff;
-    border: 1px solid #fff;
+    background-color: $white-color;
     transform: rotate(-45deg);
 }
 
+.main-nav__btn:hover::before,
+.main-nav__btn:hover::after {
+  background-color: $red-text;
+}
+
+.main-nav__btn:active::before,
+.main-nav__btn:active::after {
+  background-color: rgba(210, 40, 86, 0.3);
+}
