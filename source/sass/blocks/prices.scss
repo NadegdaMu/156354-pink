@@ -25,6 +25,10 @@
 
 .prices__content {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 0;
   transition-duration: 0.3s;
   transition-property: transform;
   margin-top: 65px;
@@ -34,6 +38,7 @@
   flex-shrink: 0;
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 0;
   width: 87%;
   margin-top: 25px;
   overflow: hidden;
@@ -169,6 +174,8 @@
 }
 
 .prices__controls {
+  flex-shrink: 0;
+  flex-grow: 0;
   display: flex;
   justify-content: center;
   margin-top: 25px;
@@ -264,6 +271,7 @@
   .prices__list:nth-child(1) {
     width: 310px;
     flex-shrink: 0;
+    justify-content: flex-start;
   }
 
   .prices__list:nth-child(2),
@@ -278,6 +286,8 @@
 
   .prices__list:nth-child(2) .prices__name--header,
   .prices__list:nth-child(3) .prices__name--header {
+    flex-shrink: 0;
+    flex-grow: 0;
     display: flex;
     margin-left: 0;
     margin-left: -2px;
@@ -304,6 +314,8 @@
   }
 
   .prices__name {
+    flex-shrink: 0;
+    flex-grow: 0;
     flex-basis: 155px;
     width: 155px;
     text-transform: none;
@@ -427,10 +439,15 @@
   .prices__list .prices__name:nth-of-type(2),
   .prices__list .prices__name:nth-of-type(3),
   .prices__list .prices__name:nth-of-type(4) {
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 235px;
+    width: 235px;
     height: 61px;
     font-size: 18px;
     padding-top: 13px;
     padding-left: 20px;
+    box-sizing: border-box;
   }
 
 }
