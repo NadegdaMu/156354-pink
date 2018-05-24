@@ -320,12 +320,42 @@
 
 }
 
+.upload__input::-ms-fill-upper,
+.upload__input::-ms-fill-lower {
+    background: $color-text;
+
+  }
+
+.upload__input::-ms-track {
+    background: $base-color;
+    width: 240px;
+    height: 2px;
+    background-color: $base-color;
+}
+
+.upload__input::-ms-thumb {
+    width: 14px;
+    height: 14px;
+    background-color: $base-color;
+    border: 2px solid $red-text;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 .upload__input {
   /*стилизация для хрома*/
   -webkit-appearance: none;
   width: 240px;
   height: 2px;
   background-color: #283645;
+
+  &::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border: 2px solid $red-text;
+    border-radius: 50%;
+    cursor: pointer;
+  }
 
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -337,9 +367,17 @@
     cursor: pointer;
   }
 
+  &:active::-moz-range-thumb {
+    background-color: $red-text;
+  }
+
   &:active::-webkit-slider-thumb {
     background-color: $red-text;
   }
+
+
+
+
 
   @media (min-width: 660px) {
     width: 200px;
