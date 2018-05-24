@@ -322,7 +322,13 @@
 
 .upload__input {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 240px;
+  height: 100px;
+  background-color: $base-color;
+  margin-top: -30px;
+
 
   &::-webkit-slider-runnable-track {
     -webkit-appearance: none;
