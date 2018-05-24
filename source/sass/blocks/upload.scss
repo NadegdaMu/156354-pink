@@ -320,34 +320,38 @@
 
 }
 
-.upload__input::-ms-fill-upper,
-.upload__input::-ms-fill-lower {
-    background: $color-text;
+.upload__input {
+  /*стилизация для хрома*/
+  -webkit-appearance: none;
 
-  }
-
-.upload__input::-ms-track {
-    background: $base-color;
+  /*background-color: $color-text;*/
+  &::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
     width: 240px;
     height: 2px;
-    background-color: $base-color;
-}
+    background-color: $color-text;
+  }
 
-.upload__input::-ms-thumb {
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    margin-top: -6px;
+    background-color: $base-color;
+    border: 2px solid $red-text;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+
+  &::-ms-thumb {
     width: 14px;
     height: 14px;
     background-color: $base-color;
     border: 2px solid $red-text;
     border-radius: 50%;
     cursor: pointer;
-}
-
-.upload__input {
-  /*стилизация для хрома*/
-  -webkit-appearance: none;
-  width: 240px;
-  height: 2px;
-  background-color: #283645;
+  }
 
   &::-moz-range-thumb {
     width: 14px;
@@ -357,15 +361,28 @@
     cursor: pointer;
   }
 
-  &::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 14px;
-    height: 14px;
-    background-color: $base-color;
-    border: 2px solid $red-text;
-    border-radius: 50%;
-    cursor: pointer;
+  &::-moz-range-track {
+    -moz-appearance: none;
+    width: 240px;
+    height: 2px;
+    background-color: $color-text;
   }
+
+  &::-ms-fill-lower,
+  &::-ms-fill-upper {
+    height: 2px;
+    background: $color-text;
+  }
+
+  &::-ms-track {
+    -ms-appearance: none;
+    width: 240px;
+    height: 2px;
+    cursor: pointer;
+    background: $color-text;
+    border-color: transparent;
+  }
+
 
   &:active::-moz-range-thumb {
     background-color: $red-text;
