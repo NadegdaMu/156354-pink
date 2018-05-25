@@ -4,7 +4,6 @@
     margin-left: 43px;
   }
 }
-
 .social__list {
   width: 200px;
   height: 80px;
@@ -17,6 +16,14 @@
   @media (min-width: 660px) {
     margin-top: 36px;
     margin-left: 76px;
+  }
+}
+
+
+.social__list--photo {
+  @media (min-width: 960px) {
+    margin-left: 51px;
+    margin-top: 15px;
   }
 }
 

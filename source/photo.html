@@ -7,7 +7,25 @@
     <link href="css/style.css" rel="stylesheet">
     <script src="js/picturefill.js" async></script>
     <script src="js/svgxuse.js" async></script>
+    <style>
 
+      BODY {
+        background: url( './background/pink-photo-mobile.jpg' ) 50% 0 no-repeat;
+      }
+
+      @media (min-width: 660px) {
+        BODY {
+          background-image: url( './background/pink-photo-tablet.jpg' );
+        }
+      }
+
+      @media (min-width: 960px) {
+        BODY {
+          background-image: url( './background/pink-photo-desktop.jpg' );
+        }
+      }
+
+    </style>
   </head>
 
   <body>
@@ -357,7 +375,7 @@
           </a>
 
           <div class="social">
-          <ul class="social__list">
+          <ul class="social__list social__list--photo">
             <li class="social__item">
               <a class="social__link social__link--tw" href="#">
                 <span class="visually-hidden">twitter</span>
@@ -376,7 +394,7 @@
           </ul>
           </div>
 
-          <div class="copyright">
+          <div class="copyright copyright--photo">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__img" width="34" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>

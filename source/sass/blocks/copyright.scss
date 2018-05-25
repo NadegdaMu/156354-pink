@@ -52,3 +52,15 @@
     height: 34px;
   }
 }
+
+.copyright--photo {
+  margin-top: 10px;
+
+  @media (min-width: 660px) {
+    margin-top: 48px;
+  }
+
+  @media (min-width: 960px) {
+    margin-top: 15px;
+  }
+}

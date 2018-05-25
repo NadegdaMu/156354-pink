@@ -19,8 +19,8 @@
   }
 
   @media (min-width: 960px) {
-    margin-top: -10px;
-    margin-left: 30px;
+    margin-top: -16px;
+    margin-left: 5px;
   }
 }
 
@@ -73,6 +73,14 @@
   @media (min-width: 660px) {
     margin-left: 0;
   }
+
+  @media (min-width: 960px) {
+    margin-top: 0;
+  }
+}
+
+.footer-main__wrap .social {
+
 }
 
 .footer-main__wrap--footer .footer-main__logo {
