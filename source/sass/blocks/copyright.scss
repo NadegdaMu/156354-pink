@@ -5,8 +5,8 @@
   margin-left: 75px;
 
   @media (min-width: 660px) {
-    margin-top: 77px;
-    margin-left: 70px;
+    margin-top: 48px;
+    margin-left: 68px;
 
     &--form {
       margin-top: 47px;
@@ -20,7 +20,7 @@
 
 .copyright__text {
   margin: 0;
-  margin-right: 10px;
+  margin-right: 14px;
 
   @media (min-width: 960px) {
     margin-right: 0;
@@ -29,10 +29,6 @@
 }
 
 .copyright__link {
-  @media (min-width: 660px) {
-    margin-left: 5px;
-  }
-
   @media (min-width: 960px) {
     margin-left: 14px;
     width: 27px;
@@ -54,13 +50,5 @@
   &--photo {
     width: 34px;
     height: 34px;
-  }
-}
-
-.copyright__img--form {
-  margin-left: 5px;
-
-  @media (min-width: 660px) {
-    margin-left: 0;
   }
 }

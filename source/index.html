@@ -9,7 +9,25 @@
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="js/custom-google-map.js"></script>
     <script src="js/svgxuse.js" async></script>
+    <style>
 
+      BODY {
+        background: url( './background/pink-index-mobile.jpg' ) 50% 0 no-repeat;
+      }
+
+      @media (min-width: 660px) {
+        BODY {
+          background-image: url( './background/pink-index-tablet.jpg' );
+        }
+      }
+
+      @media (min-width: 960px) {
+        BODY {
+          background-image: url( './background/pink-index-desktop.jpg' );
+        }
+      }
+
+    </style>
 
   </head>
   <body>
@@ -38,7 +56,9 @@
           <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link—current">Главная</a>
+              <a class="main-nav__link">
+                <span class="main-nav__link—current">Главная</span>
+              </a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="photo.html">Фотографии</a>
@@ -204,7 +224,7 @@
                 <dt class="prices__name prices__name--header">База</dt>
                 <dd class="prices__desk prices__desk--header">1,99 USD</dd>
 
-                <dt class="prices__name prices__name--collumn">Розовый фильтр</dt>
+                <dt class="prices__name prices__name--column">Розовый фильтр</dt>
                 <dd class="prices__available prices__available--yes">
                   <span class="visually-hidden">Входит в комплектацию</span>
                 </dd>

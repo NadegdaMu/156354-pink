@@ -1,5 +1,5 @@
 .header-main {
-  background-color: $header-color;
+  /*background-color: $header-color;*/
   color: $white-color;
 }
 
@@ -39,15 +39,15 @@
 
 .header-main__link {
   position: relative;
-  left: -60px;
-  top: -15px;
+  left: -72px;
+  top: -18px;
   display: block;
   padding-top: 22px;
   margin-left: 20px;
 
   @media (min-width: 660px) {
-    left: 30px;
-    padding-top: 27px;
+    left: -1px;
+    padding-top: 45px;
     width: 180px;
   }
 

@@ -43,6 +43,10 @@
       border-top: none;
     }
 
+    &:nth-child(4) .main-nav__link {
+      margin-left: 19px;
+    }
+
   }
 }
 
@@ -107,7 +111,7 @@
     left: 605px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 960px) {
     display: none;
   }
 }
@@ -141,4 +145,11 @@
 .main-nav__btn:active::before,
 .main-nav__btn:active::after {
   background-color: rgba(210, 40, 86, 0.3);
+}
+
+.main-nav__link—current {
+  @media (min-width: 960px) {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
+  }
 }

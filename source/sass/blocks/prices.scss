@@ -5,7 +5,7 @@
 
 .prices {
   position: relative;
-  padding-bottom: 47px;
+  padding-bottom: 83px;
   background-color: $base-color;
 
   &::before {
@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  align-items: flex-start;
   flex-shrink: 0;
   flex-grow: 0;
   transition-duration: 0.3s;
@@ -67,7 +68,6 @@
     left: 10px;
     font-family: "OpenSansLight", "Arial", sans-serif;
     font-weight: 300;
-    color: #283645;
     font-size: 14px;
     line-height: 30px;
     color: #fff;
@@ -108,7 +108,7 @@
 
 .prices__name {
   flex-basis: 76%;
-  width: 76%;
+  max-width: 76%;
   padding-top: 18px;
   padding-left: 22px;
   text-transform: uppercase;
@@ -121,7 +121,7 @@
 .prices__name--header,
 .prices__desk--header {
   flex-basis: 100%;
-  width: 100%;
+  max-width: 100%;
   background-color: $color-text;
   color: $white-color;
   text-align: center;
@@ -149,17 +149,8 @@
   padding: 0;
   margin: 0;
   flex-basis: 24%;
-  width: 24%;
+  max-width: 24%;
   border-bottom: 2px solid $color-border;
-}
-
-.prices__available::before {
-  content: "";
-  display: block;
-  width: 65px;
-  height: 60px;
-  margin-left: auto;
-
 }
 
 .prices__available--yes {
@@ -289,7 +280,6 @@
     flex-shrink: 0;
     flex-grow: 0;
     display: flex;
-    margin-left: 0;
     margin-left: -2px;
     padding-left: 35px;
   }
@@ -345,12 +335,12 @@
 
   .prices__available {
     flex-basis: 155px;
-    width: 155px;
+    max-width: 155px;
     height: 47px;
     border-right: 2px solid $color-border;
   }
 
-  .prices__name--collumn {
+  .prices__name--column {
     border-top: 2px solid $color-border;
 
   }
@@ -396,19 +386,19 @@
 
   .prices__name {
     flex-basis: 235px;
-    width: 235px;
+    max-width: 235px;
   }
 
   .prices__name--header,
   .prices__desk--header {
     flex-basis:235px;
-    width: 235px;
-    margin-left: 235px;
+    max-width: 235px;
+    margin-left: 232px;
   }
 
   .prices__available {
     flex-basis: 235px;
-    width: 235px;
+    max-width: 235px;
     height: 61px;
   }
 

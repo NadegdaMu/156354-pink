@@ -4,11 +4,11 @@
   @media (min-width: 660px) {
     display: block;
     min-height: 400px;
-    background-color: $base-color;
   }
 
   @media (min-width: 960px) {
-   min-height: 455px;
+    min-height: 455px;
+    background-color: $base-color;
   }
 
 }
