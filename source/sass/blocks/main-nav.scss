@@ -114,37 +114,6 @@
   }
 }
 
-.main-nav__btn::before {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: 0;
-    width: 30px;
-    height: 4px;
-    background-color: $white-color;
-    transform: rotate(45deg);
-}
-.main-nav__btn::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: 0;
-    width: 30px;
-    height: 4px;
-    background-color: $white-color;
-    transform: rotate(-45deg);
-}
-
-.main-nav__btn:hover::before,
-.main-nav__btn:hover::after {
-  background-color: $red-text;
-}
-
-.main-nav__btn:active::before,
-.main-nav__btn:active::after {
-  background-color: rgba(210, 40, 86, 0.3);
-}
-
 .main-nav__link—current {
   @media (min-width: 960px) {
     padding-bottom: 5px;
