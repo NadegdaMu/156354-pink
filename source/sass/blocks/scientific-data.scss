@@ -10,7 +10,6 @@
     min-height: 455px;
     background-color: $base-color;
   }
-
 }
 
 @media (min-width: 660px) {
@@ -36,7 +35,6 @@
       font-weight: 700;
       color: $red-text;
     }
-
   }
 
   .scientific-data__appeal {
@@ -51,7 +49,6 @@
 
   .scientific-data__desk {
     display: block;
-
   }
 
   .scientific-data__text {
@@ -75,7 +72,6 @@
   br {
     display: none;
   }
-
 }
 
 @media (min-width: 960px) {
@@ -87,7 +83,7 @@
     background-position: 23px 115px , 0 37px;
     background-size: 250px 250px, 300px 360px;
 
-    &:before {
+    &::before {
       top: 218px;
       left: 80px;
       font-size: 120px;

@@ -2,10 +2,6 @@
   @media (min-width: 660px) {
     padding-bottom: 17px;
   }
-
-  @media (min-width: 960px) {
-
-  }
 }
 
 .upload__text {
@@ -44,11 +40,11 @@
   @media (min-width: 960px) {
     margin-right: 88px;
     margin-left: 80px;
-   }
+  }
 }
 .upload__content {
   padding-top: 18px;
-  /*background-color: $base-color;*/
+  background-color: $base-color;
 
   @media (min-width: 960px) {
     padding-bottom: 17px;
@@ -316,7 +312,6 @@
       margin-top: 13px;
     }
   }
-
 }
 
 .upload__input {
@@ -353,7 +348,6 @@
     width: 100%;
     height: 2px;
     background-color: $color-text;
-
   }
 
   &::-moz-range-thumb {
@@ -371,7 +365,6 @@
     background: transparent;
     border-color: transparent;
     color: transparent;
-
   }
 
   &::-ms-fill-lower {
@@ -398,10 +391,6 @@
     background-color: $red-text;
   }
 
-
-
-
-
   @media (min-width: 660px) {
     width: 200px;
   }
@@ -409,8 +398,4 @@
   @media (min-width: 960px) {
     width: 287px;
   }
-
-
 }
-
-

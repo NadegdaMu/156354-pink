@@ -47,10 +47,6 @@
     width: 435px;
     padding-top: 1px;
   }
-
-  @media (min-width: 960px) {
-
-  }
 }
 
 .achievements__label {
@@ -75,7 +71,6 @@
     height: 39px;
     border: 2px solid $color-border;
     border-radius: 2px;
-
   }
 
   &:hover::before {
@@ -100,6 +95,7 @@
       width: 313px;
       padding-left: 113px;
     }
+
     &:nth-of-type(2) {
       order: 4;
       margin: 0;

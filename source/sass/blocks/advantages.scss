@@ -3,6 +3,7 @@
 }
 
 .advantages__container {
+
   @media (min-width: 660px) {
     position: relative;
     z-index: 1;
@@ -56,7 +57,7 @@
   @media (min-width: 660px) {
     height: 473px;
 
-    &:before {
+    &::before {
       top: -10px;
       height: 45px;
     }
@@ -68,7 +69,7 @@
     background:  $base-color;
     background-image: none;
 
-    &:before {
+    &::before {
       top: 22px;
       height: 90px;
       z-index: 1;
@@ -277,6 +278,7 @@
 }
 
 .advantages__word {
+
   @media (min-width: 660px) {
     display: block;
   }
@@ -288,6 +290,7 @@
 }
 
 .advantages__phrase {
+
   @media (min-width: 960px) {
     display: block;
   }

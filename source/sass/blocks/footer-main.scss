@@ -109,16 +109,17 @@
   }
 }
 
-@media (min-width: 660px) {
-
-  .footer-main--form .footer-main__wrap {
+.footer-main--form .footer-main__wrap {
+  @media (min-width: 660px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-shrink: 0;
   }
+}
 
-  .footer-main--form {
+.footer-main--form {
+  @media (min-width: 660px) {
     margin-top: 53px;
   }
 }
