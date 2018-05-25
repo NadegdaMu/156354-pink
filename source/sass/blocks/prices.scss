@@ -94,7 +94,7 @@
     margin: 0;
 
     &:nth-child(1) {
-      width: 310px;
+      max-width: 310px;
       flex-shrink: 0;
       justify-content: flex-start;
     }
@@ -193,7 +193,7 @@
     flex-shrink: 0;
     flex-grow: 0;
     flex-basis: 155px;
-    width: 155px;
+    max-width: 155px;
     text-transform: none;
     border-right: 2px solid $color-border;
   }
@@ -215,7 +215,7 @@
 
   @media (min-width: 660px) {
     flex-basis: 155px;
-    width: 155px;
+    max-width: 155px;
     margin-left: 153px;
   }
 
