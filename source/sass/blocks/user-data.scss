@@ -17,6 +17,7 @@
     padding-bottom: 10px;
 
     &--network {
+      position: relative;
       padding-top: 0;
       padding-bottom: 28px;
       margin-top: 51px;
@@ -52,10 +53,22 @@
 .user-data--network .user-data__title {
   @media (min-width: 660px) {
     display: block;
+    width: 100%;
+    position: absolute;
+    top: -15px;
+    left: 0;
     text-align: center;
     color: $red-text;
     text-transform: uppercase;
     padding: 0 30px;
+  }
+}
+
+.user-data__slogan {
+  @media (min-width: 660px) {
+    width: 432px;
+    padding: 0 20px;
+    background-color: $white-color;
   }
 }
 
