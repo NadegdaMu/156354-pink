@@ -64,7 +64,6 @@
 .prices__content {
   display: flex;
   flex-direction: row;
-  align-items: center;
   align-items: flex-start;
   flex-shrink: 0;
   flex-grow: 0;
@@ -106,7 +105,6 @@
   }
 
   @media (min-width: 960px) {
-
     &:nth-child(1) {
       max-width: 470px;
     }
@@ -143,7 +141,7 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 30px;
-    color: #fff;
+    color: #ffffff;
     transform: rotate(-45deg);
     z-index: 2;
   }
@@ -220,7 +218,7 @@
   }
 
   @media (min-width: 960px) {
-    flex-basis:235px;
+    flex-basis: 235px;
     max-width: 235px;
     margin-left: 232px;
   }
@@ -289,13 +287,13 @@
 }
 
 .prices__available--yes {
-  background: $white-color url(../img/icon-table-yes.svg) no-repeat;
+  background: $white-color url("../img/icon-table-yes.svg") no-repeat;
   background-position: center center;
 
 }
 
 .prices__available--no {
-  background: $white-color url(../img/icon-no.svg) no-repeat;
+  background: $white-color url("../img/icon-no.svg") no-repeat;
   background-position: center center;
 }
 
@@ -338,7 +336,6 @@
   height: 12px;
   background-color: $base-color;
   border: 3px solid $color-text;
-
 }
 
 .prices__input--2:checked ~ .prices__table .prices__content {
@@ -388,14 +385,6 @@
   }
 }
 
-.prices__list:nth-child(2) .prices__desk--header,
-.prices__list:nth-child(3) .prices__desk--header {
-  @media (min-width: 660px) {
-    margin-left: -2px;
-    padding-left: 0;
-  }
-}
-
 .prices__list .prices__name:nth-of-type(2),
 .prices__list .prices__name:nth-of-type(3),
 .prices__list .prices__name:nth-of-type(4) {
@@ -404,6 +393,18 @@
     padding: 0;
     padding-top: 5px;
     padding-left: 15px;
+  }
+}
+
+.prices__list:nth-child(2) .prices__desk--header,
+.prices__list:nth-child(3) .prices__desk--header {
+  @media (min-width: 660px) {
+    margin-left: -2px;
+    padding-left: 0;
+  }
+
+  @media (min-width: 960px) {
+    padding-left: 0;
   }
 }
 
@@ -422,13 +423,6 @@
 .prices__list:nth-child(3) .prices__name--header {
   @media (min-width: 960px) {
     padding-left: 80px;
-  }
-}
-
-.prices__list:nth-child(2) .prices__desk--header,
-.prices__list:nth-child(3) .prices__desk--header {
-  @media (min-width: 960px) {
-    padding-left: 0;
   }
 }
 

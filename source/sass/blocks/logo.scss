@@ -11,24 +11,23 @@
 }
 
 .logo__glasses {
-    opacity: 0;
+  opacity: 0;
 
-    @media (min-width: 660px) {
-      opacity: 1;
-
-    }
+  @media (min-width: 660px) {
+    opacity: 1;
+  }
 }
 
 .logo-star {
-    opacity: 0;
+  opacity: 0;
 
-    @media (min-width: 960px) {
-      opacity: 1;
-    }
+  @media (min-width: 960px) {
+    opacity: 1;
+  }
 }
 
 .logo--footer:hover .logo__word--footer {
-  fill:  $red-text;
+  fill: $red-text;
 }
 
 .logo--footer:active {
@@ -54,6 +53,7 @@
 
 .logo-stars--footer {
   opacity: 0;
+
   @media (min-width: 960px) {
     opacity: 1;
     fill: $color-text;

@@ -1,4 +1,3 @@
-
 .panorama {
   position: relative;
 
@@ -33,7 +32,6 @@
     width: 940px;
     height: 105px;
     padding: 0;
-
   }
 }
 
@@ -76,10 +74,10 @@
   height: auto;
 
   @media (min-width: 660px) {
-  display: block;
-  width: 100%;
-  height: 508px;
-  margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 508px;
+    margin: 0 auto;
   }
 
   @media (min-width: 960px) {

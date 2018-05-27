@@ -46,7 +46,6 @@
     &:nth-child(4) .main-nav__link {
       margin-left: 19px;
     }
-
   }
 }
 
@@ -117,6 +116,6 @@
 .main-nav__link—current {
   @media (min-width: 960px) {
     padding-bottom: 5px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #ffffff;
   }
 }

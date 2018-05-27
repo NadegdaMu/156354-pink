@@ -19,7 +19,7 @@
   margin-left: -1px;
 }
 
-.reviews__item  {
+.reviews__item {
   height: 370px;
   position: absolute;
   top: 0;
@@ -89,6 +89,7 @@
 .reviews__input--2:checked ~ .reviews__list .reviews__item--2 {
   opacity: 1;
 }
+
 .reviews__input--3:checked ~ .reviews__list .reviews__item--3 {
   opacity: 1;
 }
@@ -167,8 +168,6 @@
   background-color: $white-color;
   border: 3px solid $color-text;
 }
-
-
 
 .reviews__paginator--1 {
   @media (min-width: 960px) {

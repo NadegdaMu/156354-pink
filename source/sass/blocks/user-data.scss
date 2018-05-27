@@ -156,7 +156,7 @@
 .user-data__input-wrap--phone {
   @media (min-width: 660px) {
     &::after {
-      background-image: url(../img/icon-phone.svg);
+      background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -166,7 +166,7 @@
 .user-data__input-wrap--email {
   @media (min-width: 660px) {
     &::after {
-      background-image: url(../img/icon-mail.svg);
+      background-image: url("../img/icon-mail.svg");
       background-repeat: no-repeat;
       background-position: center;
     }
