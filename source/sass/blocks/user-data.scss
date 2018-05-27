@@ -119,11 +119,6 @@
       margin-bottom: 49px;
     }
 
-    &:nth-of-type(2) {
-      width: 566px;
-      margin-bottom: 46px;
-    }
-
     &:nth-of-type(1) {
       order: 1;
     }
@@ -134,7 +129,7 @@
       top: 30px;
       right: 0;
       width: 62px;
-      height: 60px;
+      height: 63px;
       background-color: $color-border;
       border-radius: 2px;
       z-index: -1;

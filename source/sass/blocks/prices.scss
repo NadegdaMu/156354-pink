@@ -382,6 +382,10 @@
   @media (min-width: 660px) {
     padding-left: 45px;
   }
+
+  @media (min-width: 960px) {
+    padding-left: 80px;
+  }
 }
 
 .prices__list .prices__name:nth-of-type(2),
@@ -416,12 +420,6 @@
 .prices__list:nth-child(2) .prices__name--header {
   @media (min-width: 960px) {
     padding-left: 68px;
-  }
-}
-
-.prices__list:nth-child(3) .prices__name--header {
-  @media (min-width: 960px) {
-    padding-left: 80px;
   }
 }
 
