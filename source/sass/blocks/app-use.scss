@@ -10,7 +10,7 @@
   @media (min-width: 660px) {
     padding-top: 0;
     margin-top: -5px;
-    height: 308px;
+    min-height: 308px;
     background-color: $white-color;
     border: 2px solid $color-border;
   }
@@ -78,7 +78,6 @@
       left: 65px;
     }
   }
-
 }
 
 .app-use__input:hover + .app-use__label::before {
@@ -88,4 +87,8 @@
 .app-use__input:checked + .app-use__label::before {
   background-color: $red-text;
   box-shadow: 0 0 0 9px $white-color, 0 0 0 11px $red-text;
+}
+
+.app-use__input:focus + .app-use__label::before {
+  box-shadow: 0 0 0 9px $white-color, 0 0 0 11px $color-text;
 }

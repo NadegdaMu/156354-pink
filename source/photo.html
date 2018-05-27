@@ -4,21 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link href="css/style.css" rel="stylesheet">
     <script src="js/picturefill.js" async></script>
     <script src="js/svgxuse.js" async></script>
-
   </head>
 
   <body>
 
-
     <header class="header-main">
 
       <div class="header-main__wrapper">
-
         <div class="header-main__wrap">
-
           <div class="header-main__panel">
             <a class="header-main__link"  href="index.html">
               <svg class="logo logo--header" xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375" viewBox="0 0 146.3 40.375">
@@ -31,7 +30,6 @@
               </svg>
             </a>
           </div>
-
           <nav class="main-nav">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -53,7 +51,6 @@
               <span class="visually-hidden">Меню</span>
             </button>
           </nav>
-
         </div>
       </div>
 
@@ -68,7 +65,6 @@
       </div>
 
       <section class="posts">
-
         <h2 class="visually-hidden">Посты пользователей.</h2>
 
         <div class="container">
@@ -88,22 +84,22 @@
             </picture>
           </a>
           <div class="panorama__desc">панорама дня</div>
-          <div class="container">
-            <div class="panorama__wrap">
-              <div class="panorama__meta">
-                <span class="panorama__author">Анна</span>
-                <span class="panorama__load-time">(5 минут назад)</span>
-              </div>
-              <p class="panorama__textual">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-              <div class="panorama__likes">
-                <button class="panorama__btn-likes" type="button">
-                  <span class="visually-hidden">Сердечко</span>
-                </button>
-                <span class="panorama__wording">Нравится:</span>
-                <span class="panorama__number-likes">215</span>
+            <div class="container">
+              <div class="panorama__wrap">
+                <div class="panorama__meta">
+                  <span class="panorama__author">Анна</span>
+                  <span class="panorama__load-time">(5 минут назад)</span>
+                </div>
+                <p class="panorama__textual">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+                <div class="panorama__likes">
+                  <button class="panorama__btn-likes" type="button">
+                    <span class="visually-hidden">Сердечко</span>
+                  </button>
+                  <span class="panorama__wording">Нравится:</span>
+                  <span class="panorama__number-likes">215</span>
+                </div>
               </div>
             </div>
-          </div>
         </div>
 
         <div class="container">
@@ -282,7 +278,6 @@
       </section>
 
       <section class="upload">
-
         <h2 class="visually-hidden">Загрузить фотографию</h2>
 
         <div class="container">
@@ -297,25 +292,21 @@
                   <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
                   <img class="upload__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Заснеженная трасса">
                 </picture>
-
                 <form action="#" class="upload__form">
                   <!-- "управляющие элементы не меняют положение при разных брейкпойнтах, т. к. сделаны на range" -->
                   <div class="upload__tools">
-
                     <button class="upload__tool  upload__tool--size" type="button">
                       <svg class="upload__icon upload__icon--size" width="48" height="48"><use xlink:href="img/sprite.svg#icon-crop"></use></svg>
                     </button>
                     <div class="upload__scale">
                       <input class="upload__input" type="range" min="1" max="15" step="1" value="12">
                     </div>
-
                     <button class="upload__tool  upload__tool--fill" type="button">
                       <svg class="upload__icon upload__icon--fill" width="48" height="48"><use xlink:href="img/sprite.svg#icon-fill"></use></svg>
                     </button>
                     <div class="upload__scale">
                       <input class="upload__input" type="range" min="1" max="15" step="1" value="3">
                     </div>
-
                     <button class="upload__tool  upload__tool--contrast" type="button">
                       <svg class="upload__icon upload__icon--contrast" width="32" height="32"><use xlink:href="img/sprite.svg#icon-contrast"></use></svg>
                     </button>
@@ -323,24 +314,19 @@
                       <input class="upload__input" type="range" min="1" max="15" step="1" value="13">
                     </div>
                   </div>
-
                   <button class="upload__btn  upload__btn--post" type="submit">Запостить</button>
                   <button class="upload__btn  upload__btn--cancel" type="reset">Отмена</button>
-
                 </form>
               </div>
             </div>
           </div>
-
       </section>
 
     </main>
 
-
     <footer class="footer-main footer-main--photo">
 
       <div class="container">
-
         <div class="footer-main__wrap">
 
           <a class="footer-main__logo footer-main__logo--photo" href="index.html">
@@ -357,34 +343,36 @@
           </a>
 
           <div class="social">
-          <ul class="social__list social__list--photo">
-            <li class="social__item">
-              <a class="social__link social__link--tw" href="#">
-                <span class="visually-hidden">twitter</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--f" href="#">
-                <span class="visually-hidden">facebook</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--yt" href="#">
-                <span class="visually-hidden">youtube</span>
-              </a>
-            </li>
-          </ul>
+            <ul class="social__list social__list--photo">
+              <li class="social__item">
+                <a class="social__link social__link--tw" href="#">
+                  <span class="visually-hidden">twitter</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--f" href="#">
+                  <span class="visually-hidden">facebook</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--yt" href="#">
+                  <span class="visually-hidden">youtube</span>
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div class="copyright copyright--photo">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__img" width="34" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
-            <span class="visually-hidden">Сылка на интенсив HTMLacademy</span>
-          </a>
+            <p class="copyright__text">Разработано</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="copyright__img" width="34" height="34"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
+              <span class="visually-hidden">Сылка на интенсив HTMLacademy</span>
+            </a>
           </div>
+
         </div>
       </div>
+
     </footer>
 
   </body>

@@ -4,23 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link href="css/style.css" rel="stylesheet">
     <script src="js/picturefill.js" async></script>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="js/custom-google-map.js"></script>
     <script src="js/svgxuse.js" async></script>
-
   </head>
   <body>
 
     <header class="header-main">
 
       <div class="header-main__wrapper">
-
         <div class="header-main__wrap">
-
           <h1 class="visually-hidden">Пинк, приложение для обработки фотографий</h1>
-
           <div class="header-main__panel">
             <a class="header-main__link">
               <svg class="logo logo--header" xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375" viewBox="0 0 146.3 40.375">
@@ -33,43 +32,35 @@
               </svg>
             </a>
           </div>
-
           <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link">
-                <span class="main-nav__link—current">Главная</span>
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-          <button class="main-nav__btn" type="button">
-            <span class="visually-hidden">Меню</span>
-          </button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link">
+                  <span class="main-nav__link—current">Главная</span>
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
+            <button class="main-nav__btn" type="button">
+              <span class="visually-hidden">Меню</span>
+            </button>
           </nav>
-
         </div>
       </div>
 
-
-
       <div class="app">
-
         <div class="container">
           <div class="app__wrap">
-
             <p class="app__appeal">Взгляните на жизнь иначе!</p>
-
             <a class="app__btn btn" href="http://alpinefile.ru/itunes.html">Скачать приложение</a>
-
             <ul class="app__icon-list">
               <li class="app__icon-item">
                 <a class="app__icon-link" href="https://play.google.com/store/apps/eveloper?id=Apple+Inc.">
@@ -87,13 +78,11 @@
                 </a>
               </li>
             </ul>
-
             <p class="app__text">Доступно для iPhone, iPad, Android,
               <span class="app__desck">Windows Phone, OS X, Windows 8</span>
             </p>
           </div>
         </div>
-
       </div>
 
     </header>
@@ -101,13 +90,10 @@
     <main class="content-main">
 
         <section class="advantages">
-
           <h2 class="visually-hidden">Возможности приложения.</h2>
-
           <div class="container">
             <p class="advantages__slogan">Устали от серости мегаполиса?<span class="advantages__desk"> Нам есть, что вам предложить!</span></p>
           </div>
-
           <div class="advantages__wrap">
             <div class="container advantages__container">
               <ul class="advantages__list">
@@ -126,7 +112,6 @@
               </ul>
             </div>
           </div>
-
         </section>
 
         <section class="scientific-data">
@@ -147,9 +132,15 @@
             <input class="reviews__input reviews__input--1 visually-hidden" type="radio" id="btn-7" name="toggle" checked>
             <input class="reviews__input reviews__input--2 visually-hidden" type="radio" id="btn-8" name="toggle">
             <div class="reviews__controls">
-              <label class="reviews__control reviews__control--1" for="btn-1"></label>
-              <label class="reviews__control reviews__control--2" for="btn-2"></label>
-              <label class="reviews__control reviews__control--3" for="btn-3"></label>
+              <label class="reviews__control reviews__control--1" for="btn-1">
+                <span class="visually-hidden">1 слайд</span>
+              </label>
+              <label class="reviews__control reviews__control--2" for="btn-2">
+                <span class="visually-hidden">2 слайд</span>
+              </label>
+              <label class="reviews__control reviews__control--3" for="btn-3">
+                <span class="visually-hidden">3 слайд</span>
+              </label>
             </div>
             <div class="reviews__paginator">
               <label class="reviews__paginator reviews__paginator--1" for="btn-7">
@@ -159,7 +150,6 @@
                 <svg class="reviews__icon" width="22" height="41"><use xlink:href="img/sprite.svg#icon-right"></use></svg>
               </label>
             </div>
-
             <ul class="reviews__list">
               <li class="reviews__item reviews__item--1">
                 <blockquote class="reviews__blockquote">
@@ -168,7 +158,6 @@
                 </blockquote>
                 <p class="reviews__text">25 лет, водитель трамвая</p>
               </li>
-
               <li class="reviews__item reviews__item--2">
                 <blockquote class="reviews__blockquote">
                   <cite class="reviews__author">Николай Петров</cite>
@@ -176,7 +165,6 @@
                 </blockquote>
                 <p class="reviews__text">25 лет, водитель трамвая</p>
               </li>
-
               <li class="reviews__item reviews__item--3">
                 <blockquote class="reviews__blockquote">
                   <cite class="reviews__author">Николай Петров</cite>
@@ -185,93 +173,73 @@
                 <p class="reviews__text">25 лет, водитель трамвая</p>
               </li>
             </ul>
-
           </div>
         </section>
 
         <section class="prices">
-
-
-        <div class="prices__container">
-          <input class="prices__input prices__input--1 visually-hidden" type="radio" id="btn-4" name="switch" checked>
-          <input class="prices__input prices__input--2 visually-hidden" type="radio" id="btn-5" name="switch">
-          <input class="prices__input prices__input--3 visually-hidden" type="radio" id="btn-6" name="switch">
-          <div class="prices__table">
-
-            <div class="prices__content">
-
-              <dl class="prices__list">
-
-                <dt class="prices__name prices__name--header">База</dt>
-                <dd class="prices__desk prices__desk--header">1,99 USD</dd>
-
-                <dt class="prices__name prices__name--column">Розовый фильтр</dt>
-                <dd class="prices__available prices__available--yes">
-                  <span class="visually-hidden">Входит в комплектацию</span>
-                </dd>
-
-                <dt class="prices__name">Смайлики</dt>
-                <dd class="prices__available prices__available--no">
-                  <span class="visually-hidden">Не входит в комплектацию</span>
-                </dd>
-
-                <dt class="prices__name">Комментарии</dt>
-                <dd class="prices__available prices__available--no">
-                  <span class="visually-hidden">Не входит в комплектацию</span>
-                </dd>
-              </dl>
-
-              <dl class="prices__list">
-                <dt class="prices__name prices__name--header">Стандарт</dt>
-                <dd class="prices__desk prices__desk--header">3,99 USD</dd>
-
-                <dt class="prices__name">Розовый фильтр</dt>
-                <dd class="prices__available prices__available--yes">
-                  <span class="visually-hidden">Входит в комплектацию</span>
-                </dd>
-
-                <dt class="prices__name">Смайлики</dt>
-                <dd class="prices__available prices__available--yes">
-                  <span class="visually-hidden">Входит в комплектацию</span>
-                </dd>
-
-                <dt class="prices__name">Комментарии</dt>
-                <dd class="prices__available prices__available--no">
-                  <span class="visually-hidden">Не входит в комплектацию</span>
-                </dd>
-              </dl>
-
-              <dl class="prices__list">
-                <dt class="prices__name prices__name--header">Анлим</dt>
-                <dd class="prices__desk prices__desk--header">9,99 USD</dd>
-
-
-                <dt class="prices__name">Розовый фильтр</dt>
-                <dd class="prices__available prices__available--yes">
-                  <span class="visually-hidden">Входит в комплектацию</span>
-                </dd>
-
-                <dt class="prices__name">Смайлики</dt>
-                <dd class="prices__available prices__available--yes">
-                  <span class="visually-hidden">Входит в комплектацию</span>
-                </dd>
-
-                <dt class="prices__name">Комментарии</dt>
-                <dd class="prices__available prices__available--yes">
-                  <span class="visually-hidden">Входит в комплектацию</span>
-                </dd>
-              </dl>
+          <div class="prices__container">
+            <input class="prices__input prices__input--1 visually-hidden" type="radio" id="btn-4" name="switch" checked>
+            <input class="prices__input prices__input--2 visually-hidden" type="radio" id="btn-5" name="switch">
+            <input class="prices__input prices__input--3 visually-hidden" type="radio" id="btn-6" name="switch">
+            <div class="prices__table">
+              <div class="prices__content">
+                <dl class="prices__list">
+                  <dt class="prices__name prices__name--header">База</dt>
+                  <dd class="prices__desk prices__desk--header">1,99 USD</dd>
+                  <dt class="prices__name prices__name--column">Розовый фильтр</dt>
+                  <dd class="prices__available prices__available--yes">
+                    <span class="visually-hidden">Входит в комплектацию</span>
+                  </dd>
+                  <dt class="prices__name">Смайлики</dt>
+                  <dd class="prices__available prices__available--no">
+                    <span class="visually-hidden">Не входит в комплектацию</span>
+                  </dd>
+                  <dt class="prices__name">Комментарии</dt>
+                  <dd class="prices__available prices__available--no">
+                    <span class="visually-hidden">Не входит в комплектацию</span>
+                  </dd>
+                </dl>
+                <dl class="prices__list">
+                  <dt class="prices__name prices__name--header">Стандарт</dt>
+                  <dd class="prices__desk prices__desk--header">3,99 USD</dd>
+                  <dt class="prices__name">Розовый фильтр</dt>
+                  <dd class="prices__available prices__available--yes">
+                    <span class="visually-hidden">Входит в комплектацию</span>
+                  </dd>
+                  <dt class="prices__name">Смайлики</dt>
+                  <dd class="prices__available prices__available--yes">
+                    <span class="visually-hidden">Входит в комплектацию</span>
+                  </dd>
+                  <dt class="prices__name">Комментарии</dt>
+                  <dd class="prices__available prices__available--no">
+                    <span class="visually-hidden">Не входит в комплектацию</span>
+                  </dd>
+                </dl>
+                <dl class="prices__list">
+                  <dt class="prices__name prices__name--header">Анлим</dt>
+                  <dd class="prices__desk prices__desk--header">9,99 USD</dd>
+                  <dt class="prices__name">Розовый фильтр</dt>
+                  <dd class="prices__available prices__available--yes">
+                    <span class="visually-hidden">Входит в комплектацию</span>
+                  </dd>
+                  <dt class="prices__name">Смайлики</dt>
+                  <dd class="prices__available prices__available--yes">
+                    <span class="visually-hidden">Входит в комплектацию</span>
+                  </dd>
+                  <dt class="prices__name">Комментарии</dt>
+                  <dd class="prices__available prices__available--yes">
+                    <span class="visually-hidden">Входит в комплектацию</span>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="prices__controls">
+              <label class="prices__control prices__control--01" for="btn-4"><span class="visually-hidden">1 слайд</span></label>
+              <label class="prices__control prices__control--02" for="btn-5"><span class="visually-hidden">2 слайд</span></label>
+              <label class="prices__control prices__control--03" for="btn-6"><span class="visually-hidden">3 слайд</span></label>
             </div>
           </div>
-
-          <div class="prices__controls">
-            <label class="prices__control prices__control--01" for="btn-4"><span class="visually-hidden">1 слайд</span></label>
-            <label class="prices__control prices__control--02" for="btn-5"><span class="visually-hidden">2 слайд</span></label>
-            <label class="prices__control prices__control--03" for="btn-6"><span class="visually-hidden">3 слайд</span></label>
-          </div>
-        </div>
-
-      </section>
+        </section>
 
     </main>
 
@@ -302,7 +270,6 @@
       <div class="map" id="map"></div>
 
       <div class="container">
-
         <div class="footer-main__wrap-index">
 
           <a class="footer-main__logo" href="index.html">
@@ -319,23 +286,23 @@
           </a>
 
           <div class="social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--tw" href="#">
-                <span class="visually-hidden">twitter</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--f" href="#">
-                <span class="visually-hidden">facebook</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--yt" href="#">
-                <span class="visually-hidden">youtube</span>
-              </a>
-            </li>
-          </ul>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--tw" href="#">
+                  <span class="visually-hidden">twitter</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--f" href="#">
+                  <span class="visually-hidden">facebook</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--yt" href="#">
+                  <span class="visually-hidden">youtube</span>
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div class="copyright">
@@ -345,6 +312,7 @@
               <span class="visually-hidden">Сылка на интенсив HTMLacademy</span>
             </a>
           </div>
+
         </div>
       </div>
 

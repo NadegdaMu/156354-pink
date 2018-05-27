@@ -40,6 +40,11 @@
       margin-right: 20px;
     }
 
+    &:nth-child(1) .post__wrap,
+    &:nth-child(3) .post__wrap {
+      min-height: 156px;
+    }
+
     &:nth-child(2) .post__meta,
     &:nth-child(3) .post__meta,
     &:nth-child(4) .post__meta,

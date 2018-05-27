@@ -167,3 +167,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.achievements__input:focus + .achievements__label::before {
+  border: 2px solid $color-text;
+}

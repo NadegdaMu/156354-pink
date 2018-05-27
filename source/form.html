@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link href="css/style.css" rel="stylesheet">
     <script src="js/picturefill.js" async></script>
     <script src="js/svgxuse.js" async></script>
@@ -12,12 +15,10 @@
 
   <body>
 
-
     <header class="header-main">
 
       <div class="header-main__wrapper">
         <div class="header-main__wrap">
-
           <div class="header-main__panel">
             <a class="header-main__link"  href="index.html">
               <svg class="logo logo--header" xmlns="http://www.w3.org/2000/svg" width="146.3" height="40.375" viewBox="0 0 146.3 40.375">
@@ -30,7 +31,6 @@
               </svg>
             </a>
           </div>
-
           <nav class="main-nav">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -52,7 +52,6 @@
               <span class="visually-hidden">Меню</span>
             </button>
           </nav>
-
         </div>
       </div>
 
@@ -70,143 +69,107 @@
         <p class="content-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на<span class="content-main__text-desk">вашу бонусную карту!</span>
           <span class="content-main__desk">Пожалуйста, заполните форму ниже:</span>
         </p>
-
       </div>
 
       <div class="registration">
         <form action="https://echo.htmlacademy.ru" class="registration__form">
-
-
           <fieldset class="user-data">
-
             <label class="user-data__label" for="user-data__surname">
               Фамилия:
             </label>
             <input class="user-data__input" type="text" id="user-data__surname" name="surname" placeholder="Укажите фамилию *" required>
-
             <label class="user-data__label" for="user-data__name">
               Имя:
             </label>
             <input class="user-data__input" type="text" id="user-data__name" name="name" placeholder="Введите ваше имя *" required>
-
             <label class="user-data__label" for="user-data__middle-name">
               Отчество:
             </label>
             <input class="user-data__input" type="text" id="user-data__middle-name" name="middle-name" placeholder="Ну и отчество тоже">
-
           </fieldset>
-
           <fieldset class="achievements">
-
             <legend class="achievements__title">
               <span class="achievements__slogan">
                 Ваши безбашенные достижения в путешествии
               </span>
             </legend>
-
             <div class="achievements__wrapper">
-
               <input class="achievements__input visually-hidden" type="checkbox" name="record1" id="chx1" checked>
               <label class="achievements__label" for="chx1">
                 <span class="achievements__desk">Сделал селфи с акулой</span>
               </label>
-
               <input class="achievements__input visually-hidden" type="checkbox" name="record2" id="chx2" checked>
               <label class="achievements__label" for="chx2">
                 <span class="achievements__desk">Обгoрел на пляже</span>
               </label>
-
               <input class="achievements__input visually-hidden" type="checkbox" name="record3" id="chx3">
               <label class="achievements__label" for="chx3">
                 <span class="achievements__desk">Видел Чака Норриса</span>
               </label>
-
               <input class="achievements__input visually-hidden" type="checkbox" name="record4" id="chx4">
               <label class="achievements__label" for="chx4">
                 <span class="achievements__desk">Накупил сувениров</span>
               </label>
-
               <input class="achievements__input visually-hidden" type="checkbox" name="record5" id="chx5" checked>
               <label class="achievements__label" for="chx5">
                 <span class="achievements__desk">Удержал башню</span>
               </label>
-
               <input class="achievements__input visually-hidden" type="checkbox" name="record6" id="chx6">
               <label class="achievements__label" for="chx6">
                 <span class="achievements__desk">Разгромил отель</span>
               </label>
-
             </div>
-
           </fieldset>
-
           <fieldset class="user-data user-data--network">
-
             <legend class="user-data__title">
               <span class="user-data__slogan">
                 Контактная информация
               </span>
             </legend>
-
             <div class="user-data__wrapper user-data__wrapper--network">
-
               <label class="user-data__label-mobile" for="user-data__phone">
                 Номер телефона
               </label>
               <div class="user-data__input-wrap user-data__input-wrap--phone">
                 <input class="user-data__input  user-data__input--network" type="tel" name="tel"  id="user-data__phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста">
               </div>
-
               <label class="user-data__label-mobile" for="user-data__address">
                 Адрес почты
               </label>
               <div class="user-data__input-wrap user-data__input-wrap--email">
                 <input class="user-data__input  user-data__input--network" type="email" name="email" id="user-data__address" placeholder="Введите почту *" required>
               </div>
-
             </div>
-
           </fieldset>
-
           <fieldset class="app-use">
-
             <legend class="app-use__title">
               <span class="app-use__slogan">
                 С каким приложением путешествовали?
               </span>
             </legend>
-
             <input class="app-use__input visually-hidden" type="radio" name="program-name" value="IOS" id="rd1" checked>
             <label class="app-use__label" for="rd1">
               <span class="app-use__desk">Pink для iOS</span>
             </label>
-
             <input class="app-use__input visually-hidden" type="radio" name="program-name" value="Android" id="rd2">
             <label class="app-use__label" for="rd2">
               <span class="app-use__desk">Pink на Android</span>
             </label>
-
             <input class="app-use__input visually-hidden" type="radio" name="program-name" value="Phone" id="rd3">
             <label class="app-use__label" for="rd3">
               <span class="app-use__desk">Windows Phone</span>
             </label>
-
           </fieldset>
-
           <fieldset class="review">
             <legend class="review__title">
               <span class="review__slogan">
                 Опишите свои эмоции
               </span>
             </legend>
-
             <textarea class="review__textarea" name="review" id="review__emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-
           </fieldset>
-
           <div class="registration__wrapper">
             <button class="registration__btn  btn-contest" type="submit">Отправить форму</button>
-
             <p class="registration__text">
               <span class="registration__desk">*</span>
               — обязательные поля
@@ -216,7 +179,6 @@
               — обязательные для заполнения поля
             </p>
           </div>
-
         </form>
       </div>
 
@@ -268,8 +230,10 @@
               <span class="visually-hidden">Сылка на интенсив HTMLacademy</span>
             </a>
           </div>
+
         </div>
       </div>
+
     </footer>
 
     <!-- открываются при классе modal-message--show -->
