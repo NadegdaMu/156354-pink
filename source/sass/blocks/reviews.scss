@@ -1,4 +1,4 @@
- .reviews {
+.reviews {
   position: relative;
   padding-bottom: 50px;
 
@@ -10,9 +10,9 @@
     min-height: 490px;
     padding-bottom: 0;
   }
- }
+}
 
- .reviews__list {
+.reviews__list {
   height: 300px;
   @include list-reset;
   position: relative;
