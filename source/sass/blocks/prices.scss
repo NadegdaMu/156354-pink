@@ -108,7 +108,7 @@
   @media (min-width: 960px) {
 
     &:nth-child(1) {
-      width: 470px;
+      max-width: 470px;
     }
 
     &:nth-child(2),
